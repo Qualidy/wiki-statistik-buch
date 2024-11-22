@@ -1,7 +1,7 @@
 **Repository klonen:**
 
 ```commandline
-git clone https://github.com/Qualidy/wiki-stochastik.git
+git clone https://github.com/Qualidy/wiki-statistik-buch.git
 ```
 
 **Virtuelle Umgebung anlegen:**
