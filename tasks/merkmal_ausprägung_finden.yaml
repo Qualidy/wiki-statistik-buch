@@ -1,0 +1,24 @@
+title: "Merkmalsausprägungen finden"
+question: |
+  Denken Sie sich zu jedem der hier aufgelisteten Merkmale sinnvolle Merkmalsausprägungen aus.
+  
+  a) Wetter
+  
+  b) Getränk
+  
+  c) Fortbewegungsarten bei Google Maps
+  
+  d) Gehalt
+  
+  e) Temperatur in Celsius (wenn möglich als Intervall angeben)
+
+solution: |
+  a) Sonnig, Bewölkt, Regnerisch, Schneefall, Nebelig, Windig, Stürmisch, Heiter, Hagel, Schwül, Trocken
+  
+  b) Wasser, Saft, Limonade, Tee, Kaffee
+
+  c) Auto, Öffentliche Verkehrsmittel, Zu Fuß, Rad/Roller, Flugzeug
+
+  d) Alle Zahlen größer oder gleich $0$ mit höchstens zwei Nachkommastellen: 1000€, 20,52€, ...
+  
+  e) $[-273, 15; \infty)$
