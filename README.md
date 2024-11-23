@@ -61,3 +61,42 @@ Wenn die Veröffentlichung automatisch angestoßen werden soll, so kann das mit 
 ```commandline
 mkdocs gh-deploy
 ```
+
+**Webseite bearbeiten und veröffentlichen:**
+
+1. Aktuelle Version holen
+```commandline
+git pull
+```
+2. Vorschau starten
+Markdown-Dateien unter docs/content bearbeiten. 
+Vorschau anzeigen mit:
+
+```commandline
+mkdocs serve
+```
+
+3. Änderungen speichern
+- Status prüfen:
+
+```commandline
+git status
+```
+
+- Änderungen hinzufügen:
+
+```commandline
+git add .
+```
+
+- Commit erstellen:
+
+```commandline
+git commit -m "Beschreibung der Änderungen"
+```
+
+- Änderungen hochladen:
+
+```commandline
+git push
+```
