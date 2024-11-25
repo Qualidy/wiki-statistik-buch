@@ -5,3 +5,35 @@ question: |
   ```python
   relative_counts([4, 5, 15, 17, 10]) # [0.08, 0.1, 0.29, 0.33, 0.2]
   ```
+solution: |
+  ```python
+  def relative_counts(absolute_values):
+      if not absolute_values:
+          raise ValueError("Bitte keine leere Liste übergeben")
+      n = sum(absolute_values)
+      return [number / n for number in absolute_values]
+  
+
+  class Test_Relative_Counts(unittest.TestCase):
+      @parameterized.expand([
+          ([4, 5, 15, 17, 10], [0.08, 0.1, 0.29, 0.33, 0.2]),
+          ([1],[1]),
+          ([10, 20, 35], [0.15, 0.31, 0.54]),
+          ([22, 11, 37, 70, 2, 7], [0.15, 0.07, 0.25, 0.47, 0.01, 0.05]),
+          ([1, 2, 3, 4], [0.1, 0.2, 0.3, 0.4])
+      ])  
+           
+  
+      def test_parametrized(self,values,expected):
+          result = relative_counts(values)
+          rounded_result = [round(value, 2) for value in result]
+          self.assertEqual(rounded_result, expected)
+          
+      def test_empty_list(self):
+          with self.assertRaises(ValueError):
+              relative_counts([])
+          
+          
+  if __name__ == "__main__":
+      unittest.main()
+  ```
