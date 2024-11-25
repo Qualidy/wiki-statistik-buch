@@ -1,1 +1,20 @@
-title: Relative und absolute
+title: Relative und absolute Häufigkeiten in pandas berechnen
+question: |
+  Erstelle in Pandas eine neue Methode `Series.get_counts(self, bins, **cut_kwargs)`.
+  Diese soll eine Series mit Hilfe von [`cut`](https://pandas.pydata.org/docs/reference/api/pandas.cut.html#pandas.cut)
+  klassieren und dann die absolute und relative Häufigkeit der Klassen angeben.
+solution: |
+  ```python
+  def get_counts(self, bins, **cut_kwargs):
+      ser_bins = pd.cut(self, bins, **cut_kwargs)
+      return pd.DataFrame({
+          "relativen Häufigkeiten": ser_bins.value_counts(normalize=True),
+          "absoluten Häufigkeiten": ser_bins.value_counts(normalize=False),
+      })
+
+  pd.Series.get_counts = get_counts
+
+  if __name__ == '__main__':
+      daten = pd.Series([1, 2, 2, 3, 4, 4, 4, 5, 6, 6, 6, 6, 7, 8, 9, 9, 9, 9, 9, 10])
+      print(daten.get_counts(bins=[0, 3, 6, 9, 12], right=True))
+  ```

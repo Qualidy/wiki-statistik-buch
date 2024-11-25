@@ -84,3 +84,5 @@ print(f_h_rel(7, data=X)) # 0.0
 ```
 
 {{ task("tasks/C_2_1_relative_counts/aufgabe.yaml") }}
+
+{{ task("tasks/C_2_2_4_get_counts/aufgabe.yaml") }}
