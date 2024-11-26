@@ -1,0 +1,11 @@
+title: Varianz und Standardabweichung in Python
+question: |
+  Implementierung Sie die Funktionen `var`, `std` um die Varianz und Standardabweichung einer Liste zu bestimmen.
+solution: |
+  ```python
+  def var(values):
+      ...
+  
+  def std(values):
+      ...
+  ```
