@@ -21,19 +21,23 @@ def my_median(liste):
 
 
 def my_modus(liste):
-    if liste:
-        frequency = {value: liste.count(value) for value in set(liste)}
-        return max(frequency, key=frequency.get)
-    return np.nan
+    if not liste:
+        return np.nan
+
+    return _my_modus(liste)
+
+def _my_modus(liste):
+    frequency = {value: liste.count(value) for value in set(liste)}
+    return max(frequency, key=frequency.get)
 
 # print(pd.Series(data_steps).mode())
 # print(my_modus(data_steps))
 
 
 def my_mean(liste):
-    if liste:
-        return sum(liste)/len(liste)
-    return np.nan
+    if not liste:
+        return np.nan
+    return sum(liste)/len(liste)
 
 # print(pd.Series(data_steps).mean())
 # print(my_mean(data_steps))

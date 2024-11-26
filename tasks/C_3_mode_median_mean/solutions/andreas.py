@@ -7,7 +7,7 @@ X = 'pink; silbern; silbern; pink; pink; silbern; silbern; pink; silbern; pink; 
 
 def modus(lst: str) -> str:
     if lst:
-        # return max({word: lst.count(word) for word in lst.split('; ')}.items(), key=lambda x: x[1])
+        # return max({word: lst.count(word) for word in lst.split('; ')}.items(), key=lambda x: x[1])[0]
         tmp_lst = {word: lst.count(word) for word in lst.split('; ')}
         # [(k, v) for k, v in lst.items() if v == max(lst.values())]
         return tmp_lst

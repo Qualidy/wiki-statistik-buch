@@ -13,6 +13,15 @@ def mode(values: list, multiple: bool = False):
     else:
         return modi[0]
 
+# Allgemeinere Typehints und Prüfungen:
+# from collections.abc import Iterable
+#
+# def mode_chatgpt(values, multiple=False):
+#     if not isinstance(values, Iterable):
+#         raise TypeError('Values must be Iterable.')
+
+
+
 
 def median(values: list):
     if not isinstance(values, list):

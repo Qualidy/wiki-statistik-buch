@@ -58,5 +58,3 @@ class Test_Modus(unittest.TestCase):
         ([100, 2000, 333, 7], 610)])
     def test_parametrized(self, values, expected):
         self.assertEqual(arith(values),expected)
-
-if __main_
