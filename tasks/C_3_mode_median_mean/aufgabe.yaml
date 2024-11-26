@@ -1,0 +1,13 @@
+title: Modus, Median und Arithmetisches Mittel in Python
+question: |
+  Implementierung Sie die Funktionen `mode`, `median` und `mean`, um den Modus,
+  den Median und das Arithmetische Mittel einer Liste zu bestimmen.
+solution: |
+  ```python
+  def mode(values):
+      ...
+  def median(values):
+      ...
+  def mean(values):
+      ...
+  ```
