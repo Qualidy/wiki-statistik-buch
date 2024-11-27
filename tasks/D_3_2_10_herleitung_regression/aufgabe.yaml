@@ -1,0 +1,20 @@
+title: Herleitung der Regression verstehen
+question: |
+  Um die Herleitung der Regression zu verstehen, sollten ein paar Mathematische Inhalte fest sitzen:
+  
+  * Wie geht man mit Summen um?
+  * Wie erhalte ich den Hoch- bzw. Tiefpunkt einer Funktion?
+  * Wie funktioniert Ableiten?
+  * Wie funktioniert partielles Ableiten?
+  * Was ist ein Lineares Gleichungssystem (LGS)?
+  * Wie löst man ein LGS?
+  * Wie löst man ein LGS mit Hilfe von Matrixinversen?
+  * Wie werden Matrizen und Vektoren miteinander multipliziert?
+  * Gegeben seien $X = (x_1 \cdots x_n) \in \mathbb{R}^{1\times n}$ und $Y = (y_1 \cdots y_n) \in \mathbb{R}^{1\times n}$. Wie kann $\sum_{i=1}^n x_i y_i$ als Multiplikation der beiden Matrizen / Vektoren notiert werden?
+  * Wie kann man auch $\sum_{i=1}^n x_i$ als das Produkt zweier Matrizen/Vektoren ausdrücken?
+  
+  Um das ganze noch gut in Python umzusetzen bleibt noch sicherzustellen, dass man bei Matrizen die folgenden Operationen durchführen kann:
+  
+  * Transponieren,
+  * Multiplizieren,
+  * Inverse bilden.
