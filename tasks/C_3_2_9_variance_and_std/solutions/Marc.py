@@ -30,12 +30,9 @@ class Testvarianz(unittest.TestCase):
         ([], 0),
     ])
     def test_varianz(self, values, expected):
-        if values:
-            result = round(varianz(values), 2)
-            self.assertAlmostEqual(result, expected)
-        else:
-            result = varianz(values)
-            self.assertAlmostEqual(result, expected)
+        result = round(varianz(values), 2)
+        self.assertAlmostEqual(result, expected)
+
 
     @parameterized.expand([
         ([2, 3, 4, 2, 1, 6, 9, 14, 25, 2, 6], 6.84),

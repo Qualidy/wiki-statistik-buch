@@ -10,11 +10,6 @@ def var(values: list):
     return ((sum([val**2 for val in values]))/len(values))-((sum(values)/len(values))**2)
 
 def std(values: list):
-    if not isinstance(values, list):
-        raise TypeError('Values must be a list')
-    if not values:  # Überprüfung auf leere Liste
-        raise ValueError('Values list is empty')
-
     return var(values)**0.5
 
 

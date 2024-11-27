@@ -13,8 +13,6 @@ print(np.var(data_steps))
 print(my_variance(data_steps))
 
 def my_st_dev(liste):
-    if not liste:
-        return np.nan
     return np.sqrt(my_variance(liste))
 
 print(pd.Series(data_steps).std())
