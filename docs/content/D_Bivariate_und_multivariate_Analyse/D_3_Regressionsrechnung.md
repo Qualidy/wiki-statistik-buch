@@ -7,3 +7,5 @@
     [2](https://esb1jockisch.lima-city.de/math/math11/regression2/kap_4_1_2_aufgaben.pdf)
 
 {{ task("tasks/D_3_Regression/aufgabe.yaml") }}
+
+{{ task("tasks/D_3_2_10_herleitung_regression/aufgabe.yaml") }}
