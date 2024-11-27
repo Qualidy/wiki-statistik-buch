@@ -1,0 +1,7 @@
+title: Regression in Python implementieren
+question: Implementieren Sie ein Funktion, die bei einer einfachen Regression `a` und `b` bestimmen.
+solution: |
+  ```python
+  def regression():
+      ...
+  ```
