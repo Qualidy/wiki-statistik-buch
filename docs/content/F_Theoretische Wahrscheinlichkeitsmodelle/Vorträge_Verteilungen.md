@@ -2,14 +2,14 @@
 
 ## Verteilungen
 
-| Verteilung                   | Team                           | Breakoutroom |
-|------------------------------|--------------------------------|--------------|
-| Binomialverteilung           | Kevin, Maurice, Tom            | 1            |
-| Geometrische Verteilung      | Johannes, Tobias, Daniel       | 2            |
-| Hypergeometrische Verteilung | Ly, Christoph, Henrik          | 3            |
-| Poissonverteilung            | Elias, Andreas, David          | 4            |
-| Exponentialverteilung        | Florentin, Waldemar, Christian | 5            |
-| Pareto-Verteilung            | Fabian, Konstantin, Nick, Noah | 6            |
+| Verteilung                   | Team                           | Breakoutroom | Start | Ende  |
+|------------------------------|--------------------------------|--------------|-------|-------|
+| Binomialverteilung           | Kevin, Maurice, Tom            | 1            | 11:00 | 11:40 |
+| Geometrische Verteilung      | Johannes, Tobias, Daniel       | 2            | 12:00 | 12:40 |
+| Hypergeometrische Verteilung | Ly, Christoph, Henrik          | 3            | 12:50 | 13:30 |
+| Poissonverteilung            | Elias, Andreas, David          | 4            | 13:40 | 14:20 |
+| Exponentialverteilung        | Florentin, Waldemar, Christian | 5            | 14:30 | 15:10 |
+| Pareto-Verteilung            | Fabian, Konstantin, Nick, Noah | 6            | 15:20 | 16:00 |
 
 
 ## Was wird erwartet
@@ -29,7 +29,8 @@ Ausarbeiten des Themas bis 16:00
 
 **Tag 2:**
 
-Morgens Aufteilung und neue Themen lernen
+Finalisierung und Austausch.
 
-Nachmittags Test und Korrektur.
+**Nächste Woche:**
+Test und Korrektur.
 
