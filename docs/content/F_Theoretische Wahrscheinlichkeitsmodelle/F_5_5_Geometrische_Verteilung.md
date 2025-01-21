@@ -116,138 +116,93 @@ solution="A",
 
 {{ task(
 title="MC-Frage 4",
-question="""""",
-solution="",
+question="""Berechne den Erwartungswert \( E(X) \) einer geometrischen Verteilung mit Erfolgswahrscheinlichkeit \( p = 0.2 \).
+A) 4
+
+B) 5
+
+C) 6
+
+D) 7""",
+solution="B",
 ) }}
 
 {{ task(
 title="MC-Frage 5",
-question="""""",
-solution="",
+question="""Eine geometrische Verteilung hat eine Erfolgswahrscheinlichkeit von \( p = 0.2 \). Was ist die Wahrscheinlichkeit, dass der erste Erfolg im 3. Versuch eintritt?
+
+A) 0.140625
+
+B) 0.1875
+
+C) 0.128
+
+D) 0.421875"""
+,
+solution="C",
 ) }}
 
 
-!!! question "4. **Eine geometrische Verteilung hat eine Erfolgswahrscheinlichkeit von \( p = 0.2 \). Was ist die Wahrscheinlichkeit, dass der erste Erfolg im 3. Versuch eintritt?**"
-
-    - A) 0.140625
-
-    - B) 0.1875
-
-    - C) 0.128
-
-    - D) 0.421875
-
-    <details>
-
-    <summary>Lösung</summary>
-
-    C
-
-    </details>
-
-!!! question "5. **Berechne den Erwartungswert \( E(X) \) einer geometrischen Verteilung mit Erfolgswahrscheinlichkeit \( p = 0.2 \).**"
-
-    - A) 4
-
-    - B) 5
-
-    - C) 6
-
-    - D) 7
-
-    <details>
-
-    <summary>Lösung</summary>
-
-    B
-
-    </details>
-
-
-
 ### Freitext Fragen
+{{ task(
+title="Freitext-Frage 1",
+question="""1. Ist die Geometrische Verteilung diskret oder kontinuierlich?""",
+solution="Diskret.",
+)}}
 
-!!! question 1. Ist die Geometrische Verteilung diskret oder kontinuierlich?
-    <input type="text" id="lname" name="lname" placeholder="Antwort" style=" padding: 10px 15px; font-size: 14px; border: 1px solid #ccc; border-radius: 5px; box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); transition: border-color 0.3s, box-shadow 0.3s; outline: none; " onfocus="this.style.borderColor='#007BFF'; this.style.boxShadow='0 0 5px rgba(0, 123, 255, 0.5)';" onblur="this.style.borderColor='#ccc'; this.style.boxShadow='inset 0 1px 3px rgba(0, 0, 0, 0.1)';"><br></br>
-    <details>
-    <summary>Lösung</summary>
-    Diskret.
-    </details>
+{{ task(
+title="Freitext-Frage 2",
+question="""2. Wie verändert sich die Erfolgswahrscheinlichkeit im Verlauf der Versuche?""",
+solution="Sie bleibt konstant.",
+)}}
 
-!!! question  2. Wie verändert sich die Erfolgswahrscheinlichkeit im Verlauf der Versuche?
-    <input type="text" id="lname" name="lname" placeholder="Antwort" style=" padding: 10px 15px; font-size: 14px; border: 1px solid #ccc; border-radius: 5px; box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); transition: border-color 0.3s, box-shadow 0.3s; outline: none; " onfocus="this.style.borderColor='#007BFF'; this.style.boxShadow='0 0 5px rgba(0, 123, 255, 0.5)';" onblur="this.style.borderColor='#ccc'; this.style.boxShadow='inset 0 1px 3px rgba(0, 0, 0, 0.1)';"><br></br>
+{{ task(
+title="Freitext-Frage 3",
+question="""3. Wie lautet die Formel für den Erwartungswert der GV?""",
+solution="$$E(X) = \frac{1}{p}$$",
+)}}
 
-    <details>
+{{ task(
+title="Freitext-Frage 4",
+question="""4. Welche Schwierigkeiten könnten in einer realen Anwendung auftreten, wenn die Annahmen der geometrischen Verteilung verletzt werden?""",
+solution="Variierende Erfolgswahrscheinlichkeiten.",
+)}}
 
-    <summary>Lösung</summary>
-    Sie bleibt konstant.
-    </details>
-!!! question 3. Wie lautet die Formel für den Erwartungswert der GV?
-    <input type="text" id="lname" name="lname" placeholder="Antwort" style=" padding: 10px 15px; font-size: 14px; border: 1px solid #ccc; border-radius: 5px; box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); transition: border-color 0.3s, box-shadow 0.3s; outline: none; " onfocus="this.style.borderColor='#007BFF'; this.style.boxShadow='0 0 5px rgba(0, 123, 255, 0.5)';" onblur="this.style.borderColor='#ccc'; this.style.boxShadow='inset 0 1px 3px rgba(0, 0, 0, 0.1)';"><br></br>
-    <details>
-
-    <summary>Lösung</summary>
-
-    $$E(X) = \frac{1}{p}$$
-
-    </details>
-
-
-
-!!! question 4. Welche Schwierigkeiten könnten in einer realen Anwendung auftreten, wenn die Annahmen der geometrischen Verteilung verletzt werden?
-    <input type="text" id="lname" name="lname" placeholder="Antwort" style=" padding: 10px 15px; font-size: 14px; border: 1px solid #ccc; border-radius: 5px; box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); transition: border-color 0.3s, box-shadow 0.3s; outline: none; " onfocus="this.style.borderColor='#007BFF'; this.style.boxShadow='0 0 5px rgba(0, 123, 255, 0.5)';" onblur="this.style.borderColor='#ccc'; this.style.boxShadow='inset 0 1px 3px rgba(0, 0, 0, 0.1)';"><br></br>
-    <details>
-
-    <summary>Lösung</summary>
-    Variierende Erfolgswahrscheinlichkeiten.
-    </details>
-
-!!! question 5. Wie lautet die Wahrscheinlichkeitsfunktion der GV?
-    <input type="text" id="lname" name="lname" placeholder="Antwort" style=" padding: 10px 15px; font-size: 14px; border: 1px solid #ccc; border-radius: 5px; box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); transition: border-color 0.3s, box-shadow 0.3s; outline: none; " onfocus="this.style.borderColor='#007BFF'; this.style.boxShadow='0 0 5px rgba(0, 123, 255, 0.5)';" onblur="this.style.borderColor='#ccc'; this.style.boxShadow='inset 0 1px 3px rgba(0, 0, 0, 0.1)';"><br></br>
-    <details>
-
-    <summary>Lösung</summary>
-
-    $$
+{{ task(
+title="Freitext-Frage 5",
+question="""5. Wie lautet die Wahrscheinlichkeitsfunktion der GV?""",
+solution="""$$
     f_g(x|\Theta) = \begin{cases}
                     (1-\Theta)^{x-1} \cdot \Theta & \text{für } x \in \mathbb{N} \\
                     0 & \text{für } sonst.
                 \end{cases}
-    $$
+    $$""",
+)}}
 
-    </details>
-
-!!! question 6. Wie lautet die Formel der Verteilungsfunktion der GV?
-    <input type="text" id="lname" name="lname" placeholder="Antwort" style=" padding: 10px 15px; font-size: 14px; border: 1px solid #ccc; border-radius: 5px; box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); transition: border-color 0.3s, box-shadow 0.3s; outline: none; " onfocus="this.style.borderColor='#007BFF'; this.style.boxShadow='0 0 5px rgba(0, 123, 255, 0.5)';" onblur="this.style.borderColor='#ccc'; this.style.boxShadow='inset 0 1px 3px rgba(0, 0, 0, 0.1)';"><br></br>
-    <details>
-
-    <summary>Lösung</summary>
-
-    $$
+{{ task(
+title="Freitext-Frage 6",
+question="""6. Wie lautet die Formel der Verteilungsfunktion der GV?""",
+solution="""$$
     F_g(x|\Theta) = \begin{cases}
                     0 & \text{für } x<1 \\
                     1-(1-\Theta)^x & \text{für } x \in \mathbb{N}
                 \end{cases}
-    $$
+    $$""",
+)}}
 
-    </details>
 
 ### Rechenfragen (Python ist benötigt)
-
-!!! question Varianz:
-    Berechne die Varianz eines gleichmäßig verteilten 20-seitigen Würfels.
-    <input type="text" id="lname" name="lname" placeholder="Antwort" style=" padding: 10px 15px; font-size: 14px; border: 1px solid #ccc; border-radius: 5px; box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); transition: border-color 0.3s, box-shadow 0.3s; outline: none; " onfocus="this.style.borderColor='#007BFF'; this.style.boxShadow='0 0 5px rgba(0, 123, 255, 0.5)';" onblur="this.style.borderColor='#ccc'; this.style.boxShadow='inset 0 1px 3px rgba(0, 0, 0, 0.1)';"><br></br>
-    <details>
-    <summary>Lösung</summary>
-    380
-    </details>
+{{ task(
+title="Rechenfragen 1",
+question="""Berechne die Varianz eines gleichmäßig verteilten 20-seitigen Würfels.""",
+solution="380",
+)}}
 
 
-!!! question Lottospiel:
 
-    Du möchtest endlich reich werden und beschließt, ab sofort Lotto zu spielen. Dabei nimmst du dir vor, aufzuhören, sobald du gewonnen hast. Auf dem Lottoschein steht, dass die Wahrscheinlichkeit für einen Gewinn bei 1:1000 liegt. Wie oft musst du spielen, um mit mindestens 50 prozentiger Wahrscheinlichkeit einmal gewonnen zu haben?
-    <input type="text" id="lname" name="lname" placeholder="Antwort" style=" padding: 10px 15px; font-size: 14px; border: 1px solid #ccc; border-radius: 5px; box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); transition: border-color 0.3s, box-shadow 0.3s; outline: none; " onfocus="this.style.borderColor='#007BFF'; this.style.boxShadow='0 0 5px rgba(0, 123, 255, 0.5)';" onblur="this.style.borderColor='#ccc'; this.style.boxShadow='inset 0 1px 3px rgba(0, 0, 0, 0.1)';"><br></br>
-    <details>
-    <summary>Lösung</summary>
-    693
-    </details>
+{{ task(
+title="Rechenfragen 2",
+question="""Lottospiel: Du möchtest endlich reich werden und beschließt, ab sofort Lotto zu spielen. Dabei nimmst du dir vor, aufzuhören, sobald du gewonnen hast. Auf dem Lottoschein steht, dass die Wahrscheinlichkeit für einen Gewinn bei 1:1000 liegt. Wie oft musst du spielen, um mit mindestens 50 prozentiger Wahrscheinlichkeit einmal gewonnen zu haben?""",
+solution="693",
+)}}
+
