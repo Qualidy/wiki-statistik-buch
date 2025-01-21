@@ -60,7 +60,7 @@ Die Exponentialverteilung ist eine spezielle Wahrscheinlichkeitsverteilung, die 
 
 Eine größere Rate $\lambda$ führt dazu, dass die Varianz kleiner wird, da die Streuung bei häufigeren Ereignissen kleiner ist.
 
-<iframe src="https://websim.ai/p/h7sps6_itzxqn7qm76_h/1" width="100%" height="600" style="border:none;"></iframe>
+<iframe src="https://websim.ai/p/h7sps6_itzxqn7qm76_h/1" width="100%" height="610" style="border:none;"></iframe>
 
 !!! beispiele "Anwendungsbereiche"
     
