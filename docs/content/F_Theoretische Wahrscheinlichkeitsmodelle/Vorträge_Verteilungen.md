@@ -4,8 +4,8 @@
 
 | Verteilung                   | Team                           | Breakoutroom | Start | Ende  |
 |------------------------------|--------------------------------|--------------|-------|-------|
-| Binomialverteilung           | Kevin, Maurice, Tom            | 1            | 10:20 | 11:00 |
-| Geometrische Verteilung      | Johannes, Tobias, Daniel       | 2            | 11:10 | 11:50 |
+| Binomialverteilung           | Kevin, Maurice, Tom            | 1            | 10:30 | 11:10 |
+| Geometrische Verteilung      | Johannes, Tobias, Daniel       | 2            | 11:20 | 12:00 |
 | Hypergeometrische Verteilung | Ly, Christoph, Henrik          | 3            | 12:50 | 13:30 |
 | Poissonverteilung            | Elias, Andreas, David          | 4            | 13:40 | 14:20 |
 | Exponentialverteilung        | Florentin, Waldemar, Christian | 5            | 14:30 | 15:10 |
