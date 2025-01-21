@@ -1,0 +1,12 @@
+title: Binomial Verteilung 2
+question: |
+  Was ist der Erwartungswert \( E(X) \) mit \( n=8 \) und \( p=0.4 \)?
+
+  A) \( E(X) = 4 \)  
+
+  B) \( E(X) = 3.2 \)  
+
+  C) \( E(X) = 2.8 \)  
+
+  D) \( E(X) = 3.6 \)
+solution: B

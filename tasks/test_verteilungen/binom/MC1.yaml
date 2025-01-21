@@ -1,0 +1,13 @@
+title: Binomial Verteilung 1
+question: |
+  Welche der folgenden Situationen ist durch eine Binomialverteilung modellierbar?
+
+  A) Ein Würfel wird 10-mal geworfen, und wir zählen die Anzahl der Sechsen.  
+
+  B) Die Länge von 10 Pflanzen wird gemessen, und wir bestimmen den Durchschnitt.  
+
+  C) Eine Münze wird 20-mal geworfen, und wir zählen die Anzahl von Kopf.  
+
+  D) Ein Fahrer legt 100 Kilometer zurück, und wir berechnen die Benzinkosten.
+solution: |
+  A, C

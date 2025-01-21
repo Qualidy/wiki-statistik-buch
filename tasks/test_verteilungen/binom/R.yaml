@@ -1,0 +1,10 @@
+question: |
+  Ein Glücksrad ist in 5 gleich große Abschnitte unterteilt. Zwei Abschnitte sind rot, einer ist blau, und zwei sind grün.  
+  Das Glücksrad wird 4-mal gedreht. Die Wahrscheinlichkeit, dass das Glücksrad auf einen roten Abschnitt zeigt, ist \( P(Rot) = 0.4 \).
+
+  **Fragen:**  
+  1. Wie groß ist die Wahrscheinlichkeit, dass das Glücksrad genau 2-mal auf einen roten Abschnitt zeigt?  
+  2. Wie groß ist die Wahrscheinlichkeit, dass das Glücksrad höchstens 1-mal auf einen roten Abschnitt zeigt?
+solution: |
+  1. 34,56 %  
+  2. 47,52 %

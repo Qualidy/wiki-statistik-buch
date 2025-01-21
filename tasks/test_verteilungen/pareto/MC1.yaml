@@ -1,12 +1,13 @@
 title: Pareto Verteilung 1
 question: |
-  Welches Parameterpaar definiert die Pareto-Verteilung?
+  Für welche Werte des Parameters \( \alpha \) ist der Erwartungswert einer Pareto-Verteilung definiert?
 
-  A) Mittelwert und Varianz.
+  A) Für alle \( \alpha > 0 \).  
   
-  B) Exponent 𝛼 und Skalenparameter $x_m$.
+  B) Für \( \alpha \geq 1 \).  
   
-  C) Erwartungswert und Standardabweichung.
+  C) Für \( \alpha > 1 \).  
   
-  D) Median und Modus.
-solution: B
+  D) Für \( \alpha > 2 \).
+solution: C
+

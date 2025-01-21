@@ -1,13 +1,12 @@
 title: Pareto Verteilung 3
 question: |
-  Welche Funktion beschreibt die Wahrscheinlichkeitsdichte der Pareto-Verteilung?
+  Die Pareto-Verteilung wird oft verwendet, um die Verteilung von Einkommen zu modellieren. Welches der folgenden Szenarien passt am besten zur Pareto-Verteilung?
 
-  A) $f(x) = \frac{α*x_{min}^α}{x^{α+1}} \text{, für } x \geq x_m$
+  A) Die meisten Personen haben ein mittleres Einkommen, und extrem hohe Einkommen sind selten.  
   
-  B) $f(x) = \frac{1}{x^a} \text{, für } x \geq 0$
+  B) Die meisten Personen haben ein sehr niedriges Einkommen, und wenige Personen haben extrem hohe Einkommen.  
   
-  C) $f(x) = \frac{1}{x^2} \text{, für } x \geq 1$
+  C) Einkommen sind gleichmäßig verteilt.  
   
-  D) $f(x) = 𝛼x^a_me^{-ax} \text{, für x } \geq x_m$
-
-solution: A
+  D) Einkommen haben eine Normalverteilung mit gleichem Mittelwert und Standardabweichung.
+solution: B
