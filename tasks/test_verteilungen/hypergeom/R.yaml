@@ -1,0 +1,12 @@
+question: |
+  Ziehen von Karten:
+
+  In einem Kartenspiel gibt es 52 Karten, darunter 13 Herz-Karten. Du spielst ein Spiel, bei dem du zufällig 5 Karten aus dem Stapel ziehst, ohne sie zurückzulegen.
+
+  a) Wie groß ist die Wahrscheinlichkeit, dass du genau 2 Herz-Karten in deiner Hand hast?
+
+  b) Wie groß ist die Wahrscheinlichkeit, dass du höchstens 2 Herz-Karten in deiner Hand hast?
+
+  c) (zusätzliche Herausforderung): Wie groß ist die Wahrscheinlichkeit, dass du mindestens 3 Herz-Karten in deiner Hand hast?
+solution: |
+  TODO

@@ -1,0 +1,12 @@
+title: Hypergeometrische Verteilung 2
+question: |
+  Was bedeuten die Parameter \( N \), \( M \), \( n \) und \( x \) in der hypergeometrischen Verteilung \( f_h(x \mid N; M; n) \)?
+solution: |
+  \( N \): Gesamtanzahl der Elemente in der Grundgesamtheit.
+
+  \( M \): Anzahl der Erfolgsfälle in der Grundgesamtheit.
+
+  \( n \): Anzahl der gezogenen Elemente (Stichprobengröße).
+
+  \( x \): Anzahl der Erfolgsfälle in der Stichprobe.
+

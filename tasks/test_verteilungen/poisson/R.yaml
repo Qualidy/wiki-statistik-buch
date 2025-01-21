@@ -1,0 +1,30 @@
+question: |
+  Ein Verkehrszähler erfasst in einer Woche durchschnittlich 35 Autos, die eine bestimmte Straße passieren. 
+
+  Wie hoch ist die Wahrscheinlichkeit, dass an einem einzelnen Tag genau 6 Autos diese Straße passieren.
+
+solution: |
+  Umrechnung des Parameters $\lambda$ von einer Woche auf einen Tag:
+  
+  $$
+  \lambda_{\text{Tag}} = \frac{\lambda_{\text{Woche}}}{7} = \frac{35}{7} = 5
+  $$
+
+  Wahrscheinlichkeit berechnen:
+  
+  $$
+  P(X = 6) = \frac{\lambda_{\text{Tag}}^6 e^{-\lambda_{\text{Tag}}}}{6!}
+  $$
+  
+  Einsetzen von $\lambda_{\text{Tag}} = 5$:
+  
+  $$
+  P(X = 6) = \frac{5^6 e^{-5}}{6!} = \frac{15625 \cdot e^{-5}}{720}
+  $$
+
+  Ergebnis:
+  $$
+  P(X = 6) \approx 0.1462
+  $$
+
+  Die Wahrscheinlichkeit, dass an einem einzelnen Tag genau 6 Autos die Straße passieren, beträgt etwa **14,62%**.

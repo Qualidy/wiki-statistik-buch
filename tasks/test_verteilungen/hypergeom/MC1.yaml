@@ -1,0 +1,7 @@
+title: Hypergeometrische Verteilung 1
+question: |
+  Wie unterscheidet sich die hypergeometrische Verteilung von der Binomialverteilung?
+solution: |
+  Hypergeometrische Verteilung: Ziehen ohne Zurücklegen, die Wahrscheinlichkeiten ändern sich nach jeder Ziehung.
+
+  Binomialverteilung: Ziehen mit Zurücklegen, die Wahrscheinlichkeiten bleiben konstant.

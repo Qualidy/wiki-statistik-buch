@@ -196,7 +196,7 @@ $$""",
 
 {{ task(
 title="Beispiel 2",
-question="""    Anzahl von Verkehrsunfällen an einer bestimmten Kreuzung an einem Tag ($\lambda = 2$).
+question="""Anzahl von Verkehrsunfällen an einer bestimmten Kreuzung an einem Tag ($\lambda = 2$).
 
 **Gesucht:** Wahrscheinlichkeit, dass an diesem Tag genau 3 Unfälle passieren.
 """,

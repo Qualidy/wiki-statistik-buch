@@ -1,0 +1,25 @@
+question: |
+  Die Durchschnittliche Zeit zwischen zwei Ereignissen beträgt 60 Sekunden. Wie groß ist die Wahrscheinlichkeit, dass nach 2 Minuten noch kein Ereignis eingetreten ist??
+
+solution: |
+  Der Erwartungswert ist: 
+
+  $$E(X) = 60 \text{ Sekunden}$$
+
+  daraus folgt:
+  
+  $$ \lambda = \frac{1}{60}$$ und $$x = 120 $$
+
+  $x$ und $\lambda$ einsetzen:
+  
+  $$ F(x; \lambda) = 1 - e^{-\lambda * x}$$
+  
+  $$ F(x; \lambda) = 1 - e^{-\frac{1}{60} \cdot 120}$$
+  
+  $$ F(x; \lambda) = e^{-2}$$
+ 
+  $e^{-2}$ berechnen:
+  
+  $$ e^{-2} ≈ 0,1353$$
+    
+  **Antwort:** Die Wahrscheinlichkeit, dass nach zwei Minuten kein Ereignis eingetreten ist, beträgt etwa 13,53%.

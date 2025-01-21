@@ -1,0 +1,9 @@
+title: Hypergeometrische Verteilung 3
+question: |
+  In welchen realen Szenarien findet die hypergeometrische Verteilung Anwendung?
+solution: |
+  - Ziehen von Karten ohne Zurücklegen.
+  - Qualitätskontrolle, bei der Bauteile auf Fehler untersucht werden.
+  - Auswahl von Teams oder Gruppen mit bestimmten Merkmalen (z. B. Männer/Frauen).
+  - Gewinnchancen bei Losen oder Tombolas.
+
