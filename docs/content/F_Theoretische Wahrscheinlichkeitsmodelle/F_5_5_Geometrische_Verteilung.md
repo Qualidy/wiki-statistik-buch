@@ -171,22 +171,25 @@ solution="Variierende Erfolgswahrscheinlichkeiten.",
 {{ task(
 title="Freitext-Frage 5",
 question="""5. Wie lautet die Wahrscheinlichkeitsfunktion der GV?""",
-solution="""$$
-    f_g(x|\Theta) = \begin{cases}
-                    (1-\Theta)^{x-1} \cdot \Theta & \text{für } x \in \mathbb{N} \\
-                    0 & \text{für } sonst.
-                \end{cases}
-    $$""",
+solution="""
+\[
+f_g(x|\\Theta) = 
+\\begin{cases}
+(1-\\Theta)^{x-1} \\cdot \\Theta & \\text{für } x \\in \\mathbb{N} \\\\
+0 & \\text{für } sonst.
+\\end{cases}
+\]
+""",
 )}}
 
 {{ task(
 title="Freitext-Frage 6",
 question="""6. Wie lautet die Formel der Verteilungsfunktion der GV?""",
 solution="""$$
-    F_g(x|\Theta) = \begin{cases}
-                    0 & \text{für } x<1 \\
-                    1-(1-\Theta)^x & \text{für } x \in \mathbb{N}
-                \end{cases}
+    F_g(x|\\Theta) = \\begin{cases}
+                    0 & \\text{für } x<1 \\\\
+                    1-(1-\\Theta)^x & \\text{für } x \\in \\mathbb{N}
+                \\end{cases}
     $$""",
 )}}
 
