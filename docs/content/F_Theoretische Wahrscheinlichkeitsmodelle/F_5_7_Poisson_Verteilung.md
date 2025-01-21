@@ -172,136 +172,108 @@ $$f_p(x|\lambda) =\dfrac{\lambda^x}{x!}\cdot e^{-\lambda}$$
     Die Wahrscheinlichkeit, dass genau **3 Personen** an einem Tag ihren Laptop vergessen, beträgt **6,13 %**.
 
 
-### **Typische Beispiele mit Berechnungen**:
-
-!!! beispiel "Beispiel 1"
-    
-    Anzahl von Anrufen, die in einer Stunde bei einem Callcenter eingehen ($\lambda = 10$).
-
-    **Gesucht:** Wahrscheinlichkeit, dass genau 12 Anrufe in einer Stunde eingehen.
-    
-    **Berechnung:**
-    
-    $$
-    P(X = 12) = \frac{10^{12} e^{-10}}{12!}
-    $$
-
-    **Ergebnis:**
-
-    $$
-    P(X = 12) \approx 0.0948
-    $$
-
-!!! beispiel "Beispiel 2"
-
-    Anzahl von Verkehrsunfällen an einer bestimmten Kreuzung an einem Tag ($\lambda = 2$).
-
-    **Gesucht:** Wahrscheinlichkeit, dass an diesem Tag genau 3 Unfälle passieren.
-
-    **Berechnung:**
-    
-    $$
-    P(X = 3) = \frac{2^3 e^{-2}}{3!} = \frac{8 e^{-2}}{6}
-    $$
-
-    **Ergebnis:**
-
-    $$
-    P(X = 3) \approx 0.1804
-    $$
-
-!!! beispiel "Beispiel 3"
-
-    Anzahl von Maschinenfehlern in einer Produktionslinie pro Schicht ($\lambda = 1$).
-
-    **Gesucht:** Wahrscheinlichkeit, dass genau 0 Maschinenfehler in einer Schicht auftreten.
-
-    **Berechnung:**
-    
-    $$
-    P(X = 0) = \frac{1^0 e^{-1}}{0!} = e^{-1}
-    $$
-
-    **Ergebnis:**
-
-    $$
-    P(X = 0) \approx 0.3679
-    $$
-
-!!! beispiel "Beispiel 4"
-
-    Anzahl von E-Mails, die ein Mitarbeiter pro Tag erhält ($\lambda = 15$).
-
-    **Gesucht:** Wahrscheinlichkeit, dass ein Mitarbeiter an einem Tag genau 10 E-Mails erhält.
-
-    **Berechnung:**
-    
-    $$
-    P(X = 10) = \frac{15^{10} e^{-15}}{10!}
-    $$
-
-    **Ergebnis:**
-
-    $$
-    P(X = 10) \approx 0.0347
-    $$
-
-!!! beispiel "Beispiel 5"
-
-    Anzahl von Flugverspätungen an einem Flughafen pro Woche ($\lambda = 4$).
-
-    **Umrechnung auf pro Tag:** $\lambda_{\text{Tag}} = \frac{4}{7} \approx 0.5714$.
-
-    **Gesucht:** Wahrscheinlichkeit, dass an einem Tag genau 5 Flugverspätungen auftreten.
-
-    **Berechnung:**
-    
-    $$
-    P(X = 5) = \frac{0.5714^5 e^{-0.5714}}{5!}
-    $$
-
-    **Ergebnis:**
-
-    $$
-    P(X = 5) \approx 0.0698
-    $$
-
-
 ### Jetzt seid Ihr dran!
-
-**Beispiele zum selbser Rechnen**:
 
 {{ task(
 title="Beispiel 1",
-question="Anzahl von Anrufen, die in einer Stunde bei einem Callcenter eingehen ($\lambda = 10$).",
-solution="",
+question="""Anzahl von Anrufen, die in einer Stunde bei einem Callcenter eingehen ($\lambda = 10$).
+
+**Gesucht:** Wahrscheinlichkeit, dass genau 12 Anrufe in einer Stunde eingehen.
+""",
+solution="""**Berechnung:**
+    
+$$
+P(X = 12) = \\frac{10^{12} \\cdot e^{-10}}{12!}
+$$
+
+**Ergebnis:**
+
+$$
+P(X = 12) \\approx 0.0948
+$$""",
 ) }}
 
 {{ task(
 title="Beispiel 2",
-question="Anzahl von Verkehrsunfällen an einer bestimmten Kreuzung an einem Tag ($\lambda = 2$).",
-solution="",
+question="""    Anzahl von Verkehrsunfällen an einer bestimmten Kreuzung an einem Tag ($\lambda = 2$).
+
+**Gesucht:** Wahrscheinlichkeit, dass an diesem Tag genau 3 Unfälle passieren.
+""",
+solution="""**Berechnung:**
+
+$$
+P(X = 3) = \\frac{2^3 \\cdot e^{-2}}{3!} = \\frac{8 e^{-2}}{6}
+$$
+
+**Ergebnis:**
+
+$$
+P(X = 3) \\approx 0.1804
+$$""",
 ) }}
 
 {{ task(
 title="Beispiel 3",
-question="Anzahl von Maschinenfehlern in einer Produktionslinie pro Schicht ($\lambda = 1$).",
-solution="",
+question="""Anzahl von Maschinenfehlern in einer Produktionslinie pro Schicht ($\lambda = 1$).
+
+**Gesucht:** Wahrscheinlichkeit, dass genau 0 Maschinenfehler in einer Schicht auftreten.""",
+solution="""**Berechnung:**
+
+$$
+P(X = 0) = \\frac{1^0 \\cdot e^{-1}}{0!} = e^{-1}
+$$
+
+**Ergebnis:**
+
+$$
+P(X = 0) \\approx 0.3679
+$$""",
 ) }}
 
+    
 {{ task(
 title="Beispiel 4",
-question="Anzahl von E-Mails, die ein Mitarbeiter pro Tag erhält ($\lambda = 15$).",
-solution="",
+question="""Anzahl von E-Mails, die ein Mitarbeiter pro Tag erhält ($\lambda = 15$).
+
+**Gesucht:** Wahrscheinlichkeit, dass ein Mitarbeiter an einem Tag genau 10 E-Mails erhält.
+""",
+solution="""**Berechnung:**
+
+$$
+P(X = 10) = \\frac{15^{10} \\cdot e^{-15}}{10!}
+$$
+
+**Ergebnis:**
+
+$$
+P(X = 10) \\approx 0.0347
+$$""",
 ) }}
+
 
 {{ task(
 title="Beispiel 5",
-question="Anzahl von Flugverspätungen an einem Flughafen pro Woche ($\lambda = 4$).",
-solution="",
+question="""Anzahl von Flugverspätungen an einem Flughafen pro Woche ($\lambda = 4$).
+
+**Gesucht:** Wahrscheinlichkeit, dass an einem Tag genau 5 Flugverspätungen auftreten.
+""",
+tip="Achte auf die Einheiten!",
+solution="""**Umrechnung auf pro Tag:** $\lambda_{\\text{Tag}} = \\frac{4}{7} \\approx 0.5714$.
+
+**Berechnung:**
+    
+$$
+P(X = 5) = \\frac{0.5714^5 \\cdot e^{-0.5714}}{5!}
+$$
+
+**Ergebnis:**
+
+$$
+P(X = 5) \\approx 0.0698
+$$""",
 ) }}
 
-### **MC-Fragen zur Poisson Verteilung**
+### MC-Fragen zur Poisson Verteilung
 
 {{ task(
 title="MC-Frage 1",
