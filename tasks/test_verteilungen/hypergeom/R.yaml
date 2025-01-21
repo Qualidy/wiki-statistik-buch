@@ -9,4 +9,87 @@ question: |
 
   c) (zusätzliche Herausforderung): Wie groß ist die Wahrscheinlichkeit, dass du mindestens 3 Herz-Karten in deiner Hand hast?
 solution: |
-  TODO
+  a) Lösung über hypergeometrische Verteilung
+
+  Unsere Parameter:
+  
+  - Gesamtzahl der Karten \( N = 52 \)
+  - Anzahl der Herz-Karten \( M = 13 \)
+  - Stichprobengröße \( n = 5 \)
+  
+  Unsere Formel:
+  
+  \(
+  P(X = k) = \frac{\binom{M}{k} \cdot \binom{N - M}{n - k}}{\binom{N}{n}}
+  \)
+  
+  **a) Wahrscheinlichkeit, genau 2 Herz-Karten zu ziehen:**
+  
+  Für \( k = 2 \):
+  
+  \(
+  P(X = 2) = \frac{\binom{13}{2} \cdot \binom{39}{3}}{\binom{52}{5}}
+  \)
+  
+  mit
+  
+  \(
+  \binom{13}{2} = \frac{13!}{2!(13-2)!} = 78
+  \)
+  
+  \(
+  \binom{39}{3} = \frac{39!}{3!(39-3)!} = 9.139
+  \)
+  
+  \(
+  \binom{52}{5} = \frac{52!}{5!(52-5)!} = 2.598.960
+  \)
+  
+  Also:
+  
+  \(
+  P(X = 2) = \frac{78 \cdot 9.139}{2.598.960} \approx 0,274
+  \)
+  
+  
+  **b) Wahrscheinlichkeit, höchstens 2 Herz-Karten zu ziehen:**
+  Dies entspricht der Summe der Wahrscheinlichkeiten für 0, 1 und 2 Herz-Karten:
+  
+  \(
+  P(X \leq 2) = P(X = 0) + P(X = 1) + P(X = 2)
+  \)
+  
+  Berechnungen:
+  
+  \(
+  P(X = 0) = \frac{\binom{13}{0} \cdot \binom{39}{5}}{\binom{52}{5}} = \frac{1 \cdot 575.757}{2.598.960} \approx 0,221
+  \)
+  
+  \(
+  P(X = 1) = \frac{\binom{13}{1} \cdot \binom{39}{4}}{\binom{52}{5}} = \frac{13 \cdot 82.251}{2.598.960} \approx 0,412
+  \)
+  
+  \(
+  P(X = 2) \approx 0,274 \quad \text{(wie oben berechnet)}
+  \)
+  
+  Somit:
+  
+  \(
+  P(X \leq 2) = 0,221 + 0,412 + 0,274 = 0,907
+  \)
+  
+  
+  **c) Wahrscheinlichkeit, mindestens 3 Herz-Karten zu ziehen:**
+  
+  Dies ist das Gegenereignis zu "höchstens 2 Herz-Karten":
+  
+  \(
+  P(X \geq 3) = 1 - P(X \leq 2)
+  \)
+  
+  Berechnung:
+  
+  \(
+  P(X \geq 3) = 1 - 0,907 = 0,093
+  \)
