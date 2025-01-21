@@ -1,7 +1,12 @@
 title: Hypergeometrische Verteilung 1
 question: |
-  Wie unterscheidet sich die hypergeometrische Verteilung von der Binomialverteilung?
-solution: |
-  Hypergeometrische Verteilung: Ziehen ohne Zurücklegen, die Wahrscheinlichkeiten ändern sich nach jeder Ziehung.
+  Welche der folgenden Aussagen trifft auf die hypergeometrische Verteilung zu?
 
-  Binomialverteilung: Ziehen mit Zurücklegen, die Wahrscheinlichkeiten bleiben konstant.
+  A) Sie modelliert die Wahrscheinlichkeit von Erfolgen in unabhängigen Bernoulli-Versuchen.  
+
+  B) Sie beschreibt die Wahrscheinlichkeit von Erfolgen beim Ziehen ohne Zurücklegen aus einer endlichen Population.  
+
+  C) Sie ist eine Approximation der Binomialverteilung für große Stichproben.  
+
+  D) Sie wird verwendet, um die Zeit zwischen zwei Ereignissen zu modellieren.
+solution: B

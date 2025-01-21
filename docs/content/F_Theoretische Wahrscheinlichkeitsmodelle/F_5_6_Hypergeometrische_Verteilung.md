@@ -222,3 +222,38 @@ $x$ kann dabei natürlich höchstens so groß sein wie der kleinere der beiden 
     Für die hypergeometrisch verteilte Zufallsvariable $X_h$ ist der Erwartungswert: 
     
     $$ var(X_h)= E[(X_h - E[X_h])^2] = n \cdot \frac{M}{N} \cdot \left(1-\frac{M}{N}\right) \cdot \frac{N-n}{N-1}$$ 
+
+## Fragen
+
+{{ task(
+title="Freitext Frage 1",
+question="""Wie unterscheidet sich die hypergeometrische Verteilung von der Binomialverteilung?""",
+solution="""Hypergeometrische Verteilung: Ziehen ohne Zurücklegen, die Wahrscheinlichkeiten ändern sich nach jeder Ziehung.
+
+Binomialverteilung: Ziehen mit Zurücklegen, die Wahrscheinlichkeiten bleiben konstant.""",
+) }}
+
+{{ task(
+title="Freitext Frage 2",
+question="""Was bedeuten die Parameter $N$, $M$, $n$ und $x$ in der hypergeometrischen Verteilung $f_h(x \mid N; M; n)$?""",
+solution="""$N$: Gesamtanzahl der Elemente in der Grundgesamtheit.
+
+$M$: Anzahl der Erfolgsfälle in der Grundgesamtheit.
+
+$n$: Anzahl der gezogenen Elemente (Stichprobengröße).
+
+$x$: Anzahl der Erfolgsfälle in der Stichprobe.""",
+) }}
+
+{{ task(
+title="Freitext Frage 3",
+question="""In welchen realen Szenarien findet die hypergeometrische Verteilung Anwendung?""",
+solution="""Ziehen von Karten ohne Zurücklegen.
+
+Qualitätskontrolle, bei der Bauteile auf Fehler untersucht werden.
+
+Auswahl von Teams oder Gruppen mit bestimmten Merkmalen (z. B. Männer/Frauen).
+
+Gewinnchancen bei Losen oder Tombolas.""",
+) }}
+

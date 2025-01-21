@@ -1,12 +1,12 @@
 title: Hypergeometrische Verteilung 2
 question: |
-  Was bedeuten die Parameter \( N \), \( M \), \( n \) und \( x \) in der hypergeometrischen Verteilung \( f_h(x \mid N; M; n) \)?
-solution: |
-  \( N \): Gesamtanzahl der Elemente in der Grundgesamtheit.
+  Wie verhält sich die hypergeometrische Verteilung im Vergleich zur Binomialverteilung?
 
-  \( M \): Anzahl der Erfolgsfälle in der Grundgesamtheit.
+  A) Sie konvergiert zur Binomialverteilung, wenn die Population unendlich groß ist.  
 
-  \( n \): Anzahl der gezogenen Elemente (Stichprobengröße).
+  B) Sie ist identisch mit der Binomialverteilung für kleine Stichproben.  
 
-  \( x \): Anzahl der Erfolgsfälle in der Stichprobe.
+  C) Sie kann durch die Binomialverteilung approximiert werden, wenn die Stichprobe klein im Vergleich zur Population ist.  
 
+  D) Sie ist eine spezielle Form der Poisson-Verteilung.
+solution: C
