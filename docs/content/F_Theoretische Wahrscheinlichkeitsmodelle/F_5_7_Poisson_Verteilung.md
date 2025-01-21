@@ -52,6 +52,12 @@ $f_b(x|\lambda) = \text{Wahrscheinlichkeit, dass das Ereignis x-mal innerhalb de
 
 $\lambda = \text{Häufigkeit, in der durchschnittlich die Ereignisse zur stetigen Bezugsgröße passieren.}$
 
+$x = \text{Anzahl der Ereignisse innerhalb der Bezugsgröße.}$
+
+$x \in \mathbb{N}_{0}$
+
+$e \approx 2.71828 \cdots$ (Das ist die Euler'sche Zahl!)
+
 !!! beispiel
     
     Eine Fertigungsstraße produziert durchschnittlich 6 fehlerhafte Bauteile pro Stunde.
@@ -60,11 +66,6 @@ $\lambda = \text{Häufigkeit, in der durchschnittlich die Ereignisse zur stetige
 
     $\lambda_{Minute} = \dfrac{6}{60}=0.1$
 
-$x = \text{Anzahl der Ereignisse innerhalb der Bezugsgröße.}$
-
-$x \in \mathbb{N}_{0}$
-
-$e \approx 2.71828 \cdots$ (Das ist die Euler'sche Zahl!)
 
 ## Herleitung
 
