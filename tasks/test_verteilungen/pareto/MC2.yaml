@@ -1,0 +1,12 @@
+title: Pareto Verteilung 2
+question: |
+  Was ist der Parameter 𝛼 in einer Pareto-Verteilung?
+
+  A) Der Parameter 𝛼 beschreibt die Breite der Verteilung und bestimmt, wie viele Ausreißer existieren.
+  
+  B) Der Parameter 𝛼 ist der Mittelwert der Verteilung und beeinflusst, wie schmal oder breit die Verteilung ist.
+  
+  C) Der Parameter 𝛼 ist der Formparameter der Verteilung, der steuert, wie schnell die Wahrscheinlichkeit abnimmt.
+  
+  D) Der Parameter 𝛼 ist irrelevant und beeinflusst nicht die Form der Verteilung.
+solution: C

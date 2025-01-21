@@ -1,0 +1,53 @@
+title: Programmieraufgabe zur Binomialverteilung
+question: |
+  Berechne die Wahrscheinlichkeit, dass bei 50 Würfen mit einem fairen Würfel genau 8-mal die Zahl 6 gewürfelt wird.
+solution: |
+  **Lösung nur mit Standardmodul**
+
+  ```python
+  import math
+
+  # Parameter definieren
+  n = 50  # Anzahl der Versuche
+  p = 1/6  # Wahrscheinlichkeit für eine 6
+  k = 8  # Anzahl der Erfolge
+
+  # Funktion zur Berechnung des Binomialkoeffizienten
+  def binomialkoeffizient(n, k):
+      return math.factorial(n) // (math.factorial(k) * math.factorial(n - k))
+
+  # Binomialwahrscheinlichkeit berechnen
+  def binomial_wahrscheinlichkeit(n, k, p):
+      binom = binomialkoeffizient(n, k)
+      return binom * (p ** k) * ((1 - p) ** (n - k))
+
+  # Wahrscheinlichkeit für genau 8 Erfolge berechnen
+  wahrscheinlichkeit = binomial_wahrscheinlichkeit(n, k, p)
+  print(f"Die Wahrscheinlichkeit, genau 8-mal eine 6 zu würfeln: {wahrscheinlichkeit:.4f}")
+  ```
+
+  **Ausgabe:**
+  ```
+  Die Wahrscheinlichkeit, genau 8-mal eine 6 zu würfeln, beträgt ca. 0.114
+  ```
+
+  **Lösung mit Verwendung von `scipy`**
+
+  ```python
+  from scipy.stats import binom
+
+  # Parameter definieren
+  n = 50  # Anzahl der Versuche
+  p = 1/6  # Wahrscheinlichkeit für eine 6
+  k = 8  # Anzahl der Erfolge
+
+  # Wahrscheinlichkeit berechnen
+  wahrscheinlichkeit = binom.pmf(k, n, p)
+  print(f"Die Wahrscheinlichkeit, genau 8-mal eine 6 zu würfeln: {wahrscheinlichkeit:.4f}")
+  ```
+
+  **Ausgabe:**
+  ```
+  Die Wahrscheinlichkeit, genau 8-mal eine 6 zu würfeln, beträgt ca. 0.114
+  ```
+

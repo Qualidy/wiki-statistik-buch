@@ -1,0 +1,13 @@
+title: Pareto Verteilung 3
+question: |
+  Welche Funktion beschreibt die Wahrscheinlichkeitsdichte der Pareto-Verteilung?
+
+  A) $f(x) = \frac{α*x_{min}^α}{x^{α+1}} \text{, für } x \geq x_m$
+  
+  B) $f(x) = \frac{1}{x^a} \text{, für } x \geq 0$
+  
+  C) $f(x) = \frac{1}{x^2} \text{, für } x \geq 1$
+  
+  D) $f(x) = 𝛼x^a_me^{-ax} \text{, für x } \geq x_m$
+
+solution: A

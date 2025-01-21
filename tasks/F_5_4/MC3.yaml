@@ -1,0 +1,10 @@
+title: MC-Frage 2
+question: |
+  Welche Aussage ist korrekt?         
+  
+  A) Die Binomialverteilung erfordert unabhängige Versuche.
+  
+  B) Die Erfolgswahrscheinlichkeit $p$ darf sich ändern.
+  
+  C) Die Binomialverteilung wird immer durch das Pascalsche Dreieck berechnet.
+solution: A

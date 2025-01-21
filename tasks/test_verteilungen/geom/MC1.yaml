@@ -1,0 +1,12 @@
+title: Geometrische Verteilung 1
+question: |
+  Welche der folgenden Aussagen treffen auf die geometrische Verteilung zu?
+  
+  A) Sie modelliert die Anzahl der Erfolge in einer festen Anzahl von Versuchen.
+ 
+  B) Sie hat eine konstante Erfolgswahrscheinlichkeit in jedem Versuch.
+ 
+  C) Sie modelliert die Anzahl der Misserfolge bis zum ersten Erfolg.
+ 
+  D) Sie hat eine variable Erfolgswahrscheinlichkeit in jedem Versuch.
+solution: B und C

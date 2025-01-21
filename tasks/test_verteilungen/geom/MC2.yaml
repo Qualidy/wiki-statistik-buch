@@ -1,0 +1,13 @@
+title: Geometrische Verteilung 2
+question: |
+  Bei welchen der folgenden Zufallsversuche handelt es sich um eine geometrische Verteilung?
+  
+  A) Ein Würfel wird so lange geworfen, bis eine 6 erscheint.
+ 
+  B) Eine Münze wird so lange geworfen, bis Kopf erscheint.
+ 
+  C) Ein Kartenspieler zieht Karten aus einem Deck, bis er ein Ass zieht.
+ 
+  D) Ein Basketballspieler wirft so lange Freiwürfe, bis er trifft. Die Chance auf ein Treffer verändert sich zwischen den Würfen nicht.
+
+solution: A, B und D

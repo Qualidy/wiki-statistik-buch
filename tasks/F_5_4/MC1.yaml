@@ -1,0 +1,10 @@
+title: MC-Frage 1
+question: |
+  Welche der folgenden Situationen lässt sich mit einer Binomialverteilung modellieren?
+         
+  A) Die Anzahl der Minuten, die ein Kunde in einem Geschäft verbringt.
+  
+  B) Die Anzahl der Treffer bei 10 geworfenen Freiwürfen im Basketball.
+  
+  C) Die Anzahl defekter Teile in einer Lieferung von 50 Bauteilen bei einer Fehlerwahrscheinlichkeit von 1%.
+solution: B, C

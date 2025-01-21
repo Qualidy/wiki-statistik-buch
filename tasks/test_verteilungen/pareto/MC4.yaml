@@ -1,0 +1,7 @@
+title: Pareto Verteilung 4
+question: |
+  Gegeben sei eine Pareto-Verteilung mit dem Parameter 𝛼 = 2 und dem minimalen Wert $x_m$ = 1.
+  Berechnen Sie die Wahrscheinlichkeit, dass ein Wert größer als 3 ist, also $𝑃(𝑋 > 3)$.
+
+  Formel: $S(x) = P(X \geq x) = (\frac{x_{m}}{x})^α$
+solution: Die Wahrscheinlichkeit, dass $𝑋 > 3$, beträgt $\frac{1}{9}$
