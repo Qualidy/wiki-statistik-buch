@@ -38,7 +38,8 @@ def create_task(title="Aufgabe",
                 difficulty_icon='🌶',
                 collapsed=False,
                 solution_video=None,
-                question_video=None):
+                question_video=None,
+                show_solution=True):
     difficulty_icons = difficulty * difficulty_icon + (" " if difficulty else "")
     collapsed_symbol = "" if collapsed else "+"
 
@@ -49,7 +50,7 @@ def create_task(title="Aufgabe",
     result += add_tabs(question)
     if tip:
         result += add_tabs(f'??? info "Tipp"\n') + add_tabs(tip, 2)
-    if solution:
+    if solution and show_solution:
         result += add_tabs(f'??? success "Lösung"\n')
         if solution_video:
             result += add_tabs(youtube_video_admonition(solution_video, "Lösungsvideo"), 2)
