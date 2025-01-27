@@ -1,13 +1,15 @@
 title: Exponentielle Verteilung 3
 question: |
-  Wann ist der Wert von λ in der Poisson-Verteilung am größten?
+  Die Lebensdauer einer Lampe folgt einer Exponentialverteilung 
+  mit $\lambda = 0,5$. 
+  Was ist die durchschnittliche Lebensdauer der Lampe?
   
-  A) Wenn die Ereignisse sehr selten sind
+  A) 1 Stunde
   
-  B) Wenn die Ereignisse sehr häufig sind
+  B) 2 Stunden
   
-  C) Wenn die Ereignisse unabhängig voneinander auftreten
+  C) 0,5 Stunden
   
-  D) Wenn die Ereignisse in einem festen Intervall auftreten
+  D) 4 Stunden
 
 solution: B
