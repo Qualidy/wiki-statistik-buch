@@ -32,6 +32,8 @@ Die Poisson-Verteilung beschreibt die Wahrscheinlichkeit dafür, dass ein Ereign
     ![Verteilungsfunktion Poisson](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Poisson_cumulative_distribution_function.svg/768px-Poisson_cumulative_distribution_function.svg.png)
 
 
+<iframe src="https://www.geogebra.org/classic/S42P9agy?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+
 ## **Vergleich zwischen Binomialverteilung und Poisson-Verteilung**
 
 | **Kriterium**              | **Binomialverteilung**                                                                     | **Poisson-Verteilung**                                          |
