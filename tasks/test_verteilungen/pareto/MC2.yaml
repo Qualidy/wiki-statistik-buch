@@ -3,11 +3,11 @@ question: |
   Die Verteilungsfunktion (CDF) der Pareto-Verteilung lautet \( F(x) = 1 - \left(\frac{x_m}{x}\right)^a \) für \( x \geq x_m \).  
   Wie lautet die Wahrscheinlichkeit \( P(a \leq X \leq b) \) für \( a, b \geq x_m \)?
 
-  A) \( P(a \leq X \leq b) = \left(\frac{x_m}{a}\right)^a - \left(\frac{x_m}{b}\right)^a \)  
+  A) \( P(a \leq X \leq b) = \left(\frac{x_m}{a}\right)^\alpha - \left(\frac{x_m}{b}\right)^\alpha \)  
   
-  B) \( P(a \leq X \leq b) = \left(\frac{b}{x_m}\right)^a - \left(\frac{a}{x_m}\right)^a \)  
+  B) \( P(a \leq X \leq b) = \left(\frac{b}{x_m}\right)^\alpha - \left(\frac{a}{x_m}\right)^\alpha \)  
   
-  C) \( P(a \leq X \leq b) = \left(\frac{x_m}{b}\right)^a - \left(\frac{x_m}{a}\right)^a \)  
+  C) \( P(a \leq X \leq b) = \left(\frac{x_m}{b}\right)^\alpha - \left(\frac{x_m}{a}\right)^\alpha \)  
   
-  D) \( P(a \leq X \leq b) = 1 - \left(\frac{x_m}{b}\right)^a - \left(\frac{x_m}{a}\right)^a \)
+  D) \( P(a \leq X \leq b) = 1 - \left(\frac{x_m}{b}\right)^\alpha - \left(\frac{x_m}{a}\right)^\alpha \)
 solution: C
