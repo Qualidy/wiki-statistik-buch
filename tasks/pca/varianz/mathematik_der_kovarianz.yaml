@@ -1,0 +1,66 @@
+title: Mathematik der Kovarianz
+question: |
+  Was ist $cov(x,x)$ für ein Merkmal $x$?
+  
+  In wie fern ist die Kovarianz kommutativ?
+  
+  Wie lässt sich die Kovarianz mit Hilfe des Erwartungswertes ausdrücken?
+  
+  Welche Alternative Rechenregel lässt sich so für die Berechnung der Kovarianz bilden und wie?
+solution: |
+  **1. Was ist \( cov(x,x) \) für ein Merkmal \( x \)?**
+
+  Die Kovarianz eines Merkmals mit sich selbst entspricht der **Varianz** dieses Merkmals:
+
+  \[
+  cov(x, x) = Var(x) = \frac{1}{N} \sum_{i=1}^{N} (x_i - \bar{x})^2
+  \]
+
+  Das bedeutet, dass die Kovarianzmatrix entlang der Diagonalen die Varianzen der einzelnen Merkmale enthält.
+
+  **2. Inwiefern ist die Kovarianz kommutativ?**
+
+  Die Kovarianz ist **symmetrisch**, d. h.:
+
+  \[
+  cov(x, y) = cov(y, x)
+  \]
+
+  Das folgt direkt aus der Definition:
+
+  \[
+  cov(x, y) = \frac{1}{N} \sum_{i=1}^{N} (x_i - \bar{x})(y_i - \bar{y})
+  \]
+
+  Da die Multiplikation kommutativ ist \((a \cdot b = b \cdot a)\), folgt sofort die Symmetrie der Kovarianz.
+
+  **3. Wie lässt sich die Kovarianz mit Hilfe des Erwartungswertes ausdrücken?**
+
+  Die Kovarianz kann mit dem **Erwartungswertoperator** geschrieben werden als:
+
+  \[
+  cov(x, y) = E[(x - E[x])(y - E[y])]
+  \]
+
+  Das bedeutet, dass die Kovarianz der Erwartungswert des Produkts der zentrierten Variablen ist.
+
+  **4. Welche alternative Rechenregel lässt sich so für die Berechnung der Kovarianz bilden und wie?**
+
+  Eine alternative Berechnung der Kovarianz ergibt sich aus folgender Umformung:
+
+  \[
+  cov(x, y) = E[xy] - E[x]E[y]
+  \]
+
+  Diese Formel ergibt sich durch Ausmultiplizieren der Definition:
+
+  \[
+  cov(x, y) = E[(x - E[x])(y - E[y])]
+  = E[xy - x\cdotE[y] - y\cdotE[x] + E[x]E[y]]
+  = E[xy] - E[x\cdotE[y] - E[y\cdotE[x]] + E[E[x]E[y]]
+  = E[xy] - E[x]E[y] - E[y]E[x] + E[x]E[y]
+  = E[xy] - E[x]E[y]
+  \]
+
+  Diese alternative Rechenregel kann die Berechnung der Kovarianz vereinfachen, da sie den Mittelwert von Produkten direkt nutzt.
+

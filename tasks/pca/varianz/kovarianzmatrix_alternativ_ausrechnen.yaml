@@ -1,0 +1,129 @@
+title: Kovarianzmatrix berechnen
+question: |
+  Gegeben ist eine Matrix \( X \) mit vier Merkmalen und fünf Beobachtungen:
+
+  \[
+  X =
+  \begin{pmatrix}
+  2 & 3 & 5 & 7 \\
+  1 & 4 & 4 & 6 \\
+  3 & 2 & 6 & 5 \\
+  4 & 5 & 7 & 8 \\
+  2 & 3 & 5 & 6
+  \end{pmatrix}
+  \]
+
+  Bestimmen Sie die Kovarianzmatrix mit Hilfe der **geschlossenen Form**.
+solution: |
+  **Mittelwert bestimmen:**
+  
+  \[
+  \bar{X} =
+  \begin{pmatrix}
+  2.4 \\
+  3.4 \\
+  5.4 \\
+  6.4 
+  \end{pmatrix}
+  \]
+  
+  **Faktoren bestimmen:**
+  
+  \[
+   X_1 - \bar{X} =
+  \begin{pmatrix}
+  -0.4 \\ -0.4 \\ -0.4 \\ 0.6
+  \end{pmatrix}, \quad
+  X_2 - \bar{X} =
+  \begin{pmatrix}
+  -1.4 \\ 0.6 \\ -1.4 \\ -0.4
+  \end{pmatrix}, \quad
+  X_3 - \bar{X} =
+  \begin{pmatrix}
+  0.6 \\ -1.4 \\ 0.6 \\ -1.4
+  \end{pmatrix}, \quad
+  X_4 - \bar{X} =
+  \begin{pmatrix}
+  1.6 \\ 1.6 \\ 1.6 \\ 1.6
+  \end{pmatrix}, \quad
+  X_5 - \bar{X} =
+  \begin{pmatrix}
+  -0.4 \\ -0.4 \\ -0.4 \\ -0.4
+  \end{pmatrix}
+  \]
+
+  **Summanden bestimmen:**
+
+  \[
+  (X_1 - \bar{X})(X_1 - \bar{X})^T = 
+  \begin{pmatrix} 
+  0.16 & 0.16 & 0.16 & -0.24 \\
+  0.16 & 0.16 & 0.16 & -0.24 \\
+  0.16 & 0.16 & 0.16 & -0.24 \\
+  -0.24 & -0.24 & -0.24 & 0.36
+  \end{pmatrix}
+  \]
+
+  \[
+  (X_2 - \bar{X})(X_2 - \bar{X})^T = 
+  \begin{pmatrix} 
+  1.96 & -0.84 & 1.96 & 0.56 \\
+  -0.84 & 0.36 & -0.84 & -0.24 \\
+  1.96 & -0.84 & 1.96 & 0.56 \\
+  0.56 & -0.24 & 0.56 & 0.16
+  \end{pmatrix}
+  \]
+
+  \[
+  (X_3 - \bar{X})(X_3 - \bar{X})^T = 
+  \begin{pmatrix} 
+  0.36 & -0.84 & 0.36 & -0.84 \\
+  -0.84 & 1.96 & -0.84 & 1.96 \\
+  0.36 & -0.84 & 0.36 & -0.84 \\
+  -0.84 & 1.96 & -0.84 & 1.96
+  \end{pmatrix}
+  \]
+
+  \[
+  (X_4 - \bar{X})(X_4 - \bar{X})^T = 
+  \begin{pmatrix} 
+  2.56 & 2.56 & 2.56 & 2.56 \\
+  2.56 & 2.56 & 2.56 & 2.56 \\
+  2.56 & 2.56 & 2.56 & 2.56 \\
+  2.56 & 2.56 & 2.56 & 2.56
+  \end{pmatrix}
+  \]
+
+  \[
+  (X_5 - \bar{X})(X_5 - \bar{X})^T = 
+  \begin{pmatrix} 
+  0.16 & 0.16 & 0.16 & 0.16 \\
+  0.16 & 0.16 & 0.16 & 0.16 \\
+  0.16 & 0.16 & 0.16 & 0.16 \\
+  0.16 & 0.16 & 0.16 & 0.16
+  \end{pmatrix}
+  \]
+
+  **Summe bestimmen:**
+
+  \[
+  \sum_{i=1}^{5} (X_i - \bar{X}) (X_i - \bar{X})^T =
+  \begin{pmatrix}
+  5.2 & 2.8 & 4.8 & 5.6 \\
+  2.8 & 5.2 & 4.4 & 5.2 \\
+  4.8 & 4.4 & 6.8 & 6.8 \\
+  5.6 & 5.2 & 6.8 & 9.2
+  \end{pmatrix}
+  \]
+
+  **Kovarianzmatrix bestimmen:**
+
+  \[
+  S = \frac{1}{5} \sum_{i=1}^{5} (X_i - \bar{X}) (X_i - \bar{X})^T =
+  \begin{pmatrix}
+  1.04 & 0.56 & 0.96 & 1.12 \\
+  0.56 & 1.04 & 0.88 & 1.04 \\
+  0.96 & 0.88 & 1.36 & 1.36 \\
+  1.12 & 1.04 & 1.36 & 1.84
+  \end{pmatrix}
+  \]

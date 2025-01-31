@@ -1,0 +1,4 @@
+title: Geschlossene Form der Kovarianzmatrix programmieren
+question: |
+  Implementiere das Berechnen der Kovarianzmatrix unter Verwendung der geschlossenen Form.
+  Der Funktionsname lautet `cov`.

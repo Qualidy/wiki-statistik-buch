@@ -1,0 +1,29 @@
+title: Kovarianzmatrix mit geschlossener Form berechnen
+question: |
+  Gegeben ist eine Matrix \( X \) mit vier Merkmalen und fünf Beobachtungen:
+
+  \[
+  X =
+  \begin{pmatrix}
+  2 & 3 & 5 & 7 \\
+  1 & 4 & 4 & 6 \\
+  3 & 2 & 6 & 5 \\
+  4 & 5 & 7 & 8 \\
+  2 & 3 & 5 & 6
+  \end{pmatrix}
+  \]
+
+  Dabei entspricht jede Spalte einem Merkmal und jede Zeile einer Beobachtung.
+
+  Berechnen Sie die Mittelwerte der vier Merkmale.
+  
+  Bestimmen Sie die **Kovarianzmatrix**.
+
+tip: Die Matrix sollte dir bekannt vorkommen😉
+solution: |
+  \begin{pmatrix}
+  1.04 & 0.56 & 0.96 & 1.12 \\
+  0.56 & 1.04 & 0.88 & 1.04 \\
+  0.96 & 0.88 & 1.36 & 1.36 \\
+  1.12 & 1.04 & 1.36 & 1.84
+  \end{pmatrix}
