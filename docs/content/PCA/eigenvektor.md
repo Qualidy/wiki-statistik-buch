@@ -237,6 +237,67 @@ $$
 
 {{ task(file="tasks/AufgabeEV2.yaml") }}
 
-MORE
+
+!!! Info
+    **Kurze Übersicht/Wiederholung wichtiger Begriffe für die Herleitung**
+
+    **Determinante:** Gibt an, wie sich das Volumen bei der durch die Matrix beschriebenen linearen Abbildung ändert.
+
+    **Eigenvektor:** Der Eigenvektor einer Abbildung ist ein vom Nullvektor verschiedener Vektor, dessen Richtung durch die Abbildung nicht verändert wird.
+
+    **Eigenwert:** Der Eigenwert ist der Skalierungsfaktor eines Eigenvektors.
+
+    **injektiv:** Eine Funktion ist injektiv, wenn es zu jedem Element y
+    der Zielmenge Y höchstens ein Element x der Ausgangs- oder Definitionsmenge X gibt, das darauf abgebildet wird.
+
+    **invertierbar:**  Eine Funktion ist genau dann invertierbar , wenn sie bijektiv (also gleichzeitig injektiv und surjektiv) ist.
+    Eine quadratische Matrix ist genau dann invertierbar, wenn ihre Determinante ungleich null ist.
+
+
+!!! Info
+    **Herleitung: Eigenwerte \(\lambda\) erfüllen \( \det(\lambda E - A) = 0 \)**
+    
+    Das charakteristische Polynom ( \( \det(\lambda E - A) \) ) spielt eine wichtige Rolle bei der Bestimmung der Eigenwerte einer Matrix, denn die Eigenwerte sind genau die Nullstellen des charakteristischen Polynoms. Auch wenn man zum expliziten Berechnen des charakteristischen Polynoms immer eine Basis und damit eine Darstellungsmatrix auswählt, hängen das Polynom wie auch die Determinante nicht von dieser Wahl ab.
+
+    Um zu zeigen, dass die Eigenwerte gerade die Nullstellen des charakteristischen Polynoms sind, geht man folgendermaßen vor:
+
+
+    Es sei \(\lambda \in \mathbb{K}\) und \(A\) eine \(n \times n\)-Matrix über \(\mathbb{K}\). Dann gelten die folgenden Äquivalenzen:
+
+    \[
+    \lambda \text{ ist ein Eigenwert von } A 
+    \]
+
+    \[
+    \iff \exists x \in \mathbb{K}^n, x \neq 0 \text{ mit } A x = \lambda x
+    \]
+
+    \[
+    \iff \exists x \in \mathbb{K}^n, x \neq 0 \text{ mit } (\lambda E - A) x = 0
+    \]
+
+    \[
+    \iff \text{Der Kern von } \lambda E - A \text{ besteht nicht nur aus dem Nullvektor, d.h. } \ker(\lambda E - A) \neq \{ 0 \}
+    \]
+
+    \[
+    \text{(D.h., andere Vektoren als der Nullvektor werden auf den Nullvektor abgebildet.)}
+    \]
+
+    \[
+    \iff \text{Die durch } \lambda E - A \text{ induzierte lineare Abbildung ist nicht injektiv}
+    \]
+
+    \[
+    \iff \lambda E - A \text{ ist nicht invertierbar}
+    \]
+
+    \[
+    \iff \det(\lambda E - A) = 0
+    \]
+
+    \[
+    \iff \lambda \text{ ist Nullstelle des charakteristischen Polynoms von } A
+    \]
 
 ![](Check Picture EV TF.png)
