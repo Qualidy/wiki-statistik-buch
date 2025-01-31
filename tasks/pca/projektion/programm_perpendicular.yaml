@@ -1,0 +1,3 @@
+title: Senkrecht stehen
+question: |
+  Erstelle eine Funktion `is_perpendicular(v, w)`, die prüft, ob zwei Vektoren `w` und `v` senkrecht stehen.

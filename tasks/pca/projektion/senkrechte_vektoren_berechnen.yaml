@@ -1,0 +1,35 @@
+title: Senkrechte Vektoren bestimmen
+question: |
+  Welche der folgenden Vektoren sind senkrecht aufeinander?
+  
+  \[
+  \mathbf{a} = \begin{pmatrix} 2 \\ -1 \\ 0 \end{pmatrix}, \quad
+  \mathbf{b} = \begin{pmatrix} 1 \\ 2 \\ -2 \end{pmatrix}, \quad
+  \mathbf{c} = \begin{pmatrix} -3 \\ 6 \\ 1 \end{pmatrix}\quad
+  \mathbf{d} = \begin{pmatrix} 4 \\ -2 \end{pmatrix}, \quad
+  \mathbf{e} = \begin{pmatrix} 1 \\ 2 \end{pmatrix}\quad
+  \mathbf{f} = \begin{pmatrix} 1 \\ 0 \\ -1 \\ 2 \end{pmatrix}, \quad
+  \mathbf{g} = \begin{pmatrix} 2 \\ -1 \\ 2 \\ 1 \end{pmatrix}
+  \]
+  
+  Bonus: Gebe die Vektoren in Geogebra ein (soweit möglich) und verifiziere so deine Lösung.
+solution: |
+  Es müssen nur die Vektoren gleicher größe verglichen werden.
+  
+  \(\mathbf{a} \cdot \mathbf{b} = 0\)  
+  
+  \(\mathbf{a} \cdot \mathbf{c} = -12\)  
+  
+  \(\mathbf{b} \cdot \mathbf{c} = 7\)  
+  
+  \(\mathbf{d} \cdot \mathbf{e} = 0\)  
+  
+  \(\mathbf{f} \cdot \mathbf{g} = 2\)  
+
+  **Ergebnis:**
+
+  \(\mathbf{b} \not \perp \mathbf{a} \perp \mathbf{b} \not\perp \mathbf{c}\)  
+  
+  \(\mathbf{d} \perp \mathbf{e}\)
+  
+  \(\mathbf{f} \not \perp \mathbf{g}\)

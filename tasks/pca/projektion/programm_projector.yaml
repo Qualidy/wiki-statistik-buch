@@ -1,0 +1,5 @@
+title: Projektionsfunktion programmieren
+question: |
+  Erstelle eine Funktion `projection_faktor(v, w)`, die den Vektoren `w` auf den Vektor `v`
+  projeziert. Das Ergebnis soll dabei nur der Faktor $k$ aus der Rechnung $pr_v(w) = kv$ sein, der oben beschrieben
+  ist.

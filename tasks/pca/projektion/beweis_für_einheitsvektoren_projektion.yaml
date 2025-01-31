@@ -1,0 +1,13 @@
+title: Projektionsvorschrift bei Einheitsvektoren
+question: |
+  Erkläre, warum 
+  
+  $$
+  pr_v(w) = v^twv
+  $$
+  
+  für $v, w \in \mathbb{R}^D$ gilt, wenn $|v|=1$ gilt.
+
+tip: Überlege dir, warum und wann $a^tb = b^ta$ gilt.
+solution: |
+  Es gilt immer $v^tw = w^tv$. Da der Nenner 1 ist, können wir den Nenner aus der allgemeinen Formel weglassen.

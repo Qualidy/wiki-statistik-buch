@@ -1,0 +1,6 @@
+title: Vektoren normieren
+question: |
+  Erstelle eine Funktion `norm(v)`, die $|v|$ berechnet.
+  
+  Erstelle dann eine Funktion `normalize(v)`, die einen Vektor $w$ zurückgibt, sodass $w\in \langle v \rangle$ 
+  und $|w| = 1$ gilt.

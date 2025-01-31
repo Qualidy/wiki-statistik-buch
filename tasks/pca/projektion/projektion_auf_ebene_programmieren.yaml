@@ -1,0 +1,4 @@
+title: Projektion auf Hyperebene Programmieren
+question: |
+  Baue eine Funktion `projection(n, w)`, die einen Vektor `w` auf den vom Normalenvektor `n` aufgespannten Teilraum
+  projiziert.

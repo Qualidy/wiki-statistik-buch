@@ -1,0 +1,42 @@
+title: Projektionsraum bestimmen
+question: |
+  Gegeben seien die folgenden Vektoren:
+
+  \[
+  v = \begin{pmatrix} 2 \\ -1 \\ 0 \end{pmatrix}, \quad
+  w = \begin{pmatrix} -2 \\ 1 \\ 0 \end{pmatrix}, \quad
+  z = \begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix}, \quad
+  u = \begin{pmatrix} 2 \\ -1 \\ 3 \\ 2\end{pmatrix}
+  \]
+
+  und die folgenden Punkte:
+
+  \[
+  a = \begin{pmatrix} 4 \\ -2 \\ 0 \end{pmatrix}, \quad
+  b = \begin{pmatrix} -4 \\ 2 \\ 0 \end{pmatrix}, \quad
+  c = \begin{pmatrix} 6 \\ -3 \\ 9 \end{pmatrix}, \quad
+  d = \begin{pmatrix} 1 \\ -1 \\ 1 \end{pmatrix}, \quad
+  e = \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}, \quad
+  f = \begin{pmatrix} 6 \\ -3 \\ 9 \\ 6 \end{pmatrix}, \quad
+  g = \begin{pmatrix} 4 \\ -5 \\ 6 \\ 4 \end{pmatrix}
+  \]
+
+  Welche der Punkte liegen in den Unterräumen \(\langle v \rangle\), \(\langle w \rangle\), \(\langle z \rangle\) und \(\langle u \rangle\)?
+
+  Bonus: Geben Sie die Vektoren in GeoGebra ein (soweit möglich) und verifizieren Sie Ihre Lösung.
+
+tip: |
+  Achte auf die Größe der Vektoren. In welchen Räumen können Sie dann überhaupt nur liegen?
+solution: |
+  Da $v \in \langle w \rangle$ ist, gilt $\langle v \rangle = \langle w \rangle$
+  
+  |     | \(\langle v \rangle = \langle w \rangle\) | \(\langle z \rangle\) | \(\langle u \rangle\) |
+  |-----|-------------------------------------------|-----------------------|-----------------------|
+  | $a$ | $a=2v = -2w$                              | ❌                     | unmöglich             |
+  | $b$ | $a=-2v = 2w$                              | ❌                     | unmöglich             |
+  | $c$ | ❌                                         | $c=3z$                | unmöglich             |
+  | $d$ | ❌                                         | ❌                     | unmöglich             |
+  | $e$ | $e = 0v = 0w                              | $d=0z$                | unmöglich             |
+  | $f$ | unmöglich                                 | unmöglich             | $f = 3u$              |
+  | $g$ | unmöglich                                 | unmöglich             | ❌                     |
+  

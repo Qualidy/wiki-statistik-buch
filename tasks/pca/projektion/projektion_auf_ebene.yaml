@@ -1,0 +1,10 @@
+title: Projektion auf Ebene
+question: |
+  Finde heraus und erkläre, wie die Projektion auf die Ebene funktioniert, wenn man den Normalenvektor vorliegen hat.
+tip: Nutze gerne diese [Quelle von studyflix](https://studyflix.de/mathematik/orthogonale-projektion-1468).
+solution: |
+  Wenn der Normalenvektor $n$ der Ebene $E$ auf dem Nullpunkt aufliegt, so gilt die Formel:
+  
+  $$
+  pr_E(w) = w - \frac{x^tn}{|n|}\cdot n 
+  $$
