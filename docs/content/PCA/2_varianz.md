@@ -53,7 +53,7 @@ in Richtung unseres Zieles ist, einen Vektor $v$ zu finden, sodass $var(k)$ maxi
 	Die Kovarianz von $x$ und $y$ berechnet sich mit der Formel
 
 	$$
-	cov(x,y) = \frac{1}{N} \sum_{i=1}^N (x_i - \bar{x})(y_i - bar{y}) 
+	cov(x,y) = \frac{1}{N} \sum_{i=1}^N (x_i - \bar{x})(y_i - \bar{y}) 
 	$$
 
 	Oft wird die Notation $cov(x,y) = \sigma_{xy}$ verwendet.

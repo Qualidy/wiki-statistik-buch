@@ -36,7 +36,7 @@ solution: |
   | $b$ | $a=-2v = 2w$                              | ❌                     | unmöglich             |
   | $c$ | ❌                                         | $c=3z$                | unmöglich             |
   | $d$ | ❌                                         | ❌                     | unmöglich             |
-  | $e$ | $e = 0v = 0w                              | $d=0z$                | unmöglich             |
+  | $e$ | $e = 0v = 0w$                             | $d=0z$                | unmöglich             |
   | $f$ | unmöglich                                 | unmöglich             | $f = 3u$              |
   | $g$ | unmöglich                                 | unmöglich             | ❌                     |
   

@@ -1,0 +1,68 @@
+title: Matrix-Vektor-Multiplikation durchschauen
+question: |
+  Gegeben sei die Matrix
+  
+  \[
+  A = \begin{pmatrix}
+  2 & 1 \\
+  -3 & 4 
+  \end{pmatrix}
+  \]
+  
+  und der Vektor 
+  
+  
+  \[
+  x = \begin{pmatrix}
+  x_1 \\
+  x_2 
+  \end{pmatrix}
+  \]
+  
+  Multipliziere einmal vollständig das Produkt $x^t A x$ aus. 
+  
+  Bilde dann die die partiellen Ableitung $x^t A x$ nach $x_1$, $x_2$ und $x_3$.
+  
+    
+  Wie lässt sich 
+  
+  $$
+  \frac{\partial x^t A x}{\partial x} = 
+  \begin{pmatrix}
+  \frac{\partial x^t A x}{\partial x_1} \\
+  \frac{\partial x^t A x}{\partial x_2} \\
+  \frac{\partial x^t A x}{\partial x_3} 
+  \end{pmatrix}
+  $$
+  
+  mit $A$ und $x$ kürzer ausdrücken?
+
+
+tip: Dabei erhälst du ein Polynom mit zwei Unbekannten.
+solution: |
+  Wir berechnen zunächst $x^t A$:
+  
+  \[
+  x^t A 
+  = \begin{pmatrix}  x_1 &  x_2  \end{pmatrix}
+  \begin{pmatrix}  2 & 1 \\  -3 & 4  \end{pmatrix}
+  \begin{pmatrix}  x_1 \\  x_2  \end{pmatrix}
+  =  \begin{pmatrix}  2 x_1 - 3 x_2 & 1x_1 + 4x_2  \end{pmatrix}
+  \begin{pmatrix}  x_1 \\  x_2  \end{pmatrix}
+  = (2 x_1 - 3 x_2) x_1 + (1x_1 + 4x_2) x_2
+  = 2x_1^2 -2 x_1 x_2 + 4x_2^2
+  \]
+  
+  Wir können nun die Ableitungen bestimmen:
+  
+  $$
+  \frac{\partial x^t A x}{\partial x_1} = 4x_1 - 2x_2,\quad
+  \frac{\partial x^t A x}{\partial x_2} = -2x_1 + 8x_2 
+  $$
+  
+  Insgesamt können wir notieren:
+  
+  $$
+  \frac{\partial x^t A x}{\partial x} = \begin{pmatrix}  4x_1 - 2x_2 \\  -2x_1 + 8x_2  \end{pmatrix} = 2Ax
+  $$
+  

@@ -32,3 +32,33 @@ eignet sich die sog. *Lagrange-Methode*.
 {{ task("tasks/pca/lagrange/R2.yaml") }}
 {{ task("tasks/pca/lagrange/R3.yaml") }}
 {{ task("tasks/pca/lagrange/R4.yaml") }}
+
+## Verwendung von Lagrange für die Herleitung von PCA
+
+Wenn wir nun die Lagrange-Methode verwenden wollen, um PCA herzuleiten, müssen wir uns zunächst klar machen,
+dass 
+
+$$
+v^t S v
+$$
+
+die Zielfunktion und 
+
+$$
+|v| = 1 = v^t v
+$$
+
+die Nebenbedingung ist.
+
+Das heißt wir müssen die partielle Ableitung von
+
+$$
+L(v, \lambda) = v^t S v + \lambda (1 - v^t v)
+$$
+
+bilden.
+
+### Ableitung von $x^tAx$
+
+{{ task("tasks/pca/lagrange/matrix_mult_2d.yaml") }}
+{{ task("tasks/pca/lagrange/matrix_mult_3d.yaml") }}
