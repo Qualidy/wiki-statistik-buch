@@ -233,9 +233,9 @@ $$
     \end{pmatrix}
     $$
 
-{{ task(file="tasks/AufgabeEV.yaml") }}
+{{ task(file="tasks/pca/eigenvektor/AufgabeEV.yaml") }}
 
-{{ task(file="tasks/AufgabeEV2.yaml") }}
+{{ task(file="tasks/pca/eigenvektor/AufgabeEV2.yaml") }}
 
 
 !!! Info
