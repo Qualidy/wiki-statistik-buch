@@ -14,7 +14,8 @@ Wir müssen uns zunächst klar machen, was eine Projektion auf einen Vektor bede
     \langle v \rangle := \{ kv | k \in \mathbb{R} \}
     $$
 
-    der von $v$ aufgespannte Vektorraum. 
+    der von $v$ aufgespannte Vektorraum. Man spricht $\langle v \rangle$ aus als "Der Aufspann von $v$" oder
+    "Der von $v$ aufgespannte Vektorraum".
 
     Einen solchen aufgespannten Vektorraum kannst du dir als eine (eindimensionale) Linie in einem Raum vorstellen.
 
