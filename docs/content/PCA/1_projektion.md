@@ -44,7 +44,9 @@ man auf $k$ kommt.
 
     Sei $v \in \mathbb{R}^D$ ein Vektor. Dann ist
 
-    $$pr_v(w) = \frac{w^tvv}{|v|^2}$$
+    $$pr_v(w) = \frac{w^tv}{|v|^2} v$$
+
+    Das in der Definition noch nicht näher bestimmte $k$ ist also $\frac{w^tv}{|v|^2}$.
 
     Ist $|v|=1$ (ein sog. Einheitsvektor), so gilt sogar:
 
@@ -128,6 +130,11 @@ Jeder Hyperraum hat einen Normalenvektor, der senkrecht auf den Raum steht. Dies
 Punkte aus dem großen Raum auf den Hyperraum herunter zu projizieren.
 
 <iframe src="https://www.geogebra.org/calculator/aejercma?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+
+!!! formel "Normalenvektor"
+    
+    a
+    
 
 # TODO: Normalenvektor
 
