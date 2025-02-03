@@ -86,8 +86,11 @@ solution: |
   Berechnung von $z''$ für die erhaltenen Werte:
   
   $$ z''(0.5) > 0 \Rightarrow \text{ Minimum bei } (0.5,3) $$  
+  
   $$ z''(-0.5) < 0 \Rightarrow \text{ Maximum bei } (-0.5,-1) $$
 
   **Ergebnis:**
   
   Minimum bei $(0.5,3)$, Maximum bei $(-0.5,-1)$.
+  
+  <iframe src="https://www.geogebra.org/calculator/cwc7cx4x?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>

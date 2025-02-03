@@ -10,4 +10,10 @@ question: |
 
 tip: Überlege dir, warum und wann $a^tb = b^ta$ gilt.
 solution: |
+  Es gilt immer $a^tb = b^ta$, da
+  
+  $$
+  a^tb = a_1 \cdot b_1 + a_2 \cdot b_2 + \cdots + a_n \cdot b_n = b_1 \cdot a_1 + b_2 \cdot a_2 + \cdots b_n \cdot + a_n = b^t a
+  $$ 
+  
   Es gilt immer $v^tw = w^tv$. Da der Nenner 1 ist, können wir den Nenner aus der allgemeinen Formel weglassen.

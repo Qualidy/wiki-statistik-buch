@@ -48,3 +48,5 @@ solution: |
   $$ (3,3), (-3,-3), (-3,3), (3,-3) $$
 
   Diese Punkte sind mögliche Extremstellen.
+
+  <iframe src="https://www.geogebra.org/calculator/xmpyydhz?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
