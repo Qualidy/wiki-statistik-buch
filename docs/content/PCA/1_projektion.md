@@ -54,13 +54,21 @@ man auf $k$ kommt.
 
 {{ task("tasks/pca/projektion/projektionen_berechnen.yaml") }}
 
-Wiekann ich einen Vektor normieren?
+!!! beispiel "Vektor normieren"
+
+    Um einen Vektor zu normieren, teilen wir ihn durch seine Norm.
+
+    $$
+    \Bigl| \frac{v}{|v|} \Bigl| = 1
+    $$
+
+    <iframe src="https://www.geogebra.org/calculator/dyup65bz?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
 
 Warum funktioniert diese Rechenregel? Betrachten wir dazu die folgende Herleitung:
 
 !!! tip "Herleitung"
     
-    Sei $v\in \mathbb{R}^D\setminus {0}$ ein Vektor, auf den $w\in \mathbb{R}^D$ projiziert werden soll.
+    Sei $v\in \mathbb{R}^D\setminus \{0\}$ ein Vektor, auf den $w\in \mathbb{R}^D$ projiziert werden soll.
     
     Zunächst normieren wir $v$ zu $u := \frac{v}{|v|}$. Das heißt $|u| = 1$.
     
@@ -133,14 +141,39 @@ Punkte aus dem großen Raum auf den Hyperraum herunter zu projizieren.
 
 !!! formel "Normalenvektor"
     
-    a
+    Sei $n \in \mathbb{R}^D$ ein Vektor. Dann erzeugt $n$ eine Hyperebene 
+    $H := \{ x \in \mathbb{R}^D | x \perp n \}$
+    
+!!! formel "Hessesche Normalform"
+    
+    Es sei $E$ eine Ebene mit zugehörigen Normalenvektor $n$. Falls die Ebene nicht durch den Nullpunkt geht,
+    kann ein *Stützvektor* $a \in E$ genutzt werden, um die gesamte Ebene als die Punkte $x$ zu beschreiben,
+    die die Gleichung 
+    
+    $$
+    (x-a)\cdot n = 0 \text{ bzw. } (x-a)^t n = 0
+    $$
+
+    erfüllen.
+
+    In unseren Untersuchungen sind ist jedoch immer $a = 0$, da 
+
+
+!!! beispiel 
+
+    Gegeben sei eine Ebene $E$, die durch die Vektoren 
+    $v = \begin{pmatrix} 1 \\ -2 \\ 0.5 \end{pmatrix}$ und $u = \begin{pmatrix} 3 \\ -1 \\ 0 \end{pmatrix}$
+
+    Dann ist $n = \begin{pmatrix} 0.5 \\ 1.5 \\ 5 \end{pmatrix}$ Normalenvektor von $E$ und $n \perp v, u$. 
+
+    <iframe src="https://www.geogebra.org/calculator/fq84pxup?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
     
 
-# TODO: Normalenvektor
+{{ task("tasks/pca/projektion/normalenvektor.yaml") }}
 
 {{ task("tasks/pca/projektion/projektion_auf_ebene.yaml") }}
 
-# TODO: Übungsaufgabe Projektion auf Hyperebene (2,3,4 dim.)
+{{ task("tasks/pca/projektion/final_projection.yaml") }}
 
 {{ task("tasks/pca/projektion/projektion_auf_ebene_programmieren.yaml") }}
 
