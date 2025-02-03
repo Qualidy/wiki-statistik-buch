@@ -56,8 +56,8 @@ solution: |
 
   \[
   cov(x, y) = E[(x - E[x])(y - E[y])]
-  = E[xy - x\cdotE[y] - y\cdotE[x] + E[x]E[y]]
-  = E[xy] - E[x\cdotE[y] - E[y\cdotE[x]] + E[E[x]E[y]]
+  = E[xy - x\cdot E[y] - y\cdot E[x] + E[x]E[y]]
+  = E[xy] - E[x \cdot E[y] - E[y\cdot E[x]] + E[E[x]E[y]]
   = E[xy] - E[x]E[y] - E[y]E[x] + E[x]E[y]
   = E[xy] - E[x]E[y]
   \]
