@@ -9,8 +9,17 @@ def define_env(env):
 
         if file:
             file_path = os.path.join(env.project_dir, file)
-            with open(file_path, 'r', encoding='utf-8') as file:
-                params.update(yaml.safe_load(file))
+            try:
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    params.update(yaml.safe_load(f))
+            except FileNotFoundError:
+                params.update({
+                    "title": f"Fehler: Die Datei '{file_path}' wurde nicht gefunden.",
+                })
+            except yaml.YAMLError as e:
+                params.update({
+                    "title": f"Fehler beim Laden der YAML-Datei '{file_path}': {e}",
+                })
 
         params.update(parameter)
 
