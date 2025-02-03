@@ -1,0 +1,50 @@
+title: Extremwerte einer Funktion mit quadratischer Nebenbedingung
+question: |
+  Bestimme die Extremstellen der Funktion 
+  
+  $$ f(x,y) = 3xy $$ 
+  
+  unter der Nebenbedingung 
+  
+  $$ x^2 + y^2 = 18. $$ 
+  
+  Verwende die Methode der Lagrange-Multiplikatoren.
+  
+  Erstelle gerne eine Visualisierung in Geogebra für das Problem.
+
+solution: |
+  **Lagrange-Funktion aufstellen**
+  
+  $$ L(x, y, \lambda) = 3xy + \lambda (18 - x^2 - y^2). $$
+
+  **Berechnung der Ableitungen:**
+  
+  $$ \frac{\partial L}{\partial x} = 3y - 2\lambda x = 0 $$
+  
+  $$ \frac{\partial L}{\partial y} = 3x - 2\lambda y = 0 $$
+  
+  $$ \frac{\partial L}{\partial \lambda} = 18 - x^2 - y^2 = 0 $$
+
+  **Gleichungssystem lösen:**
+  
+  Teilen der ersten durch die zweite Gleichung:
+  
+  $$ \frac{3y}{3x} = \frac{2\lambda x}{2\lambda y} $$
+  
+  $$ \frac{y}{x} = \frac{x}{y} $$
+  
+  $$ y^2 = x^2 \Rightarrow y = \pm x $$
+
+  Einsetzen in die Nebenbedingung:
+  
+  $$ x^2 + x^2 = 18 $$
+  
+  $$ 2x^2 = 18 \Rightarrow x^2 = 9 \Rightarrow x = \pm 3, y = \pm 3 $$
+
+  **Ermittlung der Extremstellen:**
+  
+  Die Lösungen sind:
+  
+  $$ (3,3), (-3,-3), (-3,3), (3,-3) $$
+
+  Diese Punkte sind mögliche Extremstellen.

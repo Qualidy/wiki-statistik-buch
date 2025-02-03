@@ -1,0 +1,50 @@
+title: Extremwerte unter Nebenbedingungen
+question: |
+  Untersuche die Funktion 
+  
+  $$ z = x^2 + 2xy $$ 
+  
+  auf Extremwerte unter der Nebenbedingung 
+  
+  $$ y = -1.5x + 6. $$ 
+  
+  Verwende die Methode der Lagrange-Multiplikatoren.
+  
+  Erstelle gerne eine Visualisierung in Geogebra für das Problem.
+
+solution: |
+  **Lagrange-Funktion aufstellen**
+  
+  $$ L(x, y, \lambda) = x^2 + 2xy + \lambda (-1.5x - y + 6). $$
+
+  **Berechnung der Ableitungen:**
+  
+  $$ \frac{\partial L}{\partial x} = 2x + 2y - 1.5\lambda = 0 $$
+  
+  $$ \frac{\partial L}{\partial y} = 2x - \lambda = 0 $$
+  
+  $$ \frac{\partial L}{\partial \lambda} = -1.5x - y + 6 = 0 $$
+
+  **Gleichungssystem lösen:**
+  
+  Setzen von $$ \lambda = 2x $$ in die erste Gleichung:
+  
+  $$ 2x + 2y - 1.5(2x) = 0 $$
+  
+  $$ 2x + 2y - 3x = 0 $$
+  
+  $$ -x + 2y = 0 $$
+  
+  $$ y = \frac{x}{2} $$
+  
+  Einsetzen in die Nebenbedingung:
+  
+  $$ -1.5x - \frac{x}{2} + 6 = 0 $$
+  
+  $$ -3x - x + 12 = 0 $$
+  
+  $$ -4x + 12 = 0 \Rightarrow x = 3 $$
+  
+  $$ y = \frac{3}{2} = 1.5 $$
+
+  Der Extrempunkt befindet sich bei $(3, 1.5)$.

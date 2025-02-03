@@ -1,0 +1,93 @@
+title: Extremwerte einer Funktion mit einer Nebenbedingung
+question: |
+  Untersuche die Funktion 
+  
+  $$ z = 4x^3 + xy - y + 2 $$ 
+  
+  auf Extremwerte unter der Nebenbedingung 
+  
+  $$ y = xy + 3x. $$ 
+  
+  Verwende die Methode der Lagrange-Multiplikatoren.
+  
+  Erstelle gerne eine Visualisierung in Geogebra für das Problem.
+
+solution: |
+  **Lagrange-Funktion aufstellen**
+  
+  $$ L(x,y,\lambda) = 4x^3 + xy - y + 2 + \lambda(y - xy - 3x). $$
+
+  **Berechnung der Ableitungen:**
+  
+  $$ \frac{\partial L}{\partial x} = 12x^2 + y - \lambda(y + 3) = 0 $$
+  
+  $$ \frac{\partial L}{\partial y} = x - 1 + \lambda(1 - x) = 0 $$
+  
+  $$ \frac{\partial L}{\partial \lambda} = y - xy - 3x = 0 $$
+
+  **Gleichungssystem lösen:**
+  
+  Aus der zweiten Gleichung folgt:
+  
+  $$ x - 1 + \lambda - \lambda x = 0 $$
+  
+  $$ x - \lambda x + \lambda - 1 = 0 $$
+  
+  $$ x(1 - \lambda) = 1 - \lambda $$
+  
+  Falls $1 - \lambda \neq 0$, dann folgt $x = 1$.
+
+  Einsetzen in die dritte Gleichung:
+  
+  $$ y - 1 \cdot y - 3 \cdot 1 = 0 $$
+  
+  $$ y - y - 3 = 0 \Rightarrow -3 = 0 $$, was ein Widerspruch ist.
+  
+  Daher muss $1 - \lambda = 0$ gelten, also $\lambda = 1$.
+
+  Setzen von $\lambda = 1$ in die erste Gleichung:
+  
+  $$ 12x^2 + y - 1(y + 3) = 0 $$
+  
+  $$ 12x^2 + y - y - 3 = 0 $$
+  
+  $$ 12x^2 - 3 = 0 $$
+  
+  $$ 12x^2 = 3 $$
+  
+  $$ x^2 = \frac{3}{12} = \frac{1}{4} $$
+  
+  $$ x = \pm \frac{1}{2} $$
+
+  Einsetzen in die Nebenbedingung:
+  
+  Für $x = \frac{1}{2}$:
+  
+  $$ y = \frac{1}{2} y + 3 \cdot \frac{1}{2} $$
+  
+  $$ y - \frac{1}{2} y = \frac{3}{2} $$
+  
+  $$ \frac{1}{2} y = \frac{3}{2} $$
+  
+  $$ y = 3 $$
+
+  Für $x = -\frac{1}{2}$:
+  
+  $$ y = -\frac{1}{2} y + 3 \cdot (-\frac{1}{2}) $$
+  
+  $$ y + \frac{1}{2} y = -\frac{3}{2} $$
+  
+  $$ \frac{3}{2} y = -\frac{3}{2} $$
+  
+  $$ y = -1 $$
+
+  **Bestimmung der Extremwerte durch zweite Ableitung:**
+  
+  Berechnung von $z''$ für die erhaltenen Werte:
+  
+  $$ z''(0.5) > 0 \Rightarrow \text{ Minimum bei } (0.5,3) $$  
+  $$ z''(-0.5) < 0 \Rightarrow \text{ Maximum bei } (-0.5,-1) $$
+
+  **Ergebnis:**
+  
+  Minimum bei $(0.5,3)$, Maximum bei $(-0.5,-1)$.
