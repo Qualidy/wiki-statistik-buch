@@ -1,7 +1,30 @@
 # Boxplots und Quantile
 
-{{ task(file="tasks\C_3_3_boxplots\aufgabe_box_1.yaml") }}
+## Aufgabe 1
 
-{{ task(file="tasks\C_3_3_boxplots\aufgabe_box_2.yaml") }}
+![](u1_aufgabe.png)
 
-{{ task(file="tasks\C_3_3_boxplots\aufgabe_box_3.yaml") }}
+LÖSUNG
+
+![](u1_loesung.png)
+
+
+## Aufgabe 2
+
+![](u2_aufgabe.png)
+
+LÖSUNG
+
+![](u2_loesung.png)
+
+
+## Aufgabe 3
+
+![](u3_aufgabe.png)
+
+LÖSUNG
+
+![](u3_loesung.png)
+
+
+
