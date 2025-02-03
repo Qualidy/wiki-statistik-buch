@@ -14,11 +14,11 @@ solution: |
   Der Normalenvektor muss orthogonal zu den beiden Spannvektoren sein:
 
   \[
-  \begin{pmatrix} -3 \\ 3 \\ 4 \end{pmatrix} \cdot \begin{pmatrix} a \\ b \\ c \end{pmatrix} = 0
+  \begin{pmatrix} -3 \\ 3 \\ 4 \end{pmatrix}^t \cdot \begin{pmatrix} a \\ b \\ c \end{pmatrix} = 0
   \]
 
   \[
-  \begin{pmatrix} 12 \\ 5 \\ 1 \end{pmatrix} \cdot \begin{pmatrix} a \\ b \\ c \end{pmatrix} = 0
+  \begin{pmatrix} 12 \\ 5 \\ 1 \end{pmatrix}^t \cdot \begin{pmatrix} a \\ b \\ c \end{pmatrix} = 0
   \]
 
   Dies ergibt das lineare Gleichungssystem:

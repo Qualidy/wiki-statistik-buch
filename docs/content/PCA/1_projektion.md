@@ -123,16 +123,16 @@ Warum funktioniert diese Rechenregel? Betrachten wir dazu die folgende Herleitun
 
 !!! formel "Hyperebene"
     
-    Eine **Hyperebene** ist ein Raum, der eine Dimension kleiner ist, als mein Hauptraum.
+    Eine **Hyperebene** ist ein Raum, der eine Dimension kleiner ist, als der Hauptraum.
 
 !!! beispiel
 
     Wenn der Hauptraum der 3-dimensionale Raum ist, dann ist ein Hyperraum eine Ebene, die unendlich groß ist und 
     durch den Nullpunkt geht. Diese Ebene muss nicht auf einer der Achsen liegen, sondern kann auch "quer"
-    im Raum sein. Das wichtige ist, dass man sich auf dieser Ebene nurnoch in zwei verschiedene Richtungen bewegen kann,
+    im Raum sein. Das wichtige ist, dass man sich auf dieser Ebene nur noch in zwei verschiedene Richtungen bewegen kann,
     während man im 3d-Raum noch drei orthogonale Richtungsvektoren hatte.
 
-    Wenn der Hauptraum ein 2d-Koordinatensystem ist, dann ist jede Linie, die durch den Nullpunkt geht eine Hyperebene.
+    Wenn der Hauptraum ein 2d-Koordinatensystem ist, dann ist jede Gerade, die durch den Nullpunkt geht eine Hyperebene.
     
 Jeder Hyperraum hat einen Normalenvektor, der senkrecht auf den Raum steht. Dieser ist nützlich, um alle 
 Punkte aus dem großen Raum auf den Hyperraum herunter zu projizieren.
@@ -156,13 +156,14 @@ Punkte aus dem großen Raum auf den Hyperraum herunter zu projizieren.
 
     erfüllen.
 
-    In unseren Untersuchungen sind ist jedoch immer $a = 0$, da 
+    In unseren Untersuchungen sind ist jedoch immer $a = 0$, da alle betrachteten Räume durch den Nullpunkt gehen.
 
 
 !!! beispiel 
 
     Gegeben sei eine Ebene $E$, die durch die Vektoren 
     $v = \begin{pmatrix} 1 \\ -2 \\ 0.5 \end{pmatrix}$ und $u = \begin{pmatrix} 3 \\ -1 \\ 0 \end{pmatrix}$
+    aufgespannt wird.
 
     Dann ist $n = \begin{pmatrix} 0.5 \\ 1.5 \\ 5 \end{pmatrix}$ Normalenvektor von $E$ und $n \perp v, u$. 
 

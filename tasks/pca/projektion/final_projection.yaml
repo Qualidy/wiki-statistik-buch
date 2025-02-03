@@ -15,26 +15,24 @@ question: |
 
   Dabei entspricht jede Spalte einem Merkmal und jede Zeile einer Beobachtung.
   
-  Projiziere die Daten zunächst erstens auf $v_1$ und zweites auf den von $v_1$ aufgespannten Hyperraum $E_1$.
+  a) $v_1 = (1,0,0)^t,v_2 = (0,0,1)^t,v_3 = (0,1,0)^t$
+  
+  b) $v_1 = (1,-2,0.5)^t,v_2 = (0.5, 1.5, 5)^t,v_3 = (43, 19, -10)^t$
+  
+  c) $v_1 = (1,-2,0.5)^t,v_2 = (0.5, 1.5, 5)^t,v_3 = (3,1,0)^t$
+  
+  Projiziere die Daten zunächst (i) auf $v_1$ und (ii) auf den von $v_1$ aufgespannten Hyperraum $E_1$.
   
   Die auf $v_1$ projizierten Daten bilden ein neues Merkmal.
   
-  Die Daten in $E_1$ werden nun wieder projiziert erstens auf einen Vektor $v_2$ und zweites auf den von $v_2$
+  Die Daten in $E_1$ werden nun wieder projiziert (i) auf einen Vektor $v_2$ und (ii) auf den von $v_2$
   aufgespannten Hyperraum $E_2$.
   
   Die auf $v_2$ projizierten Daten bilden ein neues Merkmal.
   
-  Schließlich werden die Daten in $E_2$ werden nun wieder projiziert erstens auf einen Vektor $v_3$ und 
-  zweites auf den von $v_3$
-  aufgespannten Hyperraum $E_3$.
+  Schließlich werden die Daten in $E_2$ werden nun wieder projiziert (i) auf einen Vektor $v_3$ und 
+  (ii) auf den von $v_3$ aufgespannten Hyperraum $E_3$.
   
   Die auf $v_3$ projizierten Daten bilden ein neues Merkmal.
   
-  Führe diese berechnungen durch für
-  
-  a) $v_1 = (1,0,0)^t,v_2 = (0,0,1)^t,v_3 = (0,1,0)^t$
-  
-  b) $v_1 = (1,-2,0.5)^t,v_2 = (0.5, 1.5, 5)^t,v_3 = (2,6,0.5)^t$
-  
-  c) $v_1 = (1,-2,0.5)^t,v_2 = (0.5, 1.5, 5)^t,v_3 = (3,1,0)^t$
-  
+tip: Nach der Projektion auf den den Vektor können die Zwischenergebnisse genutzt werden, um schneller die Projektion auf die Ebene zu bestimmen.
