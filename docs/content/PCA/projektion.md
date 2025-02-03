@@ -32,7 +32,7 @@ Wir müssen uns zunächst klar machen, was eine Projektion auf einen Vektor bede
     Sei $v \in \mathbb{R}^D$ ein Vektor, auf den projeziert werden soll.
 
     Dann sei $pr_v : \mathbb{R}^D \to \langle v \rangle : w \mapsto kv$, wobei ein $d\in \mathbb{R}^D$ existiert,
-    mit $w = kv$ und $d \perp v$ (das heißt $d$ steht senkrecht auf $v$).
+    mit $w = kv + d$ und $d \perp v$ (das heißt $d$ steht senkrecht auf $v$).
 
     <iframe src="https://www.geogebra.org/calculator/psst9sn4?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
 

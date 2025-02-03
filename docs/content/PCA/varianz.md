@@ -76,7 +76,14 @@ in Richtung unseres Zieles ist, einen Vektor $v$ zu finden, sodass $var(k)$ maxi
 !!! formel "Kovarianzmatrix"
 
     Es sei \( X \in \mathbb{R}^{N \times D} \) eine Datenmatrix mit \( N \) Beobachtungen und \( D \) Merkmalen.
-    Die **Kovarianzmatrix** \( \Sigma \) berechnet sich mit der Formel:
+	Es sei $X_i \in \mathbb{R}^N$ dabei das $i$-te Merkmal. 
+    Die Einträge der **Kovarianzmatrix** \( S \) berechnen sich mit der Formel:
+
+	$$
+	S_{ij} = cov(X_i, X_j), \text{ für } i,j \in \{ 1, \cdots , M\}
+	$$
+
+	
 
 {{ task("tasks/pca/varianz/kovarianzmatrix_ausrechnen.yaml") }}
 
