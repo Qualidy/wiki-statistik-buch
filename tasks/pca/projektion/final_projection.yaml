@@ -21,17 +21,17 @@ question: |
   
   c) $v_1 = (1,-2,0.5)^t,v_2 = (0.5, 1.5, 5)^t,v_3 = (3,1,0)^t$
   
-  Projiziere die Daten zunächst (i) auf $v_1$ und (ii) auf den von $v_1$ aufgespannten Hyperraum $E_1$.
+  Projiziere die Daten zunächst auf $v_1$ (i) und  auf den von $v_1$ aufgespannten Hyperraum $E_1$ (ii).
   
   Die auf $v_1$ projizierten Daten bilden ein neues Merkmal.
   
-  Die Daten in $E_1$ werden nun wieder projiziert (i) auf einen Vektor $v_2$ und (ii) auf den von $v_2$
-  aufgespannten Hyperraum $E_2$.
+  Die Daten in $E_1$ werden nun wieder projiziert auf den Vektor $v_2$ (iii) und auf den von $v_2$
+  aufgespannten Hyperraum $E_2$ (iv).
   
   Die auf $v_2$ projizierten Daten bilden ein neues Merkmal.
   
-  Schließlich werden die Daten in $E_2$ werden nun wieder projiziert (i) auf einen Vektor $v_3$ und 
-  (ii) auf den von $v_3$ aufgespannten Hyperraum $E_3$.
+  Schließlich werden die Daten in $E_2$ werden nun wieder projiziert auf den Vektor $v_3$ (v) und 
+  auf den von $v_3$ aufgespannten Hyperraum $E_3$ (vi) .
   
   Die auf $v_3$ projizierten Daten bilden ein neues Merkmal.
   
