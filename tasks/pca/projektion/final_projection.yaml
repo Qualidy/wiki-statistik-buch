@@ -35,4 +35,6 @@ question: |
   
   Die auf $v_3$ projizierten Daten bilden ein neues Merkmal.
   
+  Notieren Sie Matrizen mit den neuen Merkmalen.
+  
 tip: Nach der Projektion auf den den Vektor können die Zwischenergebnisse genutzt werden, um schneller die Projektion auf die Ebene zu bestimmen.
