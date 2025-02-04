@@ -1,4 +1,4 @@
-title: Kovarianzmatrix berechnen
+title: Kovarianzmatrix mit geschlossener Form berechnen
 question: |
   Gegeben ist eine Matrix \( X \) mit drei Merkmalen und zehn Beobachtungen:
 
