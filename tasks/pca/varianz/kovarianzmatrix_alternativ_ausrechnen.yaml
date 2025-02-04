@@ -1,129 +1,118 @@
 title: Kovarianzmatrix berechnen
 question: |
-  Gegeben ist eine Matrix \( X \) mit vier Merkmalen und fünf Beobachtungen:
+  Gegeben ist eine Matrix \( X \) mit drei Merkmalen und zehn Beobachtungen:
 
   \[
   X =
   \begin{pmatrix}
-  2 & 3 & 5 \\
-  1 & 4 & 4 \\
-  3 & 2 & 6 \\
-  4 & 5 & 7 \\
-  2 & 3 & 5
+  2 & 7 & 2 \\
+  4 & 8 & 6 \\
+  2 & 6 & 1 \\
+  7 & 6 & 3 \\
+  1 & 5 & 9 \\
+  1 & 4 & 6 \\
+  2 & 6 & 8 \\
+  1 & 8 & 3 \\
+  4 & 6 & 7 \\
+  6 & 4 & 5
   \end{pmatrix}
   \]
 
   Bestimmen Sie die Kovarianzmatrix mit Hilfe der **geschlossenen Form**.
+  
+  Baue gerne ein Programm, dass dir bei den Berechnungen hilft, sonst sind es sehr viele.
 solution: |
   **Mittelwert bestimmen:**
   
   \[
   \bar{X} =
   \begin{pmatrix}
-  2.4 \\
-  3.4 \\
-  5.4 \\
-  6.4 
+  3 \\ 6 \\ 5
   \end{pmatrix}
   \]
   
   **Faktoren bestimmen:**
   
   \[
-   X_1 - \bar{X} =
-  \begin{pmatrix}
-  -0.4 \\ -0.4 \\ -0.4 \\ 0.6
-  \end{pmatrix}, \quad
+  X_0 - \bar{X} =
+  \begin{pmatrix}-1\\1\\-3\end{pmatrix} \quad
+  X_1 - \bar{X} =
+  \begin{pmatrix}1\\2\\1\end{pmatrix} \quad
   X_2 - \bar{X} =
-  \begin{pmatrix}
-  -1.4 \\ 0.6 \\ -1.4 \\ -0.4
-  \end{pmatrix}, \quad
+  \begin{pmatrix}-1\\0\\-4\end{pmatrix} \quad
   X_3 - \bar{X} =
-  \begin{pmatrix}
-  0.6 \\ -1.4 \\ 0.6 \\ -1.4
-  \end{pmatrix}, \quad
+  \begin{pmatrix}4\\0\\-2\end{pmatrix} \quad
   X_4 - \bar{X} =
-  \begin{pmatrix}
-  1.6 \\ 1.6 \\ 1.6 \\ 1.6
-  \end{pmatrix}, \quad
+  \begin{pmatrix}-2\\-1\\4\end{pmatrix} \quad
   X_5 - \bar{X} =
-  \begin{pmatrix}
-  -0.4 \\ -0.4 \\ -0.4 \\ -0.4
-  \end{pmatrix}
+  \begin{pmatrix}-2\\-2\\1\end{pmatrix} \quad
+  X_6 - \bar{X} =
+  \begin{pmatrix}-1\\0\\3\end{pmatrix} \quad
+  X_7 - \bar{X} =
+  \begin{pmatrix}-2\\2\\-2\end{pmatrix} \quad
+  X_8 - \bar{X} =
+  \begin{pmatrix}1\\0\\2\end{pmatrix} \quad
+  X_9 - \bar{X} =
+  \begin{pmatrix}3\\-2\\0\end{pmatrix}
   \]
 
   **Summanden bestimmen:**
 
   \[
-  (X_1 - \bar{X})(X_1 - \bar{X})^T = 
-  \begin{pmatrix} 
-  0.16 & 0.16 & 0.16 & -0.24 \\
-  0.16 & 0.16 & 0.16 & -0.24 \\
-  0.16 & 0.16 & 0.16 & -0.24 \\
-  -0.24 & -0.24 & -0.24 & 0.36
-  \end{pmatrix}
+  (X_0 - \bar{X})(X_0 - \bar{X})^T =
+  \begin{pmatrix}1 & -1 & 3\\-1 & 1 & -3\\3 & -3 & 9\end{pmatrix}
+  \]
+  
+  \[
+  (X_1 - \bar{X})(X_1 - \bar{X})^T =
+  \begin{pmatrix}1 & 2 & 1\\2 & 4 & 2\\1 & 2 & 1\end{pmatrix}
+  \]
+  
+  \[
+  (X_2 - \bar{X})(X_2 - \bar{X})^T =
+  \begin{pmatrix}1 & 0 & 4\\0 & 0 & 0\\4 & 0 & 16\end{pmatrix}
+  \]
+  
+  \[
+  (X_3 - \bar{X})(X_3 - \bar{X})^T =
+  \begin{pmatrix}16 & 0 & -8\\0 & 0 & 0\\-8 & 0 & 4\end{pmatrix}
+  \]
+  
+  \[
+  (X_4 - \bar{X})(X_4 - \bar{X})^T =
+  \begin{pmatrix}4 & 2 & -8\\2 & 1 & -4\\-8 & -4 & 16\end{pmatrix}
+  \]
+  
+  \[
+  (X_5 - \bar{X})(X_5 - \bar{X})^T =
+  \begin{pmatrix}4 & 4 & -2\\4 & 4 & -2\\-2 & -2 & 1\end{pmatrix}
+  \]
+  
+  \[
+  (X_6 - \bar{X})(X_6 - \bar{X})^T =
+  \begin{pmatrix}1 & 0 & -3\\0 & 0 & 0\\-3 & 0 & 9\end{pmatrix}
+  \]
+  
+  \[
+  (X_7 - \bar{X})(X_7 - \bar{X})^T =
+  \begin{pmatrix}4 & -4 & 4\\-4 & 4 & -4\\4 & -4 & 4\end{pmatrix}
+  \]
+  
+  \[
+  (X_8 - \bar{X})(X_8 - \bar{X})^T =
+  \begin{pmatrix}1 & 0 & 2\\0 & 0 & 0\\2 & 0 & 4\end{pmatrix}
+  \]
+  
+  \[
+  (X_9 - \bar{X})(X_9 - \bar{X})^T =
+  \begin{pmatrix}9 & -6 & 0\\-6 & 4 & 0\\0 & 0 & 0\end{pmatrix}
   \]
 
   \[
-  (X_2 - \bar{X})(X_2 - \bar{X})^T = 
-  \begin{pmatrix} 
-  1.96 & -0.84 & 1.96 & 0.56 \\
-  -0.84 & 0.36 & -0.84 & -0.24 \\
-  1.96 & -0.84 & 1.96 & 0.56 \\
-  0.56 & -0.24 & 0.56 & 0.16
-  \end{pmatrix}
-  \]
-
-  \[
-  (X_3 - \bar{X})(X_3 - \bar{X})^T = 
-  \begin{pmatrix} 
-  0.36 & -0.84 & 0.36 & -0.84 \\
-  -0.84 & 1.96 & -0.84 & 1.96 \\
-  0.36 & -0.84 & 0.36 & -0.84 \\
-  -0.84 & 1.96 & -0.84 & 1.96
-  \end{pmatrix}
-  \]
-
-  \[
-  (X_4 - \bar{X})(X_4 - \bar{X})^T = 
-  \begin{pmatrix} 
-  2.56 & 2.56 & 2.56 & 2.56 \\
-  2.56 & 2.56 & 2.56 & 2.56 \\
-  2.56 & 2.56 & 2.56 & 2.56 \\
-  2.56 & 2.56 & 2.56 & 2.56
-  \end{pmatrix}
-  \]
-
-  \[
-  (X_5 - \bar{X})(X_5 - \bar{X})^T = 
-  \begin{pmatrix} 
-  0.16 & 0.16 & 0.16 & 0.16 \\
-  0.16 & 0.16 & 0.16 & 0.16 \\
-  0.16 & 0.16 & 0.16 & 0.16 \\
-  0.16 & 0.16 & 0.16 & 0.16
-  \end{pmatrix}
-  \]
-
-  **Summe bestimmen:**
-
-  \[
-  \sum_{i=1}^{5} (X_i - \bar{X}) (X_i - \bar{X})^T =
+  S = \frac{1}{N} \sum_{i=1}^{N} (x_i - \bar{X}) (x_i - \bar{X})^t
   \begin{pmatrix}
-  5.2 & 2.8 & 4.8 & 5.6 \\
-  2.8 & 5.2 & 4.4 & 5.2 \\
-  4.8 & 4.4 & 6.8 & 6.8 \\
-  5.6 & 5.2 & 6.8 & 9.2
-  \end{pmatrix}
-  \]
-
-  **Kovarianzmatrix bestimmen:**
-
-  \[
-  S = \frac{1}{5} \sum_{i=1}^{5} (X_i - \bar{X}) (X_i - \bar{X})^T =
-  \begin{pmatrix}
-  1.04 & 0.56 & 0.96 & 1.12 \\
-  0.56 & 1.04 & 0.88 & 1.04 \\
-  0.96 & 0.88 & 1.36 & 1.36 \\
-  1.12 & 1.04 & 1.36 & 1.84
+   4.2 & -0.3 & -0.7 \\
+  -0.3 &  1.8 & -1.1 \\
+  -0.7 & -1.1 &  6.4
   \end{pmatrix}
   \]
