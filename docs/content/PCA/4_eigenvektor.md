@@ -10,7 +10,7 @@ Ein solcher Vektor heißt dann ein **Eigenvektor** von \( f \) zum Eigenwert \( 
 
 
 !!! formel "Eigenvektor"
-    Ein Eigenvektor bzgl. \( f \) ist also ein Vektor, der nicht Null ist und der durch \( f \) um einen Faktor \( \lambda \), den Eigenwert, gestreckt wird.  
+    Ein Eigenvektor \( v \) bzgl. \( f \) ist ein Vektor, der nicht Null ist und der durch \( f \) um einen Faktor \( \lambda \), den Eigenwert, gestreckt wird.  
     Wir definieren:
 
     $$
@@ -22,6 +22,10 @@ Ein solcher Vektor heißt dann ein **Eigenvektor** von \( f \) zum Eigenwert \( 
 Dies ist ein Untervektorraum von \( V \).  
 Per Definition ist \( \lambda \in K \) ein Eigenwert von \( f \), wenn es einen Vektor \( v \neq 0 \) gibt, der zu \( E(f, \lambda) \) gehört.  
 \( E(f, \lambda) = \{ v \in V \mid f(v) = \lambda v \} \) ist ein **Untervektorraum** von \( V \).
+
+
+!!! beispiel "Bild zu Eigenvektoren"   
+    ![](Check Picture EV TF2.png)
 
 ## Berechnen von Eigenwerten und Eigenvektoren
 
@@ -66,8 +70,7 @@ $$
 
 <iframe src="https://www.geogebra.org/classic/j42zmkgz?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
 
-!!! beispiel
-    **Beispiel:**  
+!!! beispiel "Beispiel: Bestimmung von Eigenwerten"
     Wir bestimmen mal die Eigenwerte der folgenden Matrix:
 
     $$
@@ -105,8 +108,7 @@ $$
     Die Nullstellen des Polynoms sind dann die **Eigenwerte**.  
     Also in diesem Fall \( \lambda_{1,2} = 2 \) und \( \lambda_3 = -2 \).
 
-!!! beispiel
-    **Bestimmung der Eigenvektoren:**  
+!!! beispiel "Beispiel: Bestimmung von Eigenvektoren"
     Jetzt geht es weiter mit den Eigenvektoren. Dazu setzen wir die Eigenwerte für \( \lambda \) ein, zuerst \( \lambda = 2 \):
 
     $$
@@ -309,4 +311,3 @@ $$
 
 <iframe src="https://www.geogebra.org/classic/e8kydrx9?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
 
-![](Check Picture EV TF.png)
