@@ -27,6 +27,9 @@ Berechnen wir nun $var(k)$:
 \begin{align}
     var(k) &= \frac{1}{N} \sum_{i=1}^{N} (k_i - \bar{k})^2 \\
 	&= \frac{1}{N} \sum_{i=1}^{N} \left( \frac{v^t x_i}{|v|^2} - \frac{v^t \bar{x}}{|v|^2} \right)^2 \\
+	&= \frac{1}{N} \sum_{i=1}^{N} \left( \frac{1}{|v|^2} \left( v^t x_i - v^t \bar{x} \right) \right)^2 \\
+	&= \frac{1}{N} \sum_{i=1}^{N} \left( \frac{1}{|v|^2} \right)^2 \left( v^t x_i - v^t \bar{x} \right)^2 \\
+	&= \frac{1}{N} \sum_{i=1}^{N} \frac{1}{|v|^4} \left( v^t x_i - v^t \bar{x} \right)^2 \\
 	&= \frac{1}{|v|^4}\cdot \frac{1}{N} \sum_{i=1}^{N} \left( v^t x_i - v^t \bar{x} \right)^2 \\
 	&= \frac{1}{|v|^4}\cdot \frac{1}{N} \sum_{i=1}^{N} \left( v^t (x_i - \bar{x}) \right)^2 \\
 	&= \frac{1}{|v|^4}\cdot \frac{1}{N} \sum_{i=1}^{N} \left( v^t (x_i - \bar{x}) \right)\left( v^t (x_i - \bar{x}) \right) \\

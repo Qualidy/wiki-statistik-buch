@@ -3,3 +3,164 @@ question: |
   Erstelle eine Funktion `projection_faktor(v, w)`, die den Vektoren `w` auf den Vektor `v`
   projeziert. Das Ergebnis soll dabei nur der Faktor $k$ aus der Rechnung $pr_v(w) = kv$ sein, der oben beschrieben
   ist.
+solution: |
+  ```python
+  ### Daniel ####
+  import numpy as np
+  from unittest import TestCase
+  import unittest
+  from parameterized import parameterized
+  
+  def projection(n, w):
+       return [x - ((x @ n) / (n.T @ n)) * n.T for x in w]
+  
+  X = np.matrix([[2,3,5], [1,4,4], [3,2,6], [4,5,7], [2,3,5]])
+  
+  # a)
+  v1 = np.matrix([1,0,0]).T
+  v2 = np.matrix([0,0,1]).T
+  v3 = np.matrix([0,1,0]).T
+  
+  # a) Projektion auf v1
+  proj_v1_e1 = projection(X, v1)
+  print("a) Projektion auf v1:")
+  print(proj_v1_e1,"\n")
+  
+  # a) Projektion auf V2
+  proj_e1_v2 = projection(proj_v1_e1, v2)
+  print("a) Projektion auf v2:")
+  print(proj_e1_v2, "\n")
+  
+  # a) Projektion auf V3
+  proj_e1_v2 = projection(proj_e1_v2, v3)
+  print("a) Projektion auf v3:")
+  print(proj_e1_v2, "\n")
+  print()
+  
+  
+  # b)
+  v1 = np.matrix([1,-2,0.5]).T
+  v2 = np.matrix([0.5,1.5,5]).T
+  v3 = np.matrix([3,1,0]).T
+  
+  # b) Projektion auf v1
+  proj_v1_e1 = projection(X, v1)
+  print("b) Projektion auf v1:")
+  print(proj_v1_e1,"\n")
+  
+  # b) Projektion auf V2
+  proj_e1_v2 = projection(proj_v1_e1, v2)
+  print("b) Projektion auf v2:")
+  print(proj_e1_v2, "\n")
+  
+  # b) Projektion auf V3
+  proj_e1_v2 = projection(proj_e1_v2, v3)
+  print("b) Projektion auf v3:")
+  print(proj_e1_v2, "\n")
+  print()
+  
+  
+  # c)
+  v1 = np.matrix([1,-2,0.5]).T
+  v2 = np.matrix([0.5,1.5,5]).T
+  v3 = np.matrix([3,1,0]).T
+  
+  # c) Projektion auf v1
+  proj_v1_e1 = projection(X, v1)
+  print("c) Projektion auf v1:")
+  print(proj_v1_e1,"\n")
+  
+  # c) Projektion auf V2
+  proj_e1_v2 = projection(proj_v1_e1, v2)
+  print("c) Projektion auf v2:")
+  print(proj_e1_v2, "\n")
+  
+  # c) Projektion auf V3
+  proj_e1_v2 = projection(proj_e1_v2, v3)
+  print("c) Projektion auf v3:")
+  print(proj_e1_v2, "\n")
+  
+  
+  class TestProjection(TestCase):
+      @parameterized.expand([
+          (np.array([[2,3,5], [1,4,4], [3,2,6], [4,5,7], [2,3,5]]), np.array([1,0,0]), 
+           [np.array([0, 3, 5]), np.array([0, 4, 4]), np.array([0, 2, 6]), np.array([0, 5, 7]), np.array([0, 3, 5])]),
+          (np.array([[2,3,5], [1,4,4], [3,2,6], [4,5,7], [2,3,5]]), np.array([0,0,1]), 
+           [np.array([2, 3, 0]), np.array([1, 4, 0]), np.array([3, 2, 0]), np.array([4, 5, 0]), np.array([2, 3, 0])]),
+          (np.array([[2,3,5], [1,4,4], [3,2,6], [4,5,7], [2,3,5]]), np.array([0,1,0]), 
+           [np.array([2, 0, 5]), np.array([1, 0, 4]), np.array([3, 0, 6]), np.array([4, 0, 7]), np.array([2, 0, 5])]),
+      ])
+      def test_projection(self, X, n, expected):
+          result = projection(X, n)
+          for r, e in zip(result, expected):
+              np.testing.assert_array_almost_equal(r, e)
+              
+              
+  if __name__ == '__main__':
+      unittest.main()
+                
+  -------Johannes-------
+  import doctest
+  doctest.testmod()
+  import numpy as np
+  
+  
+  def projection(x, v):
+      """
+      X = np.array([[2, 3, 5],
+                [1, 4, 4],
+                [3, 2, 6],
+                [3, 5, 7],
+                [2, 3, 5]])
+      v1_a, v2_a, v3_a = np.array([1,0,0]), np.array([0,0,1]), np.array([0,1,0])
+      >>> projection(X, v1_a)
+      array([[0, 3, 5],
+                [0, 4, 4],
+                [0, 2, 6],
+                [0, 5, 7],
+                [0, 3, 5]])
+      """
+      return x - np.outer(np.dot(x, v) / np.dot(v, v), v)
+      
+  -----------Nick---------------
+  
+  
+  def projection(n, w):
+      if not n or not w:
+          raise ValueError('Bitte keine leeren Listen übergeben')
+      
+      vector_n = np.array(n)
+      vector_w = np.array(w)
+      
+      if vector_n.shape != vector_w.shape:
+          raise ValueError('Die Vektoren müssen den gleichen shape haben')
+      
+      
+      projection_1 = ((vector_w.T @ vector_n)/norm(n)**2) * vector_n
+      
+      return vector_w - projection_1
+    
+    
+    -----------Henrik---------------
+    
+  def norm(v):
+      sum = 0
+      for i in range(len(v)):
+          sum += v[i]**2
+      return math.sqrt(sum)
+  
+  def normalize(v):
+      return v / norm(v)
+  
+  def is_perpendicular(v, w):
+      return np.dot(w, v) == 0
+  
+  def projection_faktor(v, w):
+      if is_perpendicular(v, w):
+          return 0
+      return np.dot(w, v) / (norm(v)**2)
+  
+  def projection(n, w):
+      proj_w_n = w - projection_faktor(n, w) * n
+      return proj_w_n
+  ```
