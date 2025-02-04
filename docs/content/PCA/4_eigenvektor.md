@@ -2,14 +2,14 @@
 
 Die nächste zentrale Definition ist die von Eigenwerten und Eigenvektoren eines Endomorphismus eines Vektorraums.  
 
-!!! info
+!!! formel "Eigenwert"
     Sei \( f: V \to V \) ein Endomorphismus. Ein \( \lambda \in K \) heißt **Eigenwert** von \( f \), wenn es einen Vektor \( v \neq 0 \) gibt mit \( f(v) = \lambda v \). 
 
  
 Ein solcher Vektor heißt dann ein **Eigenvektor** von \( f \) zum Eigenwert \( \lambda \).
 
 
-!!! info
+!!! formel "Eigenvektor"
     Ein Eigenvektor bzgl. \( f \) ist also ein Vektor, der nicht Null ist und der durch \( f \) um einen Faktor \( \lambda \), den Eigenwert, gestreckt wird.  
     Wir definieren:
 
@@ -43,7 +43,7 @@ $$
 (A - \lambda E)v = 0
 $$
 
-!!! info
+!!! formel "Bestimmung von Eigenwerten"
     Um nun den Eigenwert zu berechnen, löst man diese Gleichung.  
     Da \( v \neq 0 \) vorausgesetzt wird, folgt, dass es nur dann lösbar ist, wenn \( (A - \lambda E) \) einen nicht trivialen Kern hat (also keinen Kern \( \neq 0 \)).  
     Das bedeutet wiederum, dass die Determinante 0 sein muss:
@@ -54,7 +54,7 @@ $$
 
     Diese Determinante nennt man das **charakteristische Polynom**. Die Nullstellen dieses Polynoms sind die Eigenwerte.
 
-!!! info
+!!! formel "Bestimmung von Eigenvektoren"
     Zur Bestimmung der Eigenvektoren setzt man den Eigenvektor in die Gleichung:
 
     $$
@@ -249,6 +249,8 @@ $$
 
     **Eigenvektor:** Der Eigenvektor einer Abbildung ist ein vom Nullvektor verschiedener Vektor, dessen Richtung durch die Abbildung nicht verändert wird.
 
+    Sonderfall: Für reelle **symmetrische** Matrizen gilt: Die Eigenvektoren zu verschiedenen Eigenwerten sind zueinander **orthogonal**.
+
     **Eigenwert:** Der Eigenwert ist der Skalierungsfaktor eines Eigenvektors.
 
     **injektiv:** Eine Funktion ist injektiv, wenn es zu jedem Element y
@@ -258,8 +260,7 @@ $$
     Eine quadratische Matrix ist genau dann invertierbar, wenn ihre Determinante ungleich null ist.
 
 
-!!! Info
-    **Herleitung: Eigenwerte \(\lambda\) erfüllen \( \det(\lambda E - A) = 0 \)**
+!!! tip "Herleitung: Eigenwerte \(\lambda\) erfüllen \( \det(\lambda E - A) = 0 \)"
     
     Das charakteristische Polynom ( \( \det(\lambda E - A) \) ) spielt eine wichtige Rolle bei der Bestimmung der Eigenwerte einer Matrix, denn die Eigenwerte sind genau die Nullstellen des charakteristischen Polynoms. Auch wenn man zum expliziten Berechnen des charakteristischen Polynoms immer eine Basis und damit eine Darstellungsmatrix auswählt, hängen das Polynom wie auch die Determinante nicht von dieser Wahl ab.
 
