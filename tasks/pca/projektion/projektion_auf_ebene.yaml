@@ -6,5 +6,7 @@ solution: |
   Wenn der Normalenvektor $n$ der Ebene $E$ auf dem Nullpunkt aufliegt, so gilt die Formel:
   
   $$
-  pr_E(w) = w - \frac{x^tn}{|n|^2}\cdot n 
+  pr_E(w) = w - \frac{w^tn}{|n|^2}\cdot n 
   $$
+  
+  für alle $w$, die projiziert werden sollen.
