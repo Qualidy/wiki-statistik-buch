@@ -10,7 +10,7 @@ Kovarianzmatrix $S$ von $X$ verwendet: $var(k) = \frac{1}{|v|^4} v^t S v$.
 
 Diese Formel hat aber noch ein gewisse Problematik, die wir durch die nächsten Übungsaufgaben erkennen wollen.
 
-{{ task("tasks/pca/lagrange/differentz_variances.yaml") }}
+{{ task("tasks/pca/lagrange/different_variances.yaml") }}
 
 Wir stellen also fest, dass der Faktor $\frac{1}{|v|^4}$ in $var(k)$ dafür sorgt, dass wir $var(k)$ minimieren
 können, indem wir ein $v$ wählen mit möglichst kleinem $v$. Das kann aber kein sinnvolles Vorgehen sein.
