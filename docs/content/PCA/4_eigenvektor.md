@@ -235,6 +235,8 @@ $$
     \end{pmatrix}
     $$
 
+{{ task(file="tasks/pca/eigenvektor/AufgabeEV0.yaml") }}
+
 {{ task(file="tasks/pca/eigenvektor/AufgabeEV.yaml") }}
 
 {{ task(file="tasks/pca/eigenvektor/AufgabeEV1_5.yaml") }}
