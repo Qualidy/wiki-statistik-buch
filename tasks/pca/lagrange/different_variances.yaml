@@ -1,0 +1,25 @@
+title: Varianzen bei Projekt
+question: |
+  Gegeben ist eine Matrix \( X \) mit drei Merkmalen und fünf Beobachtungen:
+
+  \[
+  X =
+  \begin{pmatrix}
+  2 & 3 & 5 \\
+  1 & 4 & 4 \\
+  3 & 2 & 6 \\
+  4 & 5 & 7 \\
+  2 & 3 & 5
+  \end{pmatrix}
+  \]
+
+  Dabei entspricht jede Spalte einem Merkmal und jede Zeile einer Beobachtung.
+  
+  Projiziere die Daten Auf die Vektor $v_1 = (1,0,0)^t,v_2 = (2,0,0)^t,v_3 = (1, -2, 0.5)^t$
+  
+  Berechne die Varianzen von $pr_{v_1}(X), pr_{v_2}(X)$ und $pr_{v_3}(X)$.
+  
+  Berechne die Kovarianzmatrix $S$ und prüfe, dass sich die Varianzen auch mit der Formel $\frac{1}{|v|^4} v^t S v$
+  berechnen lassen.
+
+tip: Schau mal in den alten Übungsaufgaben nach den Rechnungen 😉
