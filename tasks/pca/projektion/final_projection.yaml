@@ -38,3 +38,31 @@ question: |
   Notieren Sie Matrizen mit den neuen Merkmalen.
   
 tip: Nach der Projektion auf den den Vektor können die Zwischenergebnisse genutzt werden, um schneller die Projektion auf die Ebene zu bestimmen.
+solution: |
+  <iframe src="https://www.geogebra.org/calculator/ertzqddm?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+  
+  a)
+  
+  \[
+  \begin{pmatrix}
+  2 & 5 & 3 \\
+  1 & 4 & 4 \\
+  3 & 6 & 2 \\
+  4 & 7 & 5 \\
+  2 & 5 & 3
+  \end{pmatrix}
+  \]
+  
+  b)
+  
+    \[
+  X =
+  \begin{pmatrix}
+  -0.29 & 1.11 & \frac{31}{770} \\
+  -0.95 & 0.96 & \frac{79}{2310} \\
+  0.38 & 1.25 & \frac{107}{2310} \\
+  -0.48 & 1.62 & \frac{197}{2310} \\
+  -0.29 & 1.11 & \frac{31}{770} 
+  \end{pmatrix}
+  \]
+  

@@ -1,4 +1,4 @@
-# Varianz minimieren
+# Varianz maximieren
 
 Wir haben gesehen, wie man einen Punkt auf einen Vektor projiziert.
 
@@ -11,7 +11,7 @@ Hier können wir ein paar Rechnungen durchführen, die wichtige Erkenntnisse lie
 
 !!! formel "Wiederholung: Varianz"
 
-    Sei $x = (x_1, \cdots , x_N) \in (\mathbb{R}^D)^N$ ein Datensatz aus $N$ Daten und Dimenstion $D$.
+    Sei $x = (x_1, \cdots , x_N) \in (\mathbb{R}^D)^N$ ein Datensatz aus $N$ Daten und $D$ Merkmalen.
     Dann ist die Varianz von $X$ definiert als:
 
     $$
@@ -44,6 +44,8 @@ $$
 
 Wir werden gleich sehen, wie man die Kovarianzmatrix berechnet, doch ich versichere schonmal, dass dies ein großer Schritt
 in Richtung unseres Zieles ist, einen Vektor $v$ zu finden, sodass $var(k)$ maximal ist.
+
+{{ task("tasks/pca/varianz/projizierter_mittelwert.yaml") }}
 
 ## Kovarianz
 
