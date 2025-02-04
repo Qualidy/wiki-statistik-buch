@@ -237,6 +237,8 @@ $$
     \end{pmatrix}
     $$
 
+## Aufgaben zu Eigenwerten und Eigenvektoren
+
 {{ task(file="tasks/pca/eigenvektor/AufgabeEV0.yaml") }}
 
 {{ task(file="tasks/pca/eigenvektor/AufgabeEV.yaml") }}
@@ -245,6 +247,7 @@ $$
 
 {{ task(file="tasks/pca/eigenvektor/AufgabeEV2.yaml") }}
 
+## Begriffe und charakteristisches Polynom
 
 !!! Info
     **Kurze Übersicht/Wiederholung wichtiger Begriffe für die Herleitung**
