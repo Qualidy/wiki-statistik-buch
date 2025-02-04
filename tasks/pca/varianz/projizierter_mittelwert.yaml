@@ -1,0 +1,17 @@
+title: Projezierter Mittelwert
+question: |
+  Es sei $x = (x_1, \cdots , x_N) \in (\mathbb{R}^D)^N$ ein Datensatz aus $N$ Daten und $D$ Merkmalen.
+  Es Sei $v \in \mathbb{R}^N$ der Vektor auf den die $x_i$ projiziert werden.
+  
+  Es sei $k = (k_1, k_2, \cdots , k_N) \in \mathbb{R}^{N}$ mit 
+  $k_i = \frac{x_i^t v}{|v|^2} = \frac{v^t x_i}{|v|^2}$ die Projektionsfaktoren.
+  
+  Man erkläre, warum $\bar{k} = \frac{v^t \bar{x}}{|v|^2}$ ist.
+solution: |
+  $$
+  \bar{k} 
+  = \frac{1}{N} \sum_{i=1}^N k_i 
+  = \frac{1}{N} \sum_{i=1}^N \frac{v^t x_i}{|v|^2}
+  = \frac{v^t}{|v|^2} \frac{1}{N} \sum_{i=1}^N x_i
+  = \frac{v^t \bar{x}}{|v|^2}
+  $$
