@@ -237,6 +237,8 @@ $$
 
 {{ task(file="tasks/pca/eigenvektor/AufgabeEV.yaml") }}
 
+{{ task(file="tasks/pca/eigenvektor/AufgabeEV1_5.yaml") }}
+
 {{ task(file="tasks/pca/eigenvektor/AufgabeEV2.yaml") }}
 
 
@@ -301,5 +303,7 @@ $$
     \[
     \iff \lambda \text{ ist Nullstelle des charakteristischen Polynoms von } A
     \]
+
+<iframe src="https://www.geogebra.org/classic/e8kydrx9?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
 
 ![](Check Picture EV TF.png)
