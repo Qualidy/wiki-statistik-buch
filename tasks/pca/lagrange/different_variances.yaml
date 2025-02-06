@@ -5,11 +5,16 @@ question: |
   \[
   X =
   \begin{pmatrix}
-  2 & 3 & 5 \\
-  1 & 4 & 4 \\
-  3 & 2 & 6 \\
-  4 & 5 & 7 \\
-  2 & 3 & 5
+  2 & 7 & 2 \\
+  4 & 8 & 6 \\
+  2 & 6 & 1 \\
+  7 & 6 & 3 \\
+  1 & 5 & 9 \\
+  1 & 4 & 6 \\
+  2 & 6 & 8 \\
+  1 & 8 & 3 \\
+  4 & 6 & 7 \\
+  6 & 4 & 5
   \end{pmatrix}
   \]
 
@@ -17,9 +22,8 @@ question: |
   
   Projiziere die Daten Auf die Vektor $v_1 = (1,0,0)^t,v_2 = (2,0,0)^t,v_3 = (1, -2, 0.5)^t$
   
-  Berechne die Varianzen von $pr_{v_1}(X), pr_{v_2}(X)$ und $pr_{v_3}(X)$.
+  Berechne die Varianzen von $pr_{v_1}(X), pr_{v_2}(X)$ und $pr_{v_3}(X)$ auf zwei Weisen:
   
-  Berechne die Kovarianzmatrix $S$ und prüfe, dass sich die Varianzen auch mit der Formel $\frac{1}{|v|^4} v^t S v$
-  berechnen lassen.
+  * Unter Verwendung der Standardformel $\frac{1}{N} \sum_{i=1}^{N} (x_i - \bar{x})^2$,
+  * unter Verwendung der hergeleiteten Formel $\frac{1}{|v|^4} v^t S v$.
 
-tip: Schau mal in den alten Übungsaufgaben nach den Rechnungen 😉
