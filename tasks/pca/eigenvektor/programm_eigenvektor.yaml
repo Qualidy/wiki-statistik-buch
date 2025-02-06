@@ -1,0 +1,4 @@
+title: Eigenvektoren bestimmen
+question: |
+  Schreibe eine Funktion `eigenvectors(m, lambda)`, die zu einer Matrix `m` ihrem Eigenwert `lambda`
+  alle normierten Eigenvektoren berechnet und als Tupel zurückgibt.

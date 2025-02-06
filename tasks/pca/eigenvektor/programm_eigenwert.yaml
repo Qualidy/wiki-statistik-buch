@@ -1,0 +1,3 @@
+title: Eigenwerte bestimmen
+question: |
+  Schreibe eine Funktion `eigenvalues(m)`, die die Eigenwerte einer Matrix `m` berechnet und als Tupel zurückgibt.

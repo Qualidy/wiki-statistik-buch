@@ -128,6 +128,11 @@ eignet sich die sog. *Lagrange-Methode*.
     Das Maximum von \( f(x,y) \) ist \( \sqrt{5} \) bei \( \left(\frac{1}{\sqrt{5}}, \frac{2}{\sqrt{5}}\right) \).
     Das Minimum von \( f(x,y) \) ist \( -\sqrt{5} \) bei \( \left(-\frac{1}{\sqrt{5}}, -\frac{2}{\sqrt{5}}\right) \).
 
+!!! info
+
+    Wir untersuchen hier nur, **ob** ein Extremwert vorliegt. Ob dieser dann ein Hoch- oder Tiefpunkt ist, 
+    lässt sich nur unter Bestimmung der zweiten Ableitungen und dem Aufstellen und Untersuchen der Hesse-Matrix
+    feststellen. Dies ist aber für uns im Rahmen von PCA nicht relevant und wird daher gekonnt ignoriert.
 
 {{ task("tasks/pca/lagrange/R1.yaml") }}
 {{ task("tasks/pca/lagrange/R2.yaml") }}

@@ -249,8 +249,7 @@ $$
 
 ## Begriffe und charakteristisches Polynom
 
-!!! Info
-    **Kurze Übersicht/Wiederholung wichtiger Begriffe für die Herleitung**
+!!! Info "Kurze Übersicht/Wiederholung wichtiger Begriffe für die Herleitung"
 
     **Determinante:** Gibt an, wie sich das Volumen bei der durch die Matrix beschriebenen linearen Abbildung ändert.
 

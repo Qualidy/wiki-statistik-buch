@@ -1,0 +1,23 @@
+title: Vollständiges PCA ausrechnen
+question: |
+  Gegeben ist eine Matrix \( X \) mit drei Merkmalen und fünf Beobachtungen:
+
+  \[
+  X =
+  \begin{pmatrix}
+  2 & 7 & 2 \\
+  4 & 8 & 6 \\
+  2 & 6 & 1 \\
+  7 & 6 & 3 \\
+  1 & 5 & 9 \\
+  1 & 4 & 6 \\
+  2 & 6 & 8 \\
+  1 & 8 & 3 \\
+  4 & 6 & 7 \\
+  6 & 4 & 5
+  \end{pmatrix}
+  \]
+
+  Dabei entspricht jede Spalte einem Merkmal und jede Zeile einer Beobachtung.
+
+  Führen Sie mit diesem Datensatz PCA komplett durch.

@@ -1,8 +1,15 @@
 title: "Programmiere: Bestimmung von Eigenvektoren"
 question: |
   Es folgen 3 Aufgaben zur Bestimmung von Eigenvektoren. 
-  Führe für die Aufgaben 1 und 2 mindestens eine Berechnung per Hand aus. (z.B. 1a, 2a)
+  Führe für die Aufgaben die Berechnung per Hand aus.
 
-  Schreibe ein Programm zur Bestimmung von Eigenwerten und Eigenvektoren.
+  Schreibe dann ein Programm zur Bestimmung von Eigenwerten und Eigenvektoren:
+  
+  * Schreibe eine Funktion `eigenvalues(m)`, die die Eigenwerte einer Matrix `m` berechnet und als Tupel zurückgibt.
+    
+  * Schreibe eine Funktion `eigenvectors(m, lambda)`, die zu einer Matrix `m` ihrem Eigenwert `lambda` alle normierten Eigenvektoren berechnet und als Tupel zurückgibt.
+  
+  Das sind keine einfachen Aufgaben, vor allem, wenn es zu einem Eigenwert mehrere Eigenvektoren gibt. Achte in so einem Fall darauf, dass die gewählten Eigenvektoren senkrecht aufeinander stehen.
+  Wenn das zu kompliziert ist, gehe in deinen Rechnungen zunächst davon aus, dass jeder Eigenwert genau einen normierten Eigenvektor besitzt.
 
 tip: Zum Finden von Problemen im Algorithmus sind besonders die Sonderfälle in Aufgabe 2 geeignet.
