@@ -314,3 +314,25 @@ $$
 
 <iframe src="https://www.geogebra.org/classic/e8kydrx9?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
 
+
+## Orthogonale Eigenvektoren
+
+!!! tip "Herleitung: Eigenvektoren von symmetrischen Matrizen sind orthogonal"
+
+    Für zwei verschiedene Eigenvektoren $\mathbf{v}_i$ und $\mathbf{v}_j$ mit den Eigenwerten $\lambda_i$ und $\lambda_j$ gilt:
+
+    \[
+    A \mathbf{v}_i = \lambda_i \mathbf{v}_i, \quad A \mathbf{v}_j = \lambda_j \mathbf{v}_j.
+    \]
+
+    Wenn $A$ symmetrisch ist, folgt aus
+
+    \[
+    \mathbf{v}_i^T A \mathbf{v}_j = \mathbf{v}_i^T \lambda_j \mathbf{v}_j \quad \text{und} \quad (A \mathbf{v}_i)^T \mathbf{v}_j = \lambda_i \mathbf{v}_i^T \mathbf{v}_j \text{, dass}
+    \]
+
+    \[
+    (\lambda_i - \lambda_j) \mathbf{v}_i^T \mathbf{v}_j = 0.
+    \]
+
+    Falls $\lambda_i \neq \lambda_j$, muss $\mathbf{v}_i^T \mathbf{v}_j = 0$ sein, d.h. die Eigenvektoren sind orthogonal.
