@@ -335,3 +335,6 @@ $$
     \]
 
     Falls $\lambda_i \neq \lambda_j$, muss $\mathbf{v}_i^T \mathbf{v}_j = 0$ sein, d.h. die Eigenvektoren sind orthogonal.
+
+
+{{ task(file="tasks/pca/eigenvektor/AufgabeEV9.yaml") }}

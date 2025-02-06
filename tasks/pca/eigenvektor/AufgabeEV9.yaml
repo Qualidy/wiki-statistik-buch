@@ -1,0 +1,27 @@
+title: "4) Eigenvektoren von symmetrischen Matrizen berechnen"
+question: |
+  (i) Berechne die Eigenvektoren der folgenden Matrizen.
+ 
+  (ii) Verifiziere rechnerisch, dass die Eigenvektoren orthogonal zueinander stehen.
+
+  a)
+
+  \begin{pmatrix}
+  0 & 0 \\
+  0 & 0 \\
+  \end{pmatrix}
+
+  b)
+
+  \begin{pmatrix}
+  0 & 0 & 0 \\
+  0 & 0 & 0 \\
+  0 & 0 & 0
+  \end{pmatrix}
+
+
+solution: |
+  a) -
+
+  b) -
+ 
