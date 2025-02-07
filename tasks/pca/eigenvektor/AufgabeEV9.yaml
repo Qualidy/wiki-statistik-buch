@@ -7,21 +7,29 @@ question: |
   a)
 
   \begin{pmatrix}
-  0 & 0 \\
-  0 & 0 \\
+  7 & 4 \\
+  4 & 1 \\
   \end{pmatrix}
 
   b)
 
   \begin{pmatrix}
-  0 & 0 & 0 \\
-  0 & 0 & 0 \\
-  0 & 0 & 0
+  2 & 1 & 0 \\
+  1 & 1 & 1 \\
+  0 & 1 & 2
   \end{pmatrix}
 
 
 solution: |
-  a) -
+  a) $\lambda_{1}=-1$ und $\lambda_{2}=9$
+  
+  $v_{1}= \begin{pmatrix}  -\frac{1}{2} \\  1 \end{pmatrix}$ und 
+  $v_{2}= \begin{pmatrix}   2 \\  1 \end{pmatrix}$
+ 
 
-  b) -
+  b) $\lambda_{1}=0$ und $\lambda_{2}=2$ und $\lambda_{3}=3$
+
+  $v_{1}= \begin{pmatrix}  1 \\  -2 \\ 1 \end{pmatrix}$ und 
+  $v_{2}= \begin{pmatrix}   -1 \\  0 \\ 1 \end{pmatrix}$ und 
+  $v_{3}= \begin{pmatrix}   1 \\  1 \\ 1 \end{pmatrix}$
  
