@@ -21,5 +21,5 @@ Wir haben nun alle theoretsichen Bausteine für PCA zusammengestellt.
     und so die neuen Merkmale erhält.
 
 
-{{ task(file="tasks/pca/eigenvektor/full.yaml") }}
-{{ task(file="tasks/pca/eigenvektor/implement_pca.yaml") }}
+{{ task(file="tasks/pca/pca/full.yaml") }}
+{{ task(file="tasks/pca/pca/implement_pca.yaml") }}

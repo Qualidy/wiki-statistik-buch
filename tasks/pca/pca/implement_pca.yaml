@@ -1,3 +1,18 @@
 title: PCA implementieren
 question: |
-  Implementieren Sie eine Klasse `CusotmPCA`, die von
+  Implementieren Sie eine Klasse `CustomPCA`, die von `BaseEstimator` und `TransformerMixin` ableitet. (Erkläre warum!)
+  
+  Diese Klasse muss die Methoden `fit(self, X, y=None)` `transform(self, X)`, `fit_transform(self, X, y=None)`
+  implementieren (die `y` Parameter werden nicht benötigt, müssen aber als Parameter vorhanden sein.
+  
+  Weiterhin soll `init(self, n_components)` in der Klasse vorliegen, in der über `n_components`
+  festgelegt wird, wie viele Dimensionen die Ausgabe haben soll.
+
+tip: |
+  Legen Sie ein Feld `components_` an, in dem die Eigenvektoren gespeichert werden, sodass die 
+  `transform` Funktion wie folgt implementiert werden werden kann:
+  
+  ```python
+  def transform(self, X):
+      return np.dot(X - np.mean(X, axis=0), self.components_.T)
+  ```
