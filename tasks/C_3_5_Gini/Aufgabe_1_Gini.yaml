@@ -1,0 +1,21 @@
+title: "1) Umsätze in 4 Märkten"
+question: |
+  Gegeben sind in 4 Märkten folgende Verteilungen des Gesamtumsatzes auf die verschiedenen konkurrierenden Firmen:
+
+  | Firma    | Markt 1 | Markt 2 | Markt 3 |
+  |----------|---------|---------|---------|
+  | Firma A  | 10      | 10      | 20      |
+  | Firma B  | 10      | 30      | 15      |
+  | Firma C  | 10      | 10      | 12      | 
+  | Firma D  | 0       | 10      | 2       | 
+  | Firma E  | 0       | 0       | 1       | 
+
+  **Aufgabe:** 
+  (a) Erstelle die Lorenzkurve für jeden Markt.
+
+  (b) Berechne den normierten Gini-Koeffizienten G* für jeden Markt.
+
+solution: |
+  a)
+  
+  ![](gini_1a.png)
