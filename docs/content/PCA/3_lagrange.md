@@ -12,9 +12,7 @@ Diese Formel hat aber noch ein gewisse Problematik, die wir durch die nächsten 
 
 {{ task("tasks/pca/lagrange/different_variances.yaml") }}
 
-!!! beispiel
-
-    <iframe src="https://www.geogebra.org/calculator/jh6bq8v7?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+<iframe src="https://www.geogebra.org/calculator/jh6bq8v7?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
 
 Wir stellen also fest, dass der Faktor $\frac{1}{|v|^4}$ in $var(k)$ dafür sorgt, dass wir $var(k)$ minimieren
 können, indem wir ein $v$ wählen mit möglichst großem $|v|$. Das kann aber kein sinnvolles Vorgehen sein.
