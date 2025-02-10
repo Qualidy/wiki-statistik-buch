@@ -21,6 +21,19 @@ question: |
   Multipliziere einmal vollständig das Produkt \( x^t A x \) aus. 
   
   Bilde dann die partiellen Ableitungen \( \frac{\partial x^t A x}{\partial x_1} \), \( \frac{\partial x^t A x}{\partial x_2} \) und \( \frac{\partial x^t A x}{\partial x_3} \).
+  
+  Sie lässt sich 
+  
+  $$
+  \frac{\partial x^t A x}{\partial x} = 
+  \begin{pmatrix}
+  \frac{\partial x^t A x}{\partial x_1} \\
+  \frac{\partial x^t A x}{\partial x_2} \\
+  \frac{\partial x^t A x}{\partial x_3} 
+  \end{pmatrix}
+  $$
+  
+  kürzer ausdrücken?
 
 tip: Die Matrix ist symmetrisch, sodass sich die Terme beim Multiplizieren vereinfacht addieren lassen.
 solution: |

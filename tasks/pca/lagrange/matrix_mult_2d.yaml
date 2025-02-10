@@ -24,18 +24,16 @@ question: |
   Bilde dann die die partiellen Ableitung $x^t A x$ nach $x_1$, $x_2$ und $x_3$.
   
     
-  Wie lässt sich 
+  Notieren Sie
   
   $$
   \frac{\partial x^t A x}{\partial x} = 
   \begin{pmatrix}
   \frac{\partial x^t A x}{\partial x_1} \\
-  \frac{\partial x^t A x}{\partial x_2} \\
-  \frac{\partial x^t A x}{\partial x_3} 
+  \frac{\partial x^t A x}{\partial x_2} 
   \end{pmatrix}
   $$
   
-  mit $A$ und $x$ kürzer ausdrücken?
 
 
 tip: Dabei erhälst du ein Polynom mit zwei Unbekannten.
@@ -63,6 +61,6 @@ solution: |
   Insgesamt können wir notieren:
   
   $$
-  \frac{\partial x^t A x}{\partial x} = \begin{pmatrix}  4x_1 - 2x_2 \\  -2x_1 + 8x_2  \end{pmatrix} = 2Ax
+  \frac{\partial x^t A x}{\partial x} = \begin{pmatrix}  4x_1 - 2x_2 \\  -2x_1 + 8x_2  \end{pmatrix}
   $$
   

@@ -168,11 +168,94 @@ bilden.
 
 ### Ableitung von $x^tAx$
 
+
+!!! beispiel
+    
+    Gegeben sei die Matrix
+  
+    \[
+    A = \begin{pmatrix}
+    1 & 0 \\
+    -1 & 2 
+    \end{pmatrix}
+    \]
+
+    und der Vektor 
+    
+    
+    \[
+    x = \begin{pmatrix}
+    x_1 \\
+    x_2 
+    \end{pmatrix}
+    \]
+
+    Zunächst berechnen wir $x^t A x$:
+
+    \[
+    \begin{align}
+    x^t A x &= \begin{pmatrix} x_1 & x_2 \end{pmatrix}\begin{pmatrix} 1 & 0 \\ -1 & 2 \end{pmatrix}\begin{pmatrix} x_1 \\ x_2 \end{pmatrix} \\
+            &= \begin{pmatrix} 1x_1 -1x_2 & 2x_2 \end{pmatrix}\begin{pmatrix} x_1 \\ x_2 \end{pmatrix} \\
+            &= \begin{pmatrix} (x_1 -x_2)x_1 + 2x_2\cdot x_2 \end{pmatrix} \\
+            &= x_1^2 - x_1 x_2 + 2x_2^2
+    \end{align}
+    \]
+  
+    Die partiellen Ableitungen von $x^t A x$ nach $x_1$ und $x_2$ sind:
+
+    $$
+    \frac{\partial x^t A x}{\partial x} = 
+    \begin{pmatrix}
+    \frac{\partial x^t A x}{\partial x_1} \\
+    \frac{\partial x^t A x}{\partial x_2} 
+    \end{pmatrix} = 
+    \begin{pmatrix}
+    2x_1 - x_2 \\
+    4x_2 - x_1 
+    \end{pmatrix}
+    $$
+  
+
 {{ task("tasks/pca/lagrange/matrix_mult_2d.yaml") }}
 
 {{ task("tasks/pca/lagrange/matrix_mult_3d.yaml") }}
 
-Ziel: Ableitung von $\frac{\partial x^t A x}{\partial x} = 2Ax$
+{{ youtube_video("https://www.youtube.com/embed/e73033jZTCI?si=R6zZwAoMAMR5oSmR", open=True) }}
+
+
+
+!!! formel "Ableitung von $x^t A x$"
+    
+    Es seien $x\in \mathbb{R}^D$ und $A\in \mathbb{R}^{D\times D}$ eine Matrix.
+    Dann ist
+
+    \[
+    x^t A x = x^t \begin{pmatrix} \sum a_{1i} x_i \\ \vdots\\ \sum a_{Di} x_i \end{pmatrix}
+            = \sum_i \sum_j a_{ij}x_i x_j
+    \]
+    
+    Und die partiellen Ableitungen hat dann die Form:
+    
+    $$ 
+    \begin{equation}
+       \frac{\partial (x^t A x)_{ij}}{\partial x_k} 
+        = \frac{\partial \sum_i \sum_j a_{ij}x_i x_j}{\partial x_k} = 
+       \begin{cases}
+         0 & \text{für } j \neq k \neq i \\
+         a_{ik}x_i & \text{für } j = k \neq i \\
+         a_{kj}x_j & \text{für } j \neq k = i \\
+         2a_{kk}x_k & \text{für } j = k = i 
+       \end{cases}
+    \end{equation}
+    $$
+
+
+!!! formel "Ableitung von $x^t A x$ bei symetrischen Matrizen"
+    
+    Es seien $x\in \mathbb{R}^D$ und $A\in \mathbb{R}^{D\times D}$ eine **symetrische** Matrix.
+    Dann ist
+
+    $$ \frac{\partial x^t A x}{\partial x} = 2Ax $$
 
 Wir können nun also Lagrange ausführen. Wir leiten 
 
