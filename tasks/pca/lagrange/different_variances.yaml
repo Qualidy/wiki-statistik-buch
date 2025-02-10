@@ -22,8 +22,28 @@ question: |
   
   Projiziere die Daten Auf die Vektor $v_1 = (1,0,0)^t,v_2 = (2,0,0)^t,v_3 = (1, -2, 0.5)^t$
   
-  Berechne die Varianzen von $pr_{v_1}(X), pr_{v_2}(X)$ und $pr_{v_3}(X)$ auf zwei Weisen:
+  Berechne die Varianzen der Vorfaktoren aus $pr_{v_1}(X), pr_{v_2}(X)$ und $pr_{v_3}(X)$ auf zwei Weisen:
   
   * Unter Verwendung der Standardformel $\frac{1}{N} \sum_{i=1}^{N} (x_i - \bar{x})^2$,
   * unter Verwendung der hergeleiteten Formel $\frac{1}{|v|^4} v^t S v$.
 
+solution: |
+  Vorfaktoren der Projizierten Daten:
+  
+  | Index | $proj_{v_1}$ | $proj_{v_2}$ | $proj_{v_3}$  |
+  |-------|---------|---------|----------|
+  | 0     | $2.0$     | $1.0$     | $-2.0952$  |
+  | 1     | $4.0$     | $2.0$     | $-1.7143$  |
+  | 2     | $2.0$     | $1.0$     | $-1.8095$  |
+  | 3     | $7.0$     | $3.5$     | $-0.6667$  |
+  | 4     | $1.0$     | $0.5$     | $-0.8571$  |
+  | 5     | $1.0$     | $0.5$     | $-1.2857$  |
+  | 6     | $2.0$     | $1.0$     | $-1.9048$  |
+  | 7     | $1.0$     | $0.5$     | $-0.3810$  |
+  | 8     | $4.0$     | $2.0$     | $-1.2381$  |
+  | 9     | $6.0$     | $3.0$     | $-1.1905$  |
+
+  
+  Varianz für Projektion auf $v_1$: $3.04$
+  Varianz für Projektion auf $v_2$: $12.16$
+  Varianz für Projektion auf $v_3$: $7.84$
