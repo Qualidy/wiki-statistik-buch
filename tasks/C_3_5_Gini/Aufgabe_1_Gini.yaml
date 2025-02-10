@@ -2,13 +2,13 @@ title: "1) Umsätze in 4 Märkten"
 question: |
   Gegeben sind in 4 Märkten folgende Verteilungen des Gesamtumsatzes auf die verschiedenen konkurrierenden Firmen:
 
-  | Firma    | Markt 1 | Markt 2 | Markt 3 |
-  |----------|---------|---------|---------|
-  | Firma A  | 40      | 15      | 25      |
-  | Firma B  | 10      | 30      | 20      |
-  | Firma C  | 10      | 10      | 15      | 
-  | Firma D  | 0       | 10      | 10      | 
-  | Firma E  | 0       | 0       | 5       | 
+  | Firma    | Markt 1 | Markt 2 | Markt 3 | Markt 4 |
+  |----------|---------|---------|---------|---------|
+  | Firma A  | 40      | 15      | 25      | 20      |
+  | Firma B  | 10      | 30      | 20      | 20      |
+  | Firma C  | 10      | 10      | 15      | 20      |
+  | Firma D  | 0       | 10      | 10      | 20      | 
+  | Firma E  | 0       | 0       | 5       | 20      | 
 
   **Aufgabe:** 
   (a) Erstelle die Lorenzkurve für jeden Markt.
@@ -22,8 +22,8 @@ solution: |
 
   b) 
 
-  |    | Markt 1 | Markt 2 | Markt 3 |
-  |----|---------|---------|---------|
-  | G  | 0.6     | 0.4     | 0.2666  |
-  | G* | 0.75    | 0.5     | 0.3333  |
+  |    | Markt 1 | Markt 2 | Markt 3                              | Markt 4 |
+  |----|---------|---------|--------------------------------------|---------|
+  | G  | 0.6     | 0.4     | \( \frac{4}{15} = 0.2\overline{6} \) | 0       |
+  | G* | 0.75    | 0.5     | \( \frac{1}{3} = 0.\overline{3} \)   | 0       |
  
