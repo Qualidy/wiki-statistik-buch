@@ -9,7 +9,11 @@ question: |
     
   * Schreibe eine Funktion `eigenvectors(m, lambda)`, die zu einer Matrix `m` ihrem Eigenwert `lambda` alle normierten Eigenvektoren berechnet und als Tupel zurückgibt.
   
-  Das sind keine einfachen Aufgaben, vor allem, wenn es zu einem Eigenwert mehrere Eigenvektoren gibt. Achte in so einem Fall darauf, dass die gewählten Eigenvektoren senkrecht aufeinander stehen.
-  Wenn das zu kompliziert ist, gehe in deinen Rechnungen zunächst davon aus, dass jeder Eigenwert genau einen normierten Eigenvektor besitzt.
+tip: + Zum Finden von Problemen im Algorithmus sind besonders die Sonderfälle in Aufgabe 2 geeignet.
 
-tip: Zum Finden von Problemen im Algorithmus sind besonders die Sonderfälle in Aufgabe 2 geeignet.
+  + Wenn es zu einem Eigenwert mehrere Eigenvektoren gibt, ist dies nochmal deutlich schwerer. Dies *kann* beispielsweise passieren, wenn es eine Gleichung der Form $(5-\lambda)^2=0$ gibt.
+  Wenn es zwei linear unabhängige Eigenvektoren gibt, spannen diese eine Ebene auf. Dadurch ist die konkrete Wahl der Eigenvektoren sehr flexibel. 
+
+    + **Achte in so einem Fall darauf, dass die gewählten Eigenvektoren senkrecht aufeinander stehen**. (Dies ist optional, aber hilfreich.) 
+
+    + Wenn das zu kompliziert ist, gehe in deinen Rechnungen zunächst davon aus, dass jeder Eigenwert genau einen normierten Eigenvektor besitzt. (Dies ist oft korrekt, aber eben nicht immer.)
