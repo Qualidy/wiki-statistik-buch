@@ -318,23 +318,30 @@ $$
 
 !!! tip "Herleitung: Eigenvektoren von symmetrischen Matrizen sind orthogonal"
 
-    Für zwei verschiedene Eigenvektoren $\mathbf{v}_i$ und $\mathbf{v}_j$ mit den Eigenwerten $\lambda_i$ und $\lambda_j$ gilt:
+    Für zwei **verschiedene** Eigenvektoren $\mathbf{v}_i$ und $\mathbf{v}_j$ mit den Eigenwerten $\lambda_i$ und $\lambda_j$ gilt:
 
     \[
     A \mathbf{v}_i = \lambda_i \mathbf{v}_i, \quad A \mathbf{v}_j = \lambda_j \mathbf{v}_j.
     \]
 
-    Wenn $A$ symmetrisch ist, folgt aus
+    Wenn $A$ symmetrisch (d.h. $A = A^t$) ist, folgt:
 
     \[
-    \mathbf{v}_i^T A \mathbf{v}_j = \mathbf{v}_i^T \lambda_j \mathbf{v}_j \quad \text{und} \quad (A \mathbf{v}_i)^T \mathbf{v}_j = \lambda_i \mathbf{v}_i^T \mathbf{v}_j \text{, dass}
+    \begin{array}{rrl}
+    \Leftrightarrow & A^t &=& A \\
+    \Leftrightarrow & v_i^t A^t &=& v_i^t A \\
+    \Leftrightarrow & v_i^t A^t v_j &=& v_i^t A v_j \\
+    \Leftrightarrow & (A v_i)^t v_j &=& v_i^t A v_j \\
+    \Leftrightarrow & (\lambda_i v_i)^t v_j &=& v_i^t \lambda_j v_j \\
+    \Leftrightarrow & \lambda_i v_i^t v_j &=&  \lambda_j v_i^t v_j \\
+    \Leftrightarrow & \lambda_i v_i^t v_j - \lambda_j v_i^t v_j &=& 0 \\
+    \Leftrightarrow & (\lambda_i- \lambda_j) v_i^t v_j  &=& 0 \\
+    \Leftrightarrow & v_i^t v_j  &=& 0 \\
+    \Leftrightarrow & v_i^t \perp v_j
+    \end{array}
     \]
 
-    \[
-    (\lambda_i - \lambda_j) \mathbf{v}_i^T \mathbf{v}_j = 0.
-    \]
-
-    Falls $\lambda_i \neq \lambda_j$, muss $\mathbf{v}_i^T \mathbf{v}_j = 0$ sein, d.h. die Eigenvektoren sind orthogonal.
+    Da $\lambda_i \neq \lambda_j$, muss $v_i^T v_j = 0$ sein. Das ist dann $v_i^t \perp v_j$. 
 
 
 {{ task(file="tasks\pca\eigenvektor\AufgabeEV4.yaml") }}

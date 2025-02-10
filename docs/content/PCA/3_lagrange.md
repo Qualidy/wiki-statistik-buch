@@ -266,7 +266,7 @@ $$
 nach $v$ ab und setzen den Term gleich $0$: 
 
 $$
-\frac{\partial L(v,\lambda)}{\partial v} = 2Sv + 2\lambda v = 0
+\frac{\partial L(v,\lambda)}{\partial v} = 2Sv - 2\lambda v = 0
 $$
 
 Wir können den Term umstellen zu:
