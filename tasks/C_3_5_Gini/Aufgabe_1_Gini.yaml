@@ -4,11 +4,11 @@ question: |
 
   | Firma    | Markt 1 | Markt 2 | Markt 3 |
   |----------|---------|---------|---------|
-  | Firma A  | 10      | 10      | 20      |
-  | Firma B  | 10      | 30      | 15      |
-  | Firma C  | 10      | 10      | 12      | 
-  | Firma D  | 0       | 10      | 2       | 
-  | Firma E  | 0       | 0       | 1       | 
+  | Firma A  | 40      | 15      | 25      |
+  | Firma B  | 10      | 30      | 20      |
+  | Firma C  | 10      | 10      | 15      | 
+  | Firma D  | 0       | 10      | 10      | 
+  | Firma E  | 0       | 0       | 5       | 
 
   **Aufgabe:** 
   (a) Erstelle die Lorenzkurve für jeden Markt.
@@ -19,3 +19,11 @@ solution: |
   a)
   
   ![](gini_1a.png)
+
+  b) 
+
+  |    | Markt 1 | Markt 2 | Markt 3 |
+  |----|---------|---------|---------|
+  | G  | 0.6     | 0.4     | 0.2666  |
+  | G* | 0.75    | 0.5     | 0.3333  |
+ 
