@@ -23,6 +23,13 @@ question: |
   8 & -1 \\
   \end{pmatrix}
 
+  d)
+
+  \begin{pmatrix}
+  2 & 3 \\
+  0 & 2 \\
+  \end{pmatrix}
+
 solution: |
   a) $(2-\lambda)(1-\lambda)=0$
 
@@ -45,3 +52,9 @@ solution: |
   
   $v_{1}= \begin{pmatrix}  \frac{1}{2} \\  1 \end{pmatrix}$ und 
   $v_{2}= \begin{pmatrix}   0 \\  1 \end{pmatrix}$ 
+
+  d) $(2-\lambda)^2=0$
+
+  $\lambda_{1}=2$
+  
+  $v_{1}= \begin{pmatrix}  1 \\  0 \end{pmatrix}$

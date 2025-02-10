@@ -239,13 +239,13 @@ $$
 
 ## Aufgaben zu Eigenwerten und Eigenvektoren
 
-{{ task(file="tasks/pca/eigenvektor/AufgabeEV0.yaml") }}
+{{ task(file="tasks/pca/eigenvektor/AufgabeEV0_program.yaml") }}
 
-{{ task(file="tasks/pca/eigenvektor/AufgabeEV.yaml") }}
-
-{{ task(file="tasks/pca/eigenvektor/AufgabeEV1_5.yaml") }}
+{{ task(file="tasks/pca/eigenvektor/AufgabeEV1.yaml") }}
 
 {{ task(file="tasks/pca/eigenvektor/AufgabeEV2.yaml") }}
+
+{{ task(file="tasks/pca/eigenvektor/AufgabeEV3.yaml") }}
 
 ## Begriffe und charakteristisches Polynom
 
@@ -337,4 +337,4 @@ $$
     Falls $\lambda_i \neq \lambda_j$, muss $\mathbf{v}_i^T \mathbf{v}_j = 0$ sein, d.h. die Eigenvektoren sind orthogonal.
 
 
-{{ task(file="tasks/pca/eigenvektor/AufgabeEV9.yaml") }}
+{{ task(file="tasks\pca\eigenvektor\AufgabeEV4.yaml") }}
