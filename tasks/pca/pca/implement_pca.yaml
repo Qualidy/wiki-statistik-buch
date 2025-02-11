@@ -10,7 +10,7 @@ question: |
   
   **🚀Bonus:**
   Erstelle eine Beispiel, bei der du einen echten Datensatz einlädst und mit `CustomPCA` transformierst.
-  Baue Sie dabei gerne in eine [Pipeline](https://scikit-learn.org/stable/modules/compose.html) in.
+  Baue Sie dabei gerne in eine [Pipeline](https://scikit-learn.org/stable/modules/compose.html) ein.
 
 tip: |
   Legen Sie ein Feld `components_` an, in dem die Eigenvektoren gespeichert werden, sodass die 

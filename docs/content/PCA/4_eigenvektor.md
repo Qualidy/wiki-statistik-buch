@@ -344,6 +344,6 @@ $$
     Da $\lambda_i \neq \lambda_j$, muss $v_i^t v_j = 0$ sein. Das ist dann $v_i \perp v_j$. 
 
 
-{{ task(file="tasks\pca\eigenvektor\AufgabeEV4.yaml") }}
+{{ task(file="tasks/pca/eigenvektor/AufgabeEV4.yaml") }}
 
-{{ task(file="tasks\pca\eigenvektor\AufgabeEV5.yaml") }}
+{{ task(file="tasks/pca/eigenvektor/AufgabeEV5.yaml") }}
