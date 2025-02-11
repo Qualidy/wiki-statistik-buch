@@ -32,4 +32,6 @@ solution: |
   $v_{1}= \begin{pmatrix}  1 \\  -2 \\ 1 \end{pmatrix}$ und 
   $v_{2}= \begin{pmatrix}   -1 \\  0 \\ 1 \end{pmatrix}$ und 
   $v_{3}= \begin{pmatrix}   1 \\  1 \\ 1 \end{pmatrix}$
+
+  ![](eigenvektor_symmetrisch.png)
  

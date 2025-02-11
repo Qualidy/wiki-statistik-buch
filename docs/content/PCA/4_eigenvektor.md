@@ -347,3 +347,14 @@ $$
 {{ task(file="tasks/pca/eigenvektor/AufgabeEV4.yaml") }}
 
 {{ task(file="tasks/pca/eigenvektor/AufgabeEV5.yaml") }}
+
+## Mitschriften
+
+!!! beispiel "Eigenwerte berechnen (Aufgabe 1)"   
+    ![](ev_mitschrift_1_eigenwerte.jpg)
+
+!!! beispiel "Eigenvektoren berechnen (Aufgabe 1a)"   
+    ![](ev_mitschrift_1a_eigenvektoren.jpg)
+
+!!! beispiel "Eigenvektoren - Sonderfälle (Aufabe 2)"   
+    ![](ev_mitschrift_2_sonderfaelle.jpg)
