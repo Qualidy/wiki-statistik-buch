@@ -13,7 +13,7 @@ Wir haben nun alle theoretsichen Bausteine für PCA zusammengestellt.
 
     Dann wird die Kovarianzmatrix $S$ von $Y$ berechnet.
 
-    Berechne dann die Eigenwerte von $S$ und sortiere diese der Größe nach, sodass $var(\lambda_1) \geq \cdots \geq var(\lambda_d)$ ist ($d \leq D$).
+    Berechne dann die Eigenwerte von $S$ und sortiere diese der Größe nach, sodass $\lambda_1 \geq \cdots \geq \lambda_d$ ist ($d \leq D$).
 
     Bereche zu jedem Eigenwert die normierten Eigenvektoren $(v_1, \cdots, v_d)$.
 
