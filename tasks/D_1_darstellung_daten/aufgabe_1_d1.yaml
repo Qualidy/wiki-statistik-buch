@@ -6,15 +6,39 @@ question: |
   |---------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
   | Gewicht (kg)  | 3,7 | 3,2 | 3,5 | 3,4 | 4   | 4,2 | 3,1 | 2,9 | 2,7 | 3,5 |
 
-  (i) _
+  Stelle diese Daten ...
+
+  (i) ... in einem **Streudiagramm** dar. (D.1.1)
  
-  (ii) _
+  (ii) ... in einer **Kontingenztabelle** dar. (D.1.2)
 
-  (iii) _
+  (iii) ... in einem **Streifendiagramm** dar. (D.1.3)
 
-tip: Einteilung Klassen _
+tip: + Für (ii) & (iii) ist die **Einteilung in Klassen** sinnvoll (notwendig). Bestimme dazu geeignete Klassen.
+
+  + Für die Lösung wurden folgende Klasseneinteilungen vorgenommen
+  
+    + **Gewicht** (a) unter 3 kg, (b) ab 3 kg, (c) ab 3,5 kg, (d) ab 4 kg.
+  
+    + **Größe** (a) unter 50 cm, (b) unter 52 cm, (a) ab 52 cm.
 
 
 solution: |
-  Coming soon! \(^.^)/
+  (i)
+  
+  ![](d1_i_streudiagramm.png)
+
+  (ii)
+
+  | Gewicht (kg) / Größe (cm) | bis 2,9 kg | 3 - 3,4 kg | 3,5 - 3,9 kg | ab 4,0 kg |
+  |---------------------------|------------|------------|--------------|-----------|
+  | bis 49 cm                 | 1          | 0          | 1            | 0         |
+  | 50 und 51 cm              | 1          | 2          | 0            | 0         |
+  | ab 52 cm                  | 0          | 1          | 2            | 2         |
+
+
+  (iii)
+
+  ![](d1_iii_streifendiagramm.png)
+
  
