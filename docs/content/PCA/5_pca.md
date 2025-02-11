@@ -23,3 +23,4 @@ Wir haben nun alle theoretsichen Bausteine für PCA zusammengestellt.
 
 {{ task(file="tasks/pca/pca/full.yaml") }}
 {{ task(file="tasks/pca/pca/implement_pca.yaml") }}
+{{ task(file="tasks/pca/pca/sklearn_implementation.yaml") }}

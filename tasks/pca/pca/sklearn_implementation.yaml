@@ -1,0 +1,6 @@
+title: sklearn's Implementierung untersuchen
+question: |
+  Untersuche die Implementierung von [PCA von sklearn](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html).
+  Wie ist diese aufgebaut? Wie werden die Eigenvektoren bestimmt?
+tip: |
+  Es gibt einen Button `[source]` auf der verlinkten Seite, mit der du zum Repository von sklearn gelangst.

@@ -239,13 +239,13 @@ $$
 
 ## Aufgaben zu Eigenwerten und Eigenvektoren
 
-{{ task(file="tasks/pca/eigenvektor/AufgabeEV0_program.yaml") }}
-
 {{ task(file="tasks/pca/eigenvektor/AufgabeEV1.yaml") }}
 
 {{ task(file="tasks/pca/eigenvektor/AufgabeEV2.yaml") }}
 
 {{ task(file="tasks/pca/eigenvektor/AufgabeEV3.yaml") }}
+
+{{ task(file="tasks/pca/eigenvektor/AufgabeEV0_program.yaml") }}
 
 ## Begriffe und charakteristisches Polynom
 
@@ -299,7 +299,7 @@ $$
     \iff \text{Die durch } \lambda E - A \text{ induzierte lineare Abbildung ist nicht injektiv}
     \]
 
-    \[
+    \[progra
     \iff \lambda E - A \text{ ist nicht invertierbar}
     \]
 
@@ -318,17 +318,17 @@ $$
 
 !!! tip "Herleitung: Eigenvektoren von symmetrischen Matrizen sind orthogonal"
 
-    Für zwei **verschiedene** Eigenvektoren $\mathbf{v}_i$ und $\mathbf{v}_j$ mit den Eigenwerten $\lambda_i$ und $\lambda_j$ gilt:
+    Für zwei **verschiedene** Eigenvektoren $v_i$ und $v_j$ mit den Eigenwerten $\lambda_i$ und $\lambda_j$ gilt:
 
     \[
-    A \mathbf{v}_i = \lambda_i \mathbf{v}_i, \quad A \mathbf{v}_j = \lambda_j \mathbf{v}_j.
+    A v_i = \lambda_i v_i, \quad A v_j = \lambda_j v_j.
     \]
 
     Wenn $A$ symmetrisch (d.h. $A = A^t$) ist, folgt:
 
     \[
     \begin{array}{rrl}
-    \Leftrightarrow & A^t &=& A \\
+    & A^t &=& A \\
     \Leftrightarrow & v_i^t A^t &=& v_i^t A \\
     \Leftrightarrow & v_i^t A^t v_j &=& v_i^t A v_j \\
     \Leftrightarrow & (A v_i)^t v_j &=& v_i^t A v_j \\
@@ -337,11 +337,11 @@ $$
     \Leftrightarrow & \lambda_i v_i^t v_j - \lambda_j v_i^t v_j &=& 0 \\
     \Leftrightarrow & (\lambda_i- \lambda_j) v_i^t v_j  &=& 0 \\
     \Leftrightarrow & v_i^t v_j  &=& 0 \\
-    \Leftrightarrow & v_i^t \perp v_j
+    \Leftrightarrow & v_i &\perp& v_j
     \end{array}
     \]
 
-    Da $\lambda_i \neq \lambda_j$, muss $v_i^T v_j = 0$ sein. Das ist dann $v_i^t \perp v_j$. 
+    Da $\lambda_i \neq \lambda_j$, muss $v_i^t v_j = 0$ sein. Das ist dann $v_i \perp v_j$. 
 
 
 {{ task(file="tasks\pca\eigenvektor\AufgabeEV4.yaml") }}
