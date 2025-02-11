@@ -318,10 +318,10 @@ $$
 
 !!! tip "Herleitung: Eigenvektoren von symmetrischen Matrizen sind orthogonal"
 
-    Für zwei **verschiedene** Eigenvektoren $v_i$ und $v_j$ mit den Eigenwerten $\lambda_i$ und $\lambda_j$ gilt:
+    Für zwei **verschiedene** Eigenvektoren $v$ und $w$ mit den Eigenwerten $\lambda$ und $\mu$ gilt:
 
     \[
-    A v_i = \lambda_i v_i, \quad A v_j = \lambda_j v_j.
+    A v = \lambda v, \quad A w = \mu w.
     \]
 
     Wenn $A$ symmetrisch (d.h. $A = A^t$) ist, folgt:
@@ -329,19 +329,19 @@ $$
     \[
     \begin{array}{rrl}
     & A^t &=& A \\
-    \Leftrightarrow & v_i^t A^t &=& v_i^t A \\
-    \Leftrightarrow & v_i^t A^t v_j &=& v_i^t A v_j \\
-    \Leftrightarrow & (A v_i)^t v_j &=& v_i^t A v_j \\
-    \Leftrightarrow & (\lambda_i v_i)^t v_j &=& v_i^t \lambda_j v_j \\
-    \Leftrightarrow & \lambda_i v_i^t v_j &=&  \lambda_j v_i^t v_j \\
-    \Leftrightarrow & \lambda_i v_i^t v_j - \lambda_j v_i^t v_j &=& 0 \\
-    \Leftrightarrow & (\lambda_i- \lambda_j) v_i^t v_j  &=& 0 \\
-    \Leftrightarrow & v_i^t v_j  &=& 0 \\
-    \Leftrightarrow & v_i &\perp& v_j
+    \Leftrightarrow & v^t A^t &=& v^t A \\
+    \Leftrightarrow & v^t A^t w &=& v^t A w \\
+    \Leftrightarrow & (A v)^t w &=& v^t A w \\
+    \Leftrightarrow & (\lambda v)^t w &=& v^t \mu w \\
+    \Leftrightarrow & \lambda v^t w &=&  \mu v^t w \\
+    \Leftrightarrow & \lambda v^t w - \mu v^t w &=& 0 \\
+    \Leftrightarrow & (\lambda- \mu) v^t w  &=& 0 \\
+    \Leftrightarrow & v^t w  &=& 0 \\
+    \Leftrightarrow & v &\perp& w
     \end{array}
     \]
 
-    Da $\lambda_i \neq \lambda_j$, muss $v_i^t v_j = 0$ sein. Das ist dann $v_i \perp v_j$. 
+    Da $\lambda \neq \mu$, muss $v^t w = 0$ sein. Das ist dann $v \perp w$. 
 
 
 {{ task(file="tasks/pca/eigenvektor/AufgabeEV4.yaml") }}

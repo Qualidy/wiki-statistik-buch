@@ -47,3 +47,60 @@ solution: |
   Varianz für Projektion auf $v_1$: $3.04$
   Varianz für Projektion auf $v_2$: $12.16$
   Varianz für Projektion auf $v_3$: $7.84$
+  
+  Programm zur Berechnung:
+  
+  ```python
+  import numpy as np
+  from unittest import TestCase
+  from parameterized import parameterized
+  
+  X = np.array([[2, 7, 2],
+                [4, 8, 6],
+                [2, 6, 1],
+                [7, 6, 3],
+                [1, 5, 9],
+                [1, 4, 6],
+                [2, 6, 8],
+                [1, 8, 3],
+                [4, 6, 7],
+                [6, 4, 5]])
+  
+  v1 = np.array([1, 0, 0])
+  v2 = np.array([2, 0, 0])
+  v3 = np.array([1, -2, 0.5])
+  
+  
+  def proj_factor(v, w):
+      return w.T @ v / (v.T @ v)
+  
+  
+  class TestProjection(TestCase):
+      @parameterized.expand([
+          (np.array([1, 0]), np.array([2, 3]), np.array(2)),
+          (np.array([1, 1]), np.array([2, 2]), np.array(2)),
+          (np.array([1, 2]), np.array([-2, 1]), np.array(0)),
+          (np.array([2, 1]), np.array([-2, 1]), np.array(-.6)),
+      ])
+      def test_projection(self, v, w, expected):
+          result = proj_factor(v, w)
+          np.testing.assert_array_almost_equal(expected, result)
+  
+  
+  S = np.cov(X, rowvar=False, bias=True)
+  print(S)
+  
+  for v in [v1, v2, v3]:
+      print(f"Projection on {v}:")
+      projected = np.apply_along_axis(lambda w: proj_factor(v, w), axis=1, arr=X)
+      print(projected)
+      print(f"Varianz dieser Projektionsfaktoren ist:    {np.var(projected)}")
+      print(f"Varianz mit alternativer Formel berechnet: {v.T @ S @ v / (v.T @ v) ** 2}")
+      print()
+      # v.T: 1x3
+      # S:   3x3
+      # v:   3x1
+      # v.T @ S: 1x3
+      # v.T @ S @ v : 1x1 -> EINE Zahl
+      # |v|² = v.T @ v
+  ```
