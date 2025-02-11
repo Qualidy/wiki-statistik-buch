@@ -1,4 +1,4 @@
-# Regressionsrechnung
+# D.3 Regressionsrechnung
 
 !!! question "Regression händisch berechnen"
     
