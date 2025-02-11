@@ -1,0 +1,14 @@
+title: Gini mit Datensatz
+question: |
+  Laden Sie diesen [Datensatz über die Einkommen von Erwachsenen](adult.csv) herunter.
+  Hier finden Sie den 
+  (orginalen Download)[https://www.cs.toronto.edu/~delve/data/adult/desc.html]
+  und die 
+  [Erklärungen zum Datensatz](https://www.cs.toronto.edu/~delve/data/adult/adultDetail.html)
+  
+  Berechnen Sie den Gini-Koeffizienten und zeichnen Sie die Lorenzkurve zu diesem Datensatz.
+  
+  Überlegen Sie selbst, welche Merkmale da interessant sind zu untersuchen.
+  
+  Berechnen sie dann dan Gini-Koeffizienten und zeichnen Sie die Lorenzkurve für Untergruppen
+  (z.B. `Male` und `Female`) Wo lassen sich Unterschiede erkennen und wo nicht?
