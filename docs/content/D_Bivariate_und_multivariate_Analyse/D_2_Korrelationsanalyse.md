@@ -15,5 +15,7 @@
     r = \frac{ \left( \sum_{i=1}^{n} x_i \cdot y_i \right) - n \cdot \bar{x} \cdot \bar{y}}{\sqrt{\left( \left( \sum_{i=1}^{n} x_i^2 \right) - n \cdot \bar{x}^2 \right) \cdot \left( \left( \sum_{i=1}^{n} y_i^2 \right) - n \cdot \bar{y}^2 \right)}}
     $$
 
+{{ task("tasks/D_2_korrelationsanalyse/aufgabe_2_d2.yaml") }}
+
 ## D.2.2 Rangkorrelationskoeffizient nach Spearman-Pearson
 

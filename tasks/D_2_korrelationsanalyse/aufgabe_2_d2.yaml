@@ -1,0 +1,25 @@
+title: "2) Korrelationskoeffizienten berechnen"
+question: |
+  Berechne den Korrelationskoeffizienten für den folgenden Datensatz:
+
+  | Lernstunden | Punktzahl |
+  |-------------|-----------|
+  | 2           | 24        |
+  | 4           | 37        |
+  | 6           | 62        |
+  | 8           | 79        |
+
+  ![](d2_ag2_beispiel.png)
+
+
+solution: |
+  **r = 0.993**
+
+  **Hinweis: Es gibt einige verschiedene Versionen der Formel. Allgemein ist es aber möglich das "n" herauszukürzen.**
+
+  *Rechenweg:*
+
+  ![](d2_ag2_loesung.jpg)
+
+  
+ 
