@@ -348,6 +348,8 @@ $$
 
 {{ task(file="tasks/pca/eigenvektor/AufgabeEV5.yaml") }}
 
+<iframe src="https://www.geogebra.org/calculator/gb4cpuhd?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+
 ## Mitschriften
 
 !!! beispiel "Eigenwerte berechnen (Aufgabe 1)"   
@@ -358,3 +360,4 @@ $$
 
 !!! beispiel "Eigenvektoren - Sonderfälle (Aufabe 2)"   
     ![](ev_mitschrift_2_sonderfaelle.jpg)
+
