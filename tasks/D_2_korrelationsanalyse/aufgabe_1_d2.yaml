@@ -1,0 +1,18 @@
+title: "1) Korrelationskoeffizienten zuordnen"
+question: |
+  Ordne den folgenden Streudiagrammen jeweils einen Korrelationskoeffizienten zu.
+
+  | 0.90  | 0.71  | 0.31  | -0.01 | -0.61 | -0.97 |
+  |-------|-------|-------|-------|-------|-------|
+
+
+  ![](d2_pearson_zahlen_abc.png)
+
+solution: |
+  | 0.90  | 0.71  | 0.31  | -0.01 | -0.61 | -0.97 |
+  |-------|-------|-------|-------|-------|-------|
+  | C     | D     | F     | B     | E     | A     |
+
+  ![](d2_pearson_zahlen_loesung.png)
+
+ 
