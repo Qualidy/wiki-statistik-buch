@@ -22,11 +22,7 @@ Elemente, die er nicht einem Cluster zuordnen kann, werden als "Ausreißer" mark
     7. Für jeden Nicht-Kernpunkt 𝑝^′ wird der nächstgelegene Kernpunkt-Nachbar 𝑝 mit einem maximalen Abstand von 𝜀 gesucht und 𝑝′ zum Cluster von 𝑝 hinzugefügt.
     8. Alle verbleibenden Nicht-Kernpunkte werden dem Ausreißer-Cluster hinzugefügt.
 
-!!! beispiel
 
-    [📙Clustering der Benzin- und Dieselpreise in Indien](https://www.kaggle.com/code/viktorreichert/dbscan-clustering-of-fuel-price-in-india)
-
-    ![img_1.png](img_1.png)
 
 !!! beispiel
     
@@ -45,5 +41,22 @@ Elemente, die er nicht einem Cluster zuordnen kann, werden als "Ausreißer" mark
     ![Folie204.PNG](dbscan_images/Folie204.PNG)
     ![Folie205.PNG](dbscan_images/Folie205.PNG)
     ![Folie206.PNG](dbscan_images/Folie206.PNG)
+
+
+!!! beispiel
+
+    [📙Clustering der Benzin- und Dieselpreise in Indien](https://www.kaggle.com/code/viktorreichert/dbscan-clustering-of-fuel-price-in-india)
+
+    [Download Datensatz](india_fuel_prices_with_locations.csv)
+
+    ![img_1.png](img_1.png)
+
+{{ task(
+title="DBScan anwenden",
+question="""Nutzen Sie DBScan und KMeans, um die Cluster im Indiendatensatz vom obigen Beispiel zu erkennen.
+
+Welcher Algorithmus eignet sich hier besser? Inwiefern kann man den Algorithmus wiederholt anwenden?
+""",
+) }}
 
 {{ task("tasks/clustering/dbscan.yaml") }}
