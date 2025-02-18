@@ -20,3 +20,163 @@ tip: |
   def transform(self, X):
       return np.dot(X - np.mean(X, axis=0), self.components_.T)
   ```
+
+solution: |
+  ```python
+  ## Daniel ####
+
+  import numpy as np
+  from sklearn.base import BaseEstimator, TransformerMixin
+  import unittest
+  
+  X = np.matrix([[2,4,2,7,1,1,2,1,4,6],[7,8,6,6,5,4,6,8,6,4], [2,6,1,3,9,6,8,3,7,5]]).T
+  print("Original Data Matrix:\n", X)
+  
+  # BaseEstimator stellet grundlegende Funktionalitäten wie Setzen und Überprüfen von Parametern bereit,
+  # während transformer Mixin die Methoden fit und tansform bereitstellt. So kann eigene Klasse mit weiteren sklearn Funktionen zusammenarbeiten.
+  class CustomPCA(BaseEstimator, TransformerMixin):
+      def __init__(self, n_components):
+          super().__init__()
+          self.components_ = None
+          self.n_components = n_components
+  
+      def fit(self, X, y=None):
+          # Daten in die Mitte des Koordinatensystems verschieben
+          Y = X - np.mean(X, axis=0)
+          # Kovarianzmatrix berechnen
+          covariance_matrix = np.cov(Y, rowvar=False)
+          # Eigenvwerte und Eigenvektoren ermitteln
+          eigenvalues, eigenvectors = np.linalg.eigh(covariance_matrix)
+          # Eigenwerte in absteigender Reihenfolge sortieren
+          sorted_indices = np.argsort(eigenvalues)[::-1]
+          self.components_ = eigenvectors[:, sorted_indices[:self.n_components]]
+          return self
+  
+      def transform(self, X):
+          return np.dot(X - np.mean(X, axis=0), self.components_)
+  
+  
+  pca = CustomPCA(n_components=2)
+  
+  transformed_X = pca.fit_transform(X)
+  print("Transformierte Matrix:\n", transformed_X)
+  
+  # Unit test for CustomPCA class
+  class TestCustomPCA(unittest.TestCase):
+      def setUp(self):
+          self.X = np.matrix([[2,4,2,7,1,1,2,1,4,6],[7,8,6,6,5,4,6,8,6,4], [2,6,1,3,9,6,8,3,7,5]]).T
+          self.pca = CustomPCA(n_components=2)
+  
+      def test_fit_transform_shape(self):
+          transformed_X = self.pca.fit_transform(self.X)
+          self.assertEqual(transformed_X.shape[1], 2)
+          
+      def test_fit_components_shape(self):
+          self.pca.fit(self.X)
+          self.assertEqual(self.pca.components_.shape[1], 2)
+  
+      def test_fit_transform_values(self):
+          transformed_X = self.pca.fit_transform(self.X)
+          expected_transformed_X_shape = (self.X.shape[0], 2)
+          self.assertEqual(transformed_X.shape[0], expected_transformed_X_shape[0])
+          self.assertEqual(transformed_X.shape[1], expected_transformed_X_shape[1])
+  
+      def test_fit_eigenvalues_order(self):
+          self.pca.fit(self.X)
+          covariance_matrix = np.cov(self.X - np.mean(self.X, axis=0), rowvar=False)
+          eigenvalues = np.linalg.eigh(covariance_matrix)[0]
+          sorted_eigenvalues = np.sort(eigenvalues)[::-1]
+          computed_eigenvalues = np.diag(np.dot(self.pca.components_.T,
+                                                np.dot(covariance_matrix,
+                                                       self.pca.components_)))
+          for i in range(2):
+              self.assertAlmostEqual(computed_eigenvalues[i], sorted_eigenvalues[i])
+              
+  
+   # ------------------ Fabian
+  
+  from sklearn.base import BaseEstimator, TransformerMixin
+  
+  
+  class CustomPCA(BaseEstimator, TransformerMixin):
+      def __init__(self, n_components) -> None:
+          super().__init__()
+          self.n_components = n_components
+    
+      def fit(self, X, y=None):
+          cov_mat = cov_matrix(X)
+          eigenwerte, eigenvektoren = np.linalg.eig(cov_mat)
+      
+      sorted_indices = np.argsort(eigenwerte)[::-1]
+      eigenvektoren = eigenvektoren[:, sorted_indices]
+      
+          self.components_ = eigenvektoren[:, :self.n_components]
+          return self
+          
+          
+      def transform(self, X):
+          return np.dot(X, self.components_)
+  
+  
+  
+  def normalise(data):
+      mean = np.mean(data, axis=0)
+      return data - mean
+    
+  def covariance(a, b):
+      if (l := len(a)) != len(b):
+          raise ValueError('Merkmale sind unterschiedlich lang!')
+      mean_a = np.mean(a)
+      mean_b = np.mean(b)
+      return sum([(a - mean_a) * (b - mean_b) for a, b in zip(a,b)])  / l
+  
+  
+  def cov_matrix(data_frame: pd.DataFrame):
+      cols = data_frame.columns
+      numeric_cols = [col for col in cols if df[col].dtype == 'int64'] # und alle anderen dtype die numerisch sind
+      matrix = np.array([])
+      for col1 in numeric_cols:
+          for col2 in numeric_cols:
+              matrix = np.append(matrix, (covariance(df[col1], df[col2])))
+      return matrix.reshape(len(numeric_cols), len(numeric_cols))
+  
+  
+  df = pd.DataFrame({'x1': [2, 4, 2, 7, 1, 1, 2, 1, 4, 6],
+                     'x2': [7, 8, 6, 6, 5, 4, 6, 8, 6, 4],
+                     'x3': [2, 6, 1, 3, 9, 6, 8, 3, 7, 5]})
+  
+  X_normalised = normalise(df)
+  
+  pca = CustomPCA(n_components=2)
+  
+  pca.fit_transform(X_normalised)
+  
+  
+  # Tests gibts nicht
+    
+  -------------------- Noah
+  
+  import numpy as np
+  
+  # Gegebene Matrix x
+  x = np.array([[1, 1, 0],
+                [2, 3, 1],
+                [4, 4, -1],
+                [1, 4, 0]])
+  
+  x_mean = np.mean(x, axis=0)
+  
+  x_centered = x-x_mean
+  
+  cov_matrix = (x_centered.T @ x_centered) / len(x_centered)
+  
+  eigenvalues, eigenvectors = np.linalg.eig(cov_matrix)
+  
+  sorted_indicies = np.argsort(eigenvalues)[::-1]
+  eigenvalues = eigenvalues[sorted_indicies]
+  eigenvectors = eigenvectors[:, sorted_indicies]
+  
+  pca_matrix = x_centered @ eigenvectors
+  print(pca_matrix)
+    
+  ```

@@ -31,3 +31,5 @@ $k$ ist ein Hyperparameter (wird also im vorhinein vom Nutzer bestimmt).
     [📙Kagle Notebook zur Bildsegmentierung mit KMeans](https://www.kaggle.com/viktorreichert/k-means-tumor-image-segmentation)
 
     ![img.png](img.png)
+
+{{ task("tasks/clustering/kmeans.yaml") }}
