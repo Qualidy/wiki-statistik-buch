@@ -48,3 +48,4 @@
     
     + Ein Wert von 0 bedeutet, dass keine monotone Beziehung besteht.
 
+{{ task("tasks/D_2_korrelationsanalyse/aufgabe_3_d2_rang.yaml") }}

@@ -1,0 +1,71 @@
+title: "3) Rangkorrelationskoeffizienten berechnen"
+question: |
+
+  Von einer Arbeitnehmervereinigung wurde eine anonyme Umfrage durchgeführt, wobei der Zusammenhang zwischen Kündigungsabsicht 
+  und der wahrgenommen Fairness innerhalb des Unternehmens untersucht werden soll.
+  
+  Dabei standen folgende Auswahlmöglichkeiten zur Verfügung:
+
+  + Kündigung in Erwägung gezogen (X) (in den letzte 3 Monaten); Skala: {A - sehr stark in Erwägung gezogen} bis zu {E - überhaupt nicht in Erwägung gezogen}
+
+  + Unternehmenskultur: Fairness (Y); Skala: Die Bewertung besteht nur aus den 3 Kategorien {gut}, {mittel} und {schlecht}.
+
+  Die Umfrage ergab folgende Ergebnisse:
+
+  | Person | Kündigung in Erwägung gezogen (X) | Unternehmenskultur: Fairness (Y) |
+  |--------|----------------------------------|----------------------------------|
+  | 1      | A                                | schlecht                         |
+  | 2      | C                                | mittel                           |
+  | 3      | D                                | gut                              |
+  | 4      | B                                | mittel                           |
+  | 5      | E                                | gut                              |
+  | 6      | B                                | schlecht                         |
+  | 7      | A                                | gut                              |
+  
+  **Berechne den Rangkorrelationskoeffizienten für den Datensatz.**
+  
+
+
+solution: |
+
+  $$ r_s = -0.366 $$
+
+  Ermittlung der Ränge:
+
+  | Kündigung | Position | Rang |  | Fairness | Position | Rang |
+  |-----------|----------|------|----|----------|----------|------|
+  | E         | 1        | 1    |    | schlecht | 1,2      | 1.5  |
+  | D         | 2        | 2    |    | schlecht | 1,2      | 1.5  |
+  | C         | 3        | 3    |    | mittel   | 3,4      | 3.5  |
+  | B         | 4,5      | 4.5  |    | mittel   | 3,4      | 3.5  |
+  | B         | 4,5      | 4.5  |    | gut      | 5,6,7    | 6    |
+  | A         | 6,7      | 6.5  |    | gut      | 5,6,7    | 6    |
+  | A         | 6,7      | 6.5  |    | gut      | 5,6,7    | 6    |
+
+  Tabelle um Ränge ergänzen und Rangdifferenzen berechnen:
+
+  | Person | Kündigung in Erwägung gezogen (X) | Unternehmenskultur: Fairness (Y) | rg(X) | rg(Y) | di = rg(xi) - rg(yi) | di^2 |
+  |--------|----------------------------------|----------------------------------|-------|-------|----------------------|------|
+  | 1      | A                                | schlecht                         | 6.5   | 1.5   | 5                    | 25   |
+  | 2      | C                                | mittel                           | 3     | 3.5   | -0.5                 | 0.25 |
+  | 3      | D                                | gut                              | 2     | 6     | -4                   | 16   |
+  | 4      | B                                | mittel                           | 4.5   | 3.5   | 1                    | 1    |
+  | 5      | E                                | gut                              | 1     | 6     | -5                   | 25   |
+  | 6      | B                                | schlecht                         | 4.5   | 1.5   | 3                    | 9    |
+  | 7      | A                                | gut                              | 6.5   | 6     | 0.5                  | 0.25 |
+
+  \[
+  \sum_{i=1}^{n} d_i^2 = 76.5
+  \]
+
+  Einsetzen in die Formel mit n = 7 ergibt:
+
+  $$ r_s = -0.366 $$
+
+  ![](d2_ag3_loesung.png)
+   
+
+  
+
+  
+ 
