@@ -1,0 +1,2425 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../1_projektion/">
+      
+      
+        <link rel="next" href="../3_lagrange/">
+      
+      
+      <link rel="icon" href="../../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.45">
+    
+    
+      
+        <title>Varianz maximieren - Statistik Buch Zusätze</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/beispiel_admonition.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/formel_admonition.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#varianz-maximieren" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Statistik Buch Zusätze" class="md-header__button md-logo" aria-label="Statistik Buch Zusätze" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Statistik Buch Zusätze
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Varianz maximieren
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Statistik Buch Zusätze" class="md-nav__button md-logo" aria-label="Statistik Buch Zusätze" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    Statistik Buch Zusätze
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ergänzungen zum Buch "Statistik Schritt für Schritt"
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Content
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Content
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    B Grundlagen statistischer Untersuchungen
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            B Grundlagen statistischer Untersuchungen
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../B_Grundlagen_statistischer_Untersuchungen/B_1_Gesamtheiten/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gesamtheiten und ihre Beschreibung durch Merkmale
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../B_Grundlagen_statistischer_Untersuchungen/B_2_Skalenniveaus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Skalenniveaus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    C Univariate Analyse
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            C Univariate Analyse
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C_Univariate_Analyse/C_2_Eindimensionale_H%C3%A4ufigkeitsverteilung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    C.2.1 Eindimensionale Häufigkeitsverteilung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C_Univariate_Analyse/C_3_0_Ma%C3%9Fzahlen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    C.3.0 Mittelwerte
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C_Univariate_Analyse/C_3_3_Boxplots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    C.3.3 Boxplots und Quantile
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C_Univariate_Analyse/C_3_5_Gini_Koeffizient/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    C.3.5 Lorenzkurve und Gini-Koeffizient
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Clustering
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Clustering
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Clustering/0_einf%C3%BChrung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Einführung Clustering
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Clustering/1_KMeans/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    KMeans
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Clustering/2_dbscan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DBScan
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Clustering/3_distances/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Abstände
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    D Bivariate und multivariate Analyse
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            D Bivariate und multivariate Analyse
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_Bivariate_und_multivariate_Analyse/D_1_Darstellung%20Daten/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    D.1 Darstellung multivariater Datensätze
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_Bivariate_und_multivariate_Analyse/D_2_Korrelationsanalyse/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    D.2 Korrelationsanalyse
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_Bivariate_und_multivariate_Analyse/D_3_Regressionsrechnung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    D.3 Regressionsrechnung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    F Theoretische Wahrscheinlichkeitsmodelle
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            F Theoretische Wahrscheinlichkeitsmodelle
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../F_Theoretische%20Wahrscheinlichkeitsmodelle/F_5_0_Vortr%C3%A4ge_Verteilungen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vorträge zu Verteilungen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../F_Theoretische%20Wahrscheinlichkeitsmodelle/F_5_10%20Standardnormalverteilung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    F.5.10 Standardnormalverteilung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../F_Theoretische%20Wahrscheinlichkeitsmodelle/F_5_4_Binomialverteilung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Binomialverteilung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../F_Theoretische%20Wahrscheinlichkeitsmodelle/F_5_5_Geometrische_Verteilung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geometrische Verteilung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../F_Theoretische%20Wahrscheinlichkeitsmodelle/F_5_6_Hypergeometrische_Verteilung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hypergeometrische Verteilung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../F_Theoretische%20Wahrscheinlichkeitsmodelle/F_5_7_Poisson_Verteilung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Poisson-Verteilung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../F_Theoretische%20Wahrscheinlichkeitsmodelle/F_5_8_Exponentialverteilung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exponentialverteilung Vorstellung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../F_Theoretische%20Wahrscheinlichkeitsmodelle/F_5_X_Pareto_Verteilung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pareto-Verteilung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../F_Theoretische%20Wahrscheinlichkeitsmodelle/test/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Test zu Verteilungen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Neuronale Netze
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            Neuronale Netze
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Neuronale_Netze/nn/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Neuronale Netze
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    PCA
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            PCA
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../0_einf%C3%BChrung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Einführung in PCA
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1_projektion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Projektion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Varianz maximieren
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Varianz maximieren
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#kovarianz" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kovarianz
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kovarianzmatrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kovarianzmatrix
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_lagrange/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lagrange
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4_eigenvektor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Eigenvektoren und Eigenwerte
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5_pca/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PCA
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="varianz-maximieren">Varianz maximieren<a class="headerlink" href="#varianz-maximieren" title="Permanent link">&para;</a></h1>
+<p>Wir haben gesehen, wie man einen Punkt auf einen Vektor projiziert.</p>
+<p>Wir nutzen dies, um bei PCA ein neues Merkmal zu erzeugen. Alle unsere Daten werden auf einen Vektor
+projiziert mit der Formel <span class="arithmatex">\(pr_v(w)=kv\)</span>. im neuen Merkmal wird dann das <span class="arithmatex">\(k\)</span> als neues Merkmal gespeichert.</p>
+<p>Nur wollen wir <span class="arithmatex">\(v\)</span> so wählen, dass die Varianz in dem neuen Merkmal möglichst groß ist.</p>
+<p>Hier können wir ein paar Rechnungen durchführen, die wichtige Erkenntnisse liefern.</p>
+<div class="admonition formel">
+<p class="admonition-title">Wiederholung: Varianz</p>
+<p>Sei <span class="arithmatex">\(x = (x_1, \cdots , x_N) \in (\mathbb{R}^D)^N\)</span> ein Datensatz aus <span class="arithmatex">\(N\)</span> Daten und <span class="arithmatex">\(D\)</span> Merkmalen.
+Dann ist die Varianz von <span class="arithmatex">\(X\)</span> definiert als:</p>
+<div class="arithmatex">\[
+var(x) = \frac{1}{N} \sum_{i=1}^{N} (x_i - \bar{x})^2 
+\]</div>
+</div>
+<p>Angenommen wir haben nun einen Datensatz <span class="arithmatex">\(x\)</span> und einen Vektor <span class="arithmatex">\(v\)</span>, auf den die Daten projiziert wurden.
+Wir wollen dann in <span class="arithmatex">\(k = (k_1, k_2, \cdots , k_N) \in \mathbb{R}^{N}\)</span> die Faktoren die bei der Projektion
+entstehen speichern. Wir wissen, dass <span class="arithmatex">\(k_i = \frac{x_i^t v}{|v|^2} = \frac{v^t x_i}{|v|^2}\)</span> gilt.</p>
+<p>Berechnen wir nun <span class="arithmatex">\(var(k)\)</span>:</p>
+<div class="arithmatex">\[\begin{align}
+    var(k) &amp;= \frac{1}{N} \sum_{i=1}^{N} (k_i - \bar{k})^2 \\
+    &amp;= \frac{1}{N} \sum_{i=1}^{N} \left( \frac{v^t x_i}{|v|^2} - \frac{v^t \bar{x}}{|v|^2} \right)^2 \\
+    &amp;= \frac{1}{N} \sum_{i=1}^{N} \left( \frac{1}{|v|^2} \left( v^t x_i - v^t \bar{x} \right) \right)^2 \\
+    &amp;= \frac{1}{N} \sum_{i=1}^{N} \left( \frac{1}{|v|^2} \right)^2 \left( v^t x_i - v^t \bar{x} \right)^2 \\
+    &amp;= \frac{1}{N} \sum_{i=1}^{N} \frac{1}{|v|^4} \left( v^t x_i - v^t \bar{x} \right)^2 \\
+    &amp;= \frac{1}{|v|^4}\cdot \frac{1}{N} \sum_{i=1}^{N} \left( v^t x_i - v^t \bar{x} \right)^2 \\
+    &amp;= \frac{1}{|v|^4}\cdot \frac{1}{N} \sum_{i=1}^{N} \left( v^t (x_i - \bar{x}) \right)^2 \\
+    &amp;= \frac{1}{|v|^4}\cdot \frac{1}{N} \sum_{i=1}^{N} \left( v^t (x_i - \bar{x}) \right)\left( v^t (x_i - \bar{x}) \right) \\
+    &amp;= \frac{1}{|v|^4}\cdot \frac{1}{N} \sum_{i=1}^{N} \left( v^t (x_i - \bar{x}) \right)\left( (x_i - \bar{x})^t v \right) \\
+    &amp;= \frac{1}{|v|^4} v^t \left( \frac{1}{N} \sum_{i=1}^{N} (x_i - \bar{x}) (x_i - \bar{x})^t \right) v \\
+\end{align}\]</div>
+<p>Und nun? Hier verbirgt sich ein Schatz, denn der Ausdruck <span class="arithmatex">\(\frac{1}{N} \sum_{i=1}^{N} (x_i - \bar{x}) (x_i - \bar{x})^t\)</span>,
+der hier so mühsam ausgeklammert wurde, ist etwas Besonderes, nämlich die geschlossene Form der <strong>Kovarianzmatrix</strong> <span class="arithmatex">\(S\)</span> von <span class="arithmatex">\(x\)</span>!
+Damit können wir die Gleichung zusammenfassen zu:</p>
+<div class="arithmatex">\[
+var(k) = \frac{1}{|v|^4} v^t S v
+\]</div>
+<p>Wir werden gleich sehen, wie man die Kovarianzmatrix berechnet, doch ich versichere schonmal, dass dies ein großer Schritt
+in Richtung unseres Zieles ist, einen Vektor <span class="arithmatex">\(v\)</span> zu finden, sodass <span class="arithmatex">\(var(k)\)</span> maximal ist.</p>
+<details class="question" open="open">
+<summary>Projezierter Mittelwert</summary>
+<p>Es sei <span class="arithmatex">\(x = (x_1, \cdots , x_N) \in (\mathbb{R}^D)^N\)</span> ein Datensatz aus <span class="arithmatex">\(N\)</span> Daten und <span class="arithmatex">\(D\)</span> Merkmalen.
+Es Sei <span class="arithmatex">\(v \in \mathbb{R}^N\)</span> der Vektor auf den die <span class="arithmatex">\(x_i\)</span> projiziert werden.</p>
+<p>Es sei <span class="arithmatex">\(k = (k_1, k_2, \cdots , k_N) \in \mathbb{R}^{N}\)</span> mit 
+<span class="arithmatex">\(k_i = \frac{x_i^t v}{|v|^2} = \frac{v^t x_i}{|v|^2}\)</span> die Projektionsfaktoren.</p>
+<p>Man erkläre, warum <span class="arithmatex">\(\bar{k} = \frac{v^t \bar{x}}{|v|^2}\)</span> ist.</p>
+<details class="success">
+<summary>Lösung</summary>
+<div class="arithmatex">\[
+\bar{k} 
+= \frac{1}{N} \sum_{i=1}^N k_i 
+= \frac{1}{N} \sum_{i=1}^N \frac{v^t x_i}{|v|^2}
+= \frac{v^t}{|v|^2} \frac{1}{N} \sum_{i=1}^N x_i
+= \frac{v^t \bar{x}}{|v|^2}
+\]</div>
+</details>
+</details>
+<h2 id="kovarianz">Kovarianz<a class="headerlink" href="#kovarianz" title="Permanent link">&para;</a></h2>
+<div class="admonition formel">
+<p class="admonition-title">Kovarianz</p>
+<p>Es seien <span class="arithmatex">\(x, y \in \mathbb{R}^N\)</span> zwei Merkmale mit <span class="arithmatex">\(N\)</span> Ausprägungen.
+Die Kovarianz von <span class="arithmatex">\(x\)</span> und <span class="arithmatex">\(y\)</span> berechnet sich mit der Formel</p>
+<div class="arithmatex">\[
+cov(x,y) = \frac{1}{N} \sum_{i=1}^N (x_i - \bar{x})(y_i - \bar{y}) 
+\]</div>
+<p>Oft wird die Notation <span class="arithmatex">\(cov(x,y) = \sigma_{xy}\)</span> verwendet.</p>
+</div>
+<div class="admonition beispiel">
+<p class="admonition-title">Verbildlichung der Kovarianz</p>
+<p><a href="https://www.kaggle.com/code/viktorreichert/tutorial-visualization-of-covariance-and-variance/notebook">📙Notebook mit ausführlicher Erklärung zur Kovarianz</a></p>
+<p><img alt="img.png" src="../covariance.png" /></p>
+</div>
+<details class="question" open="open">
+<summary>Kovarianzen berechnen</summary>
+<p>Gegeben ist eine Matrix <span class="arithmatex">\( X \)</span> mit drei Merkmalen und zehn Beobachtungen:</p>
+<div class="arithmatex">\[
+X =
+\begin{pmatrix}
+2 &amp; 7 &amp; 2 \\
+4 &amp; 8 &amp; 6 \\
+2 &amp; 6 &amp; 1 \\
+7 &amp; 6 &amp; 3 \\
+1 &amp; 5 &amp; 9 \\
+1 &amp; 4 &amp; 6 \\
+2 &amp; 6 &amp; 8 \\
+1 &amp; 8 &amp; 3 \\
+4 &amp; 6 &amp; 7 \\
+6 &amp; 4 &amp; 5
+\end{pmatrix}
+\]</div>
+<p>Dabei entspricht jede Spalte einem Merkmal und jede Zeile einer Beobachtung.</p>
+<p>Berechnen Sie die Mittelwerte der drei Merkmale.</p>
+<p>Bestimmen Sie die Kovarianzen zwischen allen Merkmals-Paaren.</p>
+<details class="success">
+<summary>Lösung</summary>
+<p><strong>Berechnung der Mittelwerte:</strong>  </p>
+<div class="arithmatex">\[
+\bar{x}_1 = \frac{2+4+2+7+1+1+2+1+4+6}{10} = 3.0
+\]</div>
+<div class="arithmatex">\[
+\bar{x}_2 = \frac{7+8+6+6+5+4+6+8+6+4}{10} = 6.0
+\]</div>
+<div class="arithmatex">\[
+\bar{x}_3 = \frac{2+6+1+3+9+6+8+3+7+5}{10} = 5.0
+\]</div>
+<p><strong>Berechnung der Kovarianzen:</strong>  </p>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\( a \)</span></th>
+<th><span class="arithmatex">\( b \)</span></th>
+<th><span class="arithmatex">\( \text{cov}(a,b) \)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\( x_1 \)</span></td>
+<td><span class="arithmatex">\( x_1 \)</span></td>
+<td><span class="arithmatex">\( 4.2 \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( x_1 \)</span></td>
+<td><span class="arithmatex">\( x_2 \)</span></td>
+<td><span class="arithmatex">\( -0.3 \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( x_1 \)</span></td>
+<td><span class="arithmatex">\( x_3 \)</span></td>
+<td><span class="arithmatex">\( -0.7 \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( x_2 \)</span></td>
+<td><span class="arithmatex">\( x_1 \)</span></td>
+<td><span class="arithmatex">\( -0.3 \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( x_2 \)</span></td>
+<td><span class="arithmatex">\( x_2 \)</span></td>
+<td><span class="arithmatex">\( 1.8 \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( x_2 \)</span></td>
+<td><span class="arithmatex">\( x_3 \)</span></td>
+<td><span class="arithmatex">\( -1.1 \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( x_3 \)</span></td>
+<td><span class="arithmatex">\( x_1 \)</span></td>
+<td><span class="arithmatex">\( -0.7 \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( x_3 \)</span></td>
+<td><span class="arithmatex">\( x_2 \)</span></td>
+<td><span class="arithmatex">\( -1.1 \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( x_3 \)</span></td>
+<td><span class="arithmatex">\( x_3 \)</span></td>
+<td><span class="arithmatex">\( 6.4 \)</span></td>
+</tr>
+</tbody>
+</table>
+</details>
+</details>
+<details class="question" open="open">
+<summary>Mathematik der Kovarianz</summary>
+<p>Was ist <span class="arithmatex">\(cov(x,x)\)</span> für ein Merkmal <span class="arithmatex">\(x\)</span>?</p>
+<p>In wie fern ist die Kovarianz kommutativ?</p>
+<p>Wie lässt sich die Kovarianz mit Hilfe des Erwartungswertes ausdrücken?</p>
+<p>Welche Alternative Rechenregel lässt sich so für die Berechnung der Kovarianz bilden und wie?</p>
+<details class="success">
+<summary>Lösung</summary>
+<p><strong>1. Was ist <span class="arithmatex">\( cov(x,x) \)</span> für ein Merkmal <span class="arithmatex">\( x \)</span>?</strong></p>
+<p>Die Kovarianz eines Merkmals mit sich selbst entspricht der <strong>Varianz</strong> dieses Merkmals:</p>
+<div class="arithmatex">\[
+cov(x, x) = Var(x) = \frac{1}{N} \sum_{i=1}^{N} (x_i - \bar{x})^2
+\]</div>
+<p>Das bedeutet, dass die Kovarianzmatrix entlang der Diagonalen die Varianzen der einzelnen Merkmale enthält.</p>
+<p><strong>2. Inwiefern ist die Kovarianz kommutativ?</strong></p>
+<p>Die Kovarianz ist <strong>symmetrisch</strong>, d. h.:</p>
+<div class="arithmatex">\[
+cov(x, y) = cov(y, x)
+\]</div>
+<p>Das folgt direkt aus der Definition:</p>
+<div class="arithmatex">\[
+cov(x, y) = \frac{1}{N} \sum_{i=1}^{N} (x_i - \bar{x})(y_i - \bar{y})
+\]</div>
+<p>Da die Multiplikation kommutativ ist <span class="arithmatex">\((a \cdot b = b \cdot a)\)</span>, folgt sofort die Symmetrie der Kovarianz.</p>
+<p><strong>3. Wie lässt sich die Kovarianz mit Hilfe des Erwartungswertes ausdrücken?</strong></p>
+<p>Die Kovarianz kann mit dem <strong>Erwartungswertoperator</strong> geschrieben werden als:</p>
+<div class="arithmatex">\[
+cov(x, y) = E[(x - E[x])(y - E[y])]
+\]</div>
+<p>Das bedeutet, dass die Kovarianz der Erwartungswert des Produkts der zentrierten Variablen ist.</p>
+<p><strong>4. Welche alternative Rechenregel lässt sich so für die Berechnung der Kovarianz bilden und wie?</strong></p>
+<p>Eine alternative Berechnung der Kovarianz ergibt sich aus folgender Umformung:</p>
+<div class="arithmatex">\[
+cov(x, y) = E[xy] - E[x]E[y]
+\]</div>
+<p>Diese Formel ergibt sich durch Ausmultiplizieren der Definition:</p>
+<div class="arithmatex">\[
+cov(x, y) = E[(x - E[x])(y - E[y])]
+= E[xy - x\cdot E[y] - y\cdot E[x] + E[x]E[y]]
+= E[xy] - E[x \cdot E[y] - E[y\cdot E[x]] + E[E[x]E[y]]
+= E[xy] - E[x]E[y] - E[y]E[x] + E[x]E[y]
+= E[xy] - E[x]E[y]
+\]</div>
+<p>Diese alternative Rechenregel kann die Berechnung der Kovarianz vereinfachen, da sie den Mittelwert von Produkten direkt nutzt.</p>
+</details>
+</details>
+<details class="question" open="open">
+<summary>Kovarianzmatrix programmieren</summary>
+<p>Implementiere Sie das Berechnen Kovarianz auf verschiedene Arten,
+die hier in Definitionen und Übungen vorgestellt wurden.</p>
+<details class="success">
+<summary>Lösung</summary>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">  1</span>
+<span class="normal">  2</span>
+<span class="normal">  3</span>
+<span class="normal">  4</span>
+<span class="normal">  5</span>
+<span class="normal">  6</span>
+<span class="normal">  7</span>
+<span class="normal">  8</span>
+<span class="normal">  9</span>
+<span class="normal"> 10</span>
+<span class="normal"> 11</span>
+<span class="normal"> 12</span>
+<span class="normal"> 13</span>
+<span class="normal"> 14</span>
+<span class="normal"> 15</span>
+<span class="normal"> 16</span>
+<span class="normal"> 17</span>
+<span class="normal"> 18</span>
+<span class="normal"> 19</span>
+<span class="normal"> 20</span>
+<span class="normal"> 21</span>
+<span class="normal"> 22</span>
+<span class="normal"> 23</span>
+<span class="normal"> 24</span>
+<span class="normal"> 25</span>
+<span class="normal"> 26</span>
+<span class="normal"> 27</span>
+<span class="normal"> 28</span>
+<span class="normal"> 29</span>
+<span class="normal"> 30</span>
+<span class="normal"> 31</span>
+<span class="normal"> 32</span>
+<span class="normal"> 33</span>
+<span class="normal"> 34</span>
+<span class="normal"> 35</span>
+<span class="normal"> 36</span>
+<span class="normal"> 37</span>
+<span class="normal"> 38</span>
+<span class="normal"> 39</span>
+<span class="normal"> 40</span>
+<span class="normal"> 41</span>
+<span class="normal"> 42</span>
+<span class="normal"> 43</span>
+<span class="normal"> 44</span>
+<span class="normal"> 45</span>
+<span class="normal"> 46</span>
+<span class="normal"> 47</span>
+<span class="normal"> 48</span>
+<span class="normal"> 49</span>
+<span class="normal"> 50</span>
+<span class="normal"> 51</span>
+<span class="normal"> 52</span>
+<span class="normal"> 53</span>
+<span class="normal"> 54</span>
+<span class="normal"> 55</span>
+<span class="normal"> 56</span>
+<span class="normal"> 57</span>
+<span class="normal"> 58</span>
+<span class="normal"> 59</span>
+<span class="normal"> 60</span>
+<span class="normal"> 61</span>
+<span class="normal"> 62</span>
+<span class="normal"> 63</span>
+<span class="normal"> 64</span>
+<span class="normal"> 65</span>
+<span class="normal"> 66</span>
+<span class="normal"> 67</span>
+<span class="normal"> 68</span>
+<span class="normal"> 69</span>
+<span class="normal"> 70</span>
+<span class="normal"> 71</span>
+<span class="normal"> 72</span>
+<span class="normal"> 73</span>
+<span class="normal"> 74</span>
+<span class="normal"> 75</span>
+<span class="normal"> 76</span>
+<span class="normal"> 77</span>
+<span class="normal"> 78</span>
+<span class="normal"> 79</span>
+<span class="normal"> 80</span>
+<span class="normal"> 81</span>
+<span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span>
+<span class="normal">145</span>
+<span class="normal">146</span>
+<span class="normal">147</span>
+<span class="normal">148</span>
+<span class="normal">149</span>
+<span class="normal">150</span>
+<span class="normal">151</span>
+<span class="normal">152</span>
+<span class="normal">153</span>
+<span class="normal">154</span>
+<span class="normal">155</span>
+<span class="normal">156</span>
+<span class="normal">157</span>
+<span class="normal">158</span>
+<span class="normal">159</span>
+<span class="normal">160</span>
+<span class="normal">161</span>
+<span class="normal">162</span>
+<span class="normal">163</span>
+<span class="normal">164</span>
+<span class="normal">165</span>
+<span class="normal">166</span>
+<span class="normal">167</span>
+<span class="normal">168</span>
+<span class="normal">169</span>
+<span class="normal">170</span>
+<span class="normal">171</span>
+<span class="normal">172</span>
+<span class="normal">173</span>
+<span class="normal">174</span>
+<span class="normal">175</span>
+<span class="normal">176</span>
+<span class="normal">177</span>
+<span class="normal">178</span>
+<span class="normal">179</span>
+<span class="normal">180</span>
+<span class="normal">181</span>
+<span class="normal">182</span>
+<span class="normal">183</span>
+<span class="normal">184</span>
+<span class="normal">185</span>
+<span class="normal">186</span>
+<span class="normal">187</span>
+<span class="normal">188</span>
+<span class="normal">189</span>
+<span class="normal">190</span>
+<span class="normal">191</span>
+<span class="normal">192</span>
+<span class="normal">193</span>
+<span class="normal">194</span>
+<span class="normal">195</span>
+<span class="normal">196</span>
+<span class="normal">197</span>
+<span class="normal">198</span>
+<span class="normal">199</span>
+<span class="normal">200</span>
+<span class="normal">201</span>
+<span class="normal">202</span>
+<span class="normal">203</span>
+<span class="normal">204</span>
+<span class="normal">205</span>
+<span class="normal">206</span>
+<span class="normal">207</span>
+<span class="normal">208</span>
+<span class="normal">209</span>
+<span class="normal">210</span>
+<span class="normal">211</span>
+<span class="normal">212</span>
+<span class="normal">213</span>
+<span class="normal">214</span>
+<span class="normal">215</span>
+<span class="normal">216</span>
+<span class="normal">217</span>
+<span class="normal">218</span>
+<span class="normal">219</span>
+<span class="normal">220</span>
+<span class="normal">221</span>
+<span class="normal">222</span>
+<span class="normal">223</span>
+<span class="normal">224</span>
+<span class="normal">225</span>
+<span class="normal">226</span>
+<span class="normal">227</span>
+<span class="normal">228</span>
+<span class="normal">229</span>
+<span class="normal">230</span>
+<span class="normal">231</span>
+<span class="normal">232</span>
+<span class="normal">233</span>
+<span class="normal">234</span>
+<span class="normal">235</span>
+<span class="normal">236</span>
+<span class="normal">237</span>
+<span class="normal">238</span>
+<span class="normal">239</span>
+<span class="normal">240</span>
+<span class="normal">241</span>
+<span class="normal">242</span>
+<span class="normal">243</span>
+<span class="normal">244</span>
+<span class="normal">245</span>
+<span class="normal">246</span>
+<span class="normal">247</span>
+<span class="normal">248</span>
+<span class="normal">249</span>
+<span class="normal">250</span>
+<span class="normal">251</span>
+<span class="normal">252</span>
+<span class="normal">253</span>
+<span class="normal">254</span>
+<span class="normal">255</span>
+<span class="normal">256</span>
+<span class="normal">257</span>
+<span class="normal">258</span>
+<span class="normal">259</span>
+<span class="normal">260</span>
+<span class="normal">261</span>
+<span class="normal">262</span>
+<span class="normal">263</span>
+<span class="normal">264</span>
+<span class="normal">265</span>
+<span class="normal">266</span>
+<span class="normal">267</span>
+<span class="normal">268</span>
+<span class="normal">269</span>
+<span class="normal">270</span>
+<span class="normal">271</span>
+<span class="normal">272</span>
+<span class="normal">273</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">###HDaniel###</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="k">def</span> <span class="nf">mittel</span><span class="p">(</span><span class="n">X</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">):</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;Input must be a numpy matrix.&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Matrix dimensions must be greater than 0.&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">X</span><span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">cov</span><span class="p">(</span><span class="n">X</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">):</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;Input must be a numpy matrix.&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Matrix dimensions must be greater than 0.&quot;</span><span class="p">)</span>
+    <span class="n">m</span> <span class="o">=</span> <span class="n">mittel</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">([[(</span><span class="mi">1</span> <span class="o">/</span> <span class="n">n</span><span class="p">)</span> <span class="o">*</span> <span class="nb">sum</span><span class="p">((</span><span class="n">X</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">k</span><span class="p">]</span> <span class="o">-</span> <span class="n">m</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">*</span> <span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="n">j</span><span class="p">,</span> <span class="n">k</span><span class="p">]</span> <span class="o">-</span> <span class="n">m</span><span class="p">[</span><span class="n">j</span><span class="p">])</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">))</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])])</span>
+
+<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">7</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">9</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">8</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">],[</span><span class="mi">6</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]])</span><span class="o">.</span><span class="n">T</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mittel:&quot;</span><span class="p">,</span> <span class="n">mittel</span><span class="p">(</span><span class="n">X</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Covariance Matrix:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">cov</span><span class="p">(</span><span class="n">X</span><span class="p">))</span>
+
+<span class="c1"># Unit tests</span>
+<span class="kn">import</span> <span class="nn">unittest</span>
+<span class="kn">from</span> <span class="nn">parameterized</span> <span class="kn">import</span> <span class="n">parameterized</span>
+
+<span class="k">class</span> <span class="nc">TestMatrixFunctions</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+
+    <span class="nd">@parameterized</span><span class="o">.</span><span class="n">expand</span><span class="p">([</span>
+        <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">7</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">9</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">8</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">],[</span><span class="mi">6</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]])</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="p">[</span><span class="mf">3.0</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">]),</span>
+        <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">]])</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="p">[</span><span class="mf">4.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">])</span>
+    <span class="p">])</span>
+    <span class="k">def</span> <span class="nf">test_mittel</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">expected</span><span class="p">):</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">mittel</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">expected</span><span class="p">)</span>
+
+    <span class="nd">@parameterized</span><span class="o">.</span><span class="n">expand</span><span class="p">([</span>
+        <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">7</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">9</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">8</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">],[</span><span class="mi">6</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]])</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> 
+         <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">([[</span> <span class="mf">4.2</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.3</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.7</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.3</span><span class="p">,</span>  <span class="mf">1.8</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.1</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.1</span><span class="p">,</span>  <span class="mf">6.4</span><span class="p">]])),</span>
+        <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">]])</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> 
+         <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">([[</span><span class="mf">6.0</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">],</span> <span class="p">[</span><span class="mf">6.0</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">],</span> <span class="p">[</span><span class="mf">6.0</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">]]))</span>
+    <span class="p">])</span>
+    <span class="k">def</span> <span class="nf">test_cov</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">expected</span><span class="p">):</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">cov</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+        <span class="n">np</span><span class="o">.</span><span class="n">testing</span><span class="o">.</span><span class="n">assert_array_almost_equal</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">expected</span><span class="p">)</span>
+
+    <span class="nd">@parameterized</span><span class="o">.</span><span class="n">expand</span><span class="p">([</span>
+        <span class="p">(</span><span class="s2">&quot;not a matrix&quot;</span><span class="p">,</span> <span class="ne">TypeError</span><span class="p">),</span>
+        <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">([]),</span> <span class="ne">ValueError</span><span class="p">)</span>
+    <span class="p">])</span>
+    <span class="k">def</span> <span class="nf">test_mittel_errors</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">expected_exception</span><span class="p">):</span>
+        <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">assertRaises</span><span class="p">(</span><span class="n">expected_exception</span><span class="p">):</span>
+            <span class="n">mittel</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+
+    <span class="nd">@parameterized</span><span class="o">.</span><span class="n">expand</span><span class="p">([</span>
+        <span class="p">(</span><span class="s2">&quot;not a matrix&quot;</span><span class="p">,</span> <span class="ne">TypeError</span><span class="p">),</span>
+        <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">([]),</span> <span class="ne">ValueError</span><span class="p">)</span>
+    <span class="p">])</span>
+    <span class="k">def</span> <span class="nf">test_cov_errors</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">expected_exception</span><span class="p">):</span>
+        <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">assertRaises</span><span class="p">(</span><span class="n">expected_exception</span><span class="p">):</span>
+            <span class="n">cov</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
+
+
+<span class="c1">#### Henrik</span>
+
+
+<span class="k">def</span> <span class="nf">mean</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
+    <span class="n">mean_values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">mean_values</span>
+
+<span class="k">def</span> <span class="nf">covarianz</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">means</span><span class="p">):</span>
+    <span class="n">distance</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="n">col</span> <span class="o">-</span> <span class="n">means</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">col</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">row</span><span class="p">)]</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">m</span><span class="p">])</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="n">distance</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">cov_matrix</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="n">n</span> <span class="o">*</span> <span class="n">distance</span><span class="o">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">distance</span>
+    <span class="k">return</span> <span class="n">cov_matrix</span>
+
+
+
+<span class="c1">### Ly</span>
+
+<span class="k">def</span> <span class="nf">calc_covariance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="n">x_mean</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">y_mean</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+
+    <span class="n">cov</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">((</span><span class="n">x</span><span class="o">-</span><span class="n">x_mean</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">y</span><span class="o">-</span><span class="n">y_mean</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">cov</span>
+
+<span class="k">def</span> <span class="nf">calc_covariance_matrix</span><span class="p">(</span><span class="n">X</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">):</span>
+    <span class="n">_</span><span class="p">,</span> <span class="n">n_features</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span>
+    <span class="n">cov_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">n_features</span><span class="p">,</span> <span class="n">n_features</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_features</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_features</span><span class="p">):</span>
+            <span class="n">cov_matrix</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">calc_covariance</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span> <span class="n">i</span><span class="p">],</span> <span class="n">X</span><span class="p">[:,</span> <span class="n">j</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">cov_matrix</span>
+
+
+
+<span class="c1">############## Noah</span>
+<span class="k">def</span> <span class="nf">covariance</span><span class="p">(</span><span class="n">arr1</span><span class="p">,</span> <span class="n">arr2</span><span class="p">):</span>
+    <span class="n">arr1_mean</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">arr1</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">arr1</span><span class="p">)</span>
+    <span class="n">arr2_mean</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">arr2</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">arr2</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="mi">1</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">arr1</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="nb">sum</span><span class="p">((</span><span class="n">arr1_i</span> <span class="o">-</span> <span class="n">arr1_mean</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">arr2_i</span> <span class="o">-</span> <span class="n">arr2_mean</span><span class="p">)</span> <span class="k">for</span> <span class="n">arr1_i</span><span class="p">,</span> <span class="n">arr2_i</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">arr1</span><span class="p">,</span> <span class="n">arr2</span><span class="p">)))</span>
+
+<span class="k">def</span> <span class="nf">covariance_matrix</span><span class="p">(</span><span class="o">*</span><span class="n">arrays</span><span class="p">):</span>
+    <span class="n">num_arrays</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">arrays</span><span class="p">)</span>
+    <span class="n">cov_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">num_arrays</span><span class="p">,</span> <span class="n">num_arrays</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_arrays</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_arrays</span><span class="p">):</span>
+            <span class="n">cov_value</span> <span class="o">=</span> <span class="n">covariance</span><span class="p">(</span><span class="n">arrays</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">arrays</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+            <span class="n">cov_matrix</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">cov_value</span>
+
+    <span class="k">return</span> <span class="n">cov_matrix</span>
+
+
+
+
+<span class="o">------</span><span class="n">Johannes</span><span class="o">------</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]])</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">X</span><span class="o">.</span><span class="n">T</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">X</span><span class="o">.</span><span class="n">T</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">X</span><span class="o">.</span><span class="n">T</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">np</span><span class="o">.</span><span class="n">cov</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">bias</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+
+
+<span class="c1">#Nick</span>
+
+<span class="k">def</span> <span class="nf">cov</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">x</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">y</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;Bitte zwei Vektoren übergeben&#39;</span><span class="p">)</span>
+
+    <span class="n">vector_x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">vector_y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+    <span class="n">x_</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">vector_x</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">vector_x</span><span class="p">)</span>
+    <span class="n">y_</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">vector_y</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">vector_y</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="nb">sum</span><span class="p">((</span><span class="n">number_1</span> <span class="o">-</span> <span class="n">x_</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">number_2</span> <span class="o">-</span> <span class="n">y_</span><span class="p">)</span> <span class="k">for</span> <span class="n">number_1</span><span class="p">,</span> <span class="n">number_2</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">vector_x</span><span class="p">,</span> <span class="n">vector_y</span><span class="p">))</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">vector_x</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Test_Cov</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+  <span class="n">x_1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+    <span class="n">x_2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+    <span class="n">x_3</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+    <span class="k">def</span> <span class="nf">test_empty</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">assertRaises</span><span class="p">(</span><span class="ne">ValueError</span><span class="p">):</span>
+            <span class="n">cov</span><span class="p">([],[])</span>
+
+
+
+    <span class="nd">@parameterized</span><span class="o">.</span><span class="n">expand</span><span class="p">([</span>
+
+        <span class="p">(</span><span class="n">x_1</span><span class="p">,</span><span class="n">x_2</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.3</span><span class="p">),</span>         
+        <span class="p">(</span><span class="n">x_2</span><span class="p">,</span> <span class="n">x_1</span><span class="p">,</span><span class="o">-</span><span class="mf">0.3</span><span class="p">),</span> 
+        <span class="p">(</span><span class="n">x_3</span><span class="p">,</span><span class="n">x_3</span><span class="p">,</span> <span class="mf">6.4</span><span class="p">),</span>
+
+    <span class="p">])</span>
+    <span class="k">def</span> <span class="nf">test_parametrized</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vector_1</span><span class="p">,</span><span class="n">vector_2</span><span class="p">,</span> <span class="n">expected</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertAlmostEqual</span><span class="p">(</span><span class="n">cov</span><span class="p">(</span><span class="n">vector_1</span><span class="p">,</span><span class="n">vector_2</span><span class="p">),</span> <span class="n">expected</span><span class="p">,</span> <span class="n">places</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+
+        <span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">(</span><span class="n">argv</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">],</span> <span class="n">verbosity</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">exit</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>  
+
+
+<span class="o">--------------</span>
+<span class="n">Kevin</span>
+
+<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]])</span>
+
+<span class="n">x1</span> <span class="o">=</span> <span class="n">X</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">x2</span> <span class="o">=</span> <span class="n">X</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">x3</span> <span class="o">=</span> <span class="n">X</span><span class="p">[:,</span><span class="mi">2</span><span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">covariance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="n">mean_x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">mean_y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">((</span><span class="n">x</span> <span class="o">-</span> <span class="n">mean_x</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">y</span> <span class="o">-</span> <span class="n">mean_y</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+
+
+<span class="k">def</span> <span class="nf">covariance_matrix</span><span class="p">(</span><span class="n">X</span><span class="p">):</span>
+    <span class="n">spalten</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">cov_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">spalten</span><span class="p">,</span> <span class="n">spalten</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">spalten</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">spalten</span><span class="p">):</span>
+            <span class="n">cov_matrix</span><span class="p">[</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">]</span> <span class="o">=</span> <span class="n">covariance</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span> <span class="n">x</span><span class="p">],</span> <span class="n">X</span><span class="p">[:,</span> <span class="n">y</span><span class="p">])</span>
+
+    <span class="k">return</span> <span class="n">cov_matrix</span>
+
+
+<span class="o">--------</span> <span class="n">Tom</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+    <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">7</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">9</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">8</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">6</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
+<span class="p">])</span>
+
+<span class="n">np</span><span class="o">.</span><span class="n">cov</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">rowvar</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">bias</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="err">🦫</span>
+
+
+
+<span class="c1">### Marina</span>
+
+
+<span class="k">def</span> <span class="nf">covariance</span><span class="p">(</span><span class="n">X</span><span class="p">):</span>
+    <span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+
+    <span class="c1"># print(X.shape)</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+    <span class="n">cov_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+    <span class="c1"># print(cov_matrix)</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
+            <span class="n">sum_diff</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">((</span><span class="n">X</span><span class="p">[:,</span> <span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span> <span class="n">i</span><span class="p">]))</span> <span class="o">*</span> <span class="p">(</span><span class="n">X</span><span class="p">[:,</span> <span class="n">j</span><span class="p">]</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span> <span class="n">j</span><span class="p">])))</span>
+            <span class="n">cov_matrix</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">sum_diff</span> <span class="o">/</span> <span class="n">n</span>
+
+    <span class="k">return</span> <span class="n">cov_matrix</span>
+
+<span class="c1"># Beispielmatrix</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+    <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="p">])</span>
+
+<span class="n">cov_matrix</span> <span class="o">=</span> <span class="n">covariance</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cov_matrix</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+</details>
+</details>
+<h2 id="kovarianzmatrix">Kovarianzmatrix<a class="headerlink" href="#kovarianzmatrix" title="Permanent link">&para;</a></h2>
+<div class="admonition formel">
+<p class="admonition-title">Kovarianzmatrix</p>
+<p>Es sei <span class="arithmatex">\( X \in \mathbb{R}^{N \times D} \)</span> eine Datenmatrix mit <span class="arithmatex">\( N \)</span> Beobachtungen und <span class="arithmatex">\( D \)</span> Merkmalen.
+Es sei <span class="arithmatex">\(X_i \in \mathbb{R}^N\)</span> dabei das <span class="arithmatex">\(i\)</span>-te Merkmal. 
+Die Einträge der <strong>Kovarianzmatrix</strong> <span class="arithmatex">\( S \)</span> berechnen sich mit der Formel:</p>
+<div class="arithmatex">\[
+S_{ij} = cov(X_i, X_j), \text{ für } i,j \in \{ 1, \cdots , M\}
+\]</div>
+</div>
+<details class="question" open="open">
+<summary>Kovarianzmatrix ausrechnen</summary>
+<p>Gegeben ist eine Matrix <span class="arithmatex">\( X \)</span> mit drei Merkmalen und zehn Beobachtungen:</p>
+<div class="arithmatex">\[
+X =
+\begin{pmatrix}
+2 &amp; 7 &amp; 2 \\
+4 &amp; 8 &amp; 6 \\
+2 &amp; 6 &amp; 1 \\
+7 &amp; 6 &amp; 3 \\
+1 &amp; 5 &amp; 9 \\
+1 &amp; 4 &amp; 6 \\
+2 &amp; 6 &amp; 8 \\
+1 &amp; 8 &amp; 3 \\
+4 &amp; 6 &amp; 7 \\
+6 &amp; 4 &amp; 5
+\end{pmatrix}
+\]</div>
+<p>Dabei entspricht jede Spalte einem Merkmal und jede Zeile einer Beobachtung.</p>
+<p>Bestimmen Sie die <strong>Kovarianzmatrix</strong>.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Die Matrix sollte dir bekannt vorkommen😉</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<div class="arithmatex">\[
+\begin{pmatrix}
+ 4.2 &amp; -0.3 &amp; -0.7 \\
+-0.3 &amp;  1.8 &amp; -1.1 \\
+-0.7 &amp; -1.1 &amp;  6.4
+\end{pmatrix}
+\]</div>
+</details>
+</details>
+<details class="question" open="open">
+<summary>Geschlossene Form der Kovarianzmatrix</summary>
+<p>Erkläre, die geschlossene Form der Koviaranzmatrix zustande kommt.</p>
+<div class="arithmatex">\[
+S = \frac{1}{N} \sum_{i=1}^{N} (x_i - \bar{x}) (x_i - \bar{x})^t
+\]</div>
+<details class="info">
+<summary>Tipp</summary>
+<p>Ausführliches <a href="https://www.youtube.com/watch?v=F-aku75OpoM">Video von ritvikmath</a></p>
+</details>
+</details>
+<details class="question" open="open">
+<summary>Kovarianzmatrix mit geschlossener Form berechnen</summary>
+<p>Gegeben ist eine Matrix <span class="arithmatex">\( X \)</span> mit drei Merkmalen und zehn Beobachtungen:</p>
+<div class="arithmatex">\[
+X =
+\begin{pmatrix}
+2 &amp; 7 &amp; 2 \\
+4 &amp; 8 &amp; 6 \\
+2 &amp; 6 &amp; 1 \\
+7 &amp; 6 &amp; 3 \\
+1 &amp; 5 &amp; 9 \\
+1 &amp; 4 &amp; 6 \\
+2 &amp; 6 &amp; 8 \\
+1 &amp; 8 &amp; 3 \\
+4 &amp; 6 &amp; 7 \\
+6 &amp; 4 &amp; 5
+\end{pmatrix}
+\]</div>
+<p>Bestimmen Sie die Kovarianzmatrix mit Hilfe der <strong>geschlossenen Form</strong>.</p>
+<p>Baue gerne ein Programm, dass dir bei den Berechnungen hilft, sonst sind es sehr viele.</p>
+<details class="success">
+<summary>Lösung</summary>
+<p><strong>Mittelwert bestimmen:</strong></p>
+<div class="arithmatex">\[
+\bar{X} =
+\begin{pmatrix}
+3 \\ 6 \\ 5
+\end{pmatrix}
+\]</div>
+<p><strong>Faktoren bestimmen:</strong></p>
+<div class="arithmatex">\[
+X_0 - \bar{X} =
+\begin{pmatrix}-1\\1\\-3\end{pmatrix} \quad
+X_1 - \bar{X} =
+\begin{pmatrix}1\\2\\1\end{pmatrix} \quad
+X_2 - \bar{X} =
+\begin{pmatrix}-1\\0\\-4\end{pmatrix} \quad
+X_3 - \bar{X} =
+\begin{pmatrix}4\\0\\-2\end{pmatrix} \quad
+X_4 - \bar{X} =
+\begin{pmatrix}-2\\-1\\4\end{pmatrix} \quad
+X_5 - \bar{X} =
+\begin{pmatrix}-2\\-2\\1\end{pmatrix} \quad
+X_6 - \bar{X} =
+\begin{pmatrix}-1\\0\\3\end{pmatrix} \quad
+X_7 - \bar{X} =
+\begin{pmatrix}-2\\2\\-2\end{pmatrix} \quad
+X_8 - \bar{X} =
+\begin{pmatrix}1\\0\\2\end{pmatrix} \quad
+X_9 - \bar{X} =
+\begin{pmatrix}3\\-2\\0\end{pmatrix}
+\]</div>
+<p><strong>Summanden bestimmen:</strong></p>
+<div class="arithmatex">\[
+(X_0 - \bar{X})(X_0 - \bar{X})^T =
+\begin{pmatrix}1 &amp; -1 &amp; 3\\-1 &amp; 1 &amp; -3\\3 &amp; -3 &amp; 9\end{pmatrix}
+\]</div>
+<div class="arithmatex">\[
+(X_1 - \bar{X})(X_1 - \bar{X})^T =
+\begin{pmatrix}1 &amp; 2 &amp; 1\\2 &amp; 4 &amp; 2\\1 &amp; 2 &amp; 1\end{pmatrix}
+\]</div>
+<div class="arithmatex">\[
+(X_2 - \bar{X})(X_2 - \bar{X})^T =
+\begin{pmatrix}1 &amp; 0 &amp; 4\\0 &amp; 0 &amp; 0\\4 &amp; 0 &amp; 16\end{pmatrix}
+\]</div>
+<div class="arithmatex">\[
+(X_3 - \bar{X})(X_3 - \bar{X})^T =
+\begin{pmatrix}16 &amp; 0 &amp; -8\\0 &amp; 0 &amp; 0\\-8 &amp; 0 &amp; 4\end{pmatrix}
+\]</div>
+<div class="arithmatex">\[
+(X_4 - \bar{X})(X_4 - \bar{X})^T =
+\begin{pmatrix}4 &amp; 2 &amp; -8\\2 &amp; 1 &amp; -4\\-8 &amp; -4 &amp; 16\end{pmatrix}
+\]</div>
+<div class="arithmatex">\[
+(X_5 - \bar{X})(X_5 - \bar{X})^T =
+\begin{pmatrix}4 &amp; 4 &amp; -2\\4 &amp; 4 &amp; -2\\-2 &amp; -2 &amp; 1\end{pmatrix}
+\]</div>
+<div class="arithmatex">\[
+(X_6 - \bar{X})(X_6 - \bar{X})^T =
+\begin{pmatrix}1 &amp; 0 &amp; -3\\0 &amp; 0 &amp; 0\\-3 &amp; 0 &amp; 9\end{pmatrix}
+\]</div>
+<div class="arithmatex">\[
+(X_7 - \bar{X})(X_7 - \bar{X})^T =
+\begin{pmatrix}4 &amp; -4 &amp; 4\\-4 &amp; 4 &amp; -4\\4 &amp; -4 &amp; 4\end{pmatrix}
+\]</div>
+<div class="arithmatex">\[
+(X_8 - \bar{X})(X_8 - \bar{X})^T =
+\begin{pmatrix}1 &amp; 0 &amp; 2\\0 &amp; 0 &amp; 0\\2 &amp; 0 &amp; 4\end{pmatrix}
+\]</div>
+<div class="arithmatex">\[
+(X_9 - \bar{X})(X_9 - \bar{X})^T =
+\begin{pmatrix}9 &amp; -6 &amp; 0\\-6 &amp; 4 &amp; 0\\0 &amp; 0 &amp; 0\end{pmatrix}
+\]</div>
+<div class="arithmatex">\[
+S = \frac{1}{N} \sum_{i=1}^{N} (x_i - \bar{X}) (x_i - \bar{X})^t
+\begin{pmatrix}
+ 4.2 &amp; -0.3 &amp; -0.7 \\
+-0.3 &amp;  1.8 &amp; -1.1 \\
+-0.7 &amp; -1.1 &amp;  6.4
+\end{pmatrix}
+\]</div>
+</details>
+</details>
+<details class="question" open="open">
+<summary>Geschlossene Form der Kovarianzmatrix programmieren</summary>
+<p>Implementiere das Berechnen der Kovarianzmatrix unter Verwendung der geschlossenen Form.
+Der Funktionsname lautet <code>cov</code>.</p>
+<details class="success">
+<summary>Lösung</summary>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># ----Johannes----</span>
+<span class="k">def</span> <span class="nf">covariance_matrix</span><span class="p">(</span><span class="n">X</span><span class="p">):</span>
+    <span class="n">X</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">T</span> <span class="c1"># um später nicht verwirrt zu sein wie man das drehen und wenden muss</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># um die länge zu bekommen </span>
+    <span class="c1"># 10</span>
+    <span class="n">mean_X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">keepdims</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># durchschnitt über alle reihen </span>
+    <span class="c1"># [[3.] </span>
+    <span class="c1"># [6.]</span>
+    <span class="c1"># [5.]]</span>
+    <span class="n">X_centered</span> <span class="o">=</span> <span class="n">X</span> <span class="o">-</span> <span class="n">mean_X</span>
+    <span class="c1"># [[-1.  1. -1.  4. -2. -2. -1. -2.  1.  3.]</span>
+    <span class="c1"># [ 1.  2.  0.  0. -1. -2.  0.  2.  0. -2.]</span>
+    <span class="c1"># [-3.  1. -4. -2.  4.  1.  3. -2.  2.  0.]]</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">X_centered</span> <span class="o">@</span> <span class="n">X_centered</span><span class="o">.</span><span class="n">T</span><span class="p">)</span> <span class="o">/</span> <span class="n">n</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]])</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">covariance_matrix</span><span class="p">(</span><span class="n">X</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1">#-----Daniel---</span>
+<span class="k">def</span> <span class="nf">mittel</span><span class="p">(</span><span class="n">X</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">):</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;Input must be a numpy matrix.&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Matrix dimensions must be greater than 0.&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">X</span><span class="p">]</span>
+
+
+<span class="k">def</span> <span class="nf">cov_geschlossen</span><span class="p">(</span><span class="n">X</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">):</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">m</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="n">mittel</span><span class="p">(</span><span class="n">X</span><span class="p">))</span><span class="o">.</span><span class="n">T</span>
+    <span class="k">return</span> <span class="p">(</span><span class="mi">1</span> <span class="o">/</span> <span class="n">n</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">X</span> <span class="o">-</span> <span class="n">m</span><span class="p">)</span> <span class="o">@</span> <span class="p">(</span><span class="n">X</span> <span class="o">-</span> <span class="n">m</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
+</code></pre></div></td></tr></table></div>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../1_projektion/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Projektion">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Projektion
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../3_lagrange/" class="md-footer__link md-footer__link--next" aria-label="Next: Lagrange">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Lagrange
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.kununu.com/de/qualidy" target="_blank" rel="noopener" title="www.kununu.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M311 86.3c12.3-12.7 12-32.9-.7-45.2s-32.9-12-45.2.7l-155.2 160L64 249V64c0-17.7-14.3-32-32-32S0 46.3 0 64v384c0 17.7 14.3 32 32 32s32-14.3 32-32V341l64.7-66.7 133 192c10.1 14.5 30 18.1 44.5 8.1s18.1-30 8.1-44.5L174.1 227.4z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.google.com/search?sca_esv=7e6ba2047fcb60f3&uds=AMwkrPtyB8MsmozA4Lwzqy2G2HCu-abqzc6moOG48q3gP5dtjTRzC2Ws0eSwcyLXDfZNuYCrZ7ByIreHLG9th3vKLekPoVeey0tumAbet4cVLQRLzdRFhUbOGbnyp3xo1V0hzzaNmkCN&si=AKbGX_rcuucMgom2rba1cdwsvM2SVoIkP2btyqGMV4t0GuHIs4sGV_1tpuqR0YHG4Rzd9SdJcL-lW6E-2aJA5azZLTKkIOrZ2j2aWwoBkVbdEJ0o0GPcQhs%3D&q=Qualidy+GmbH+Rezensionen&sa=X&ved=2ahUKEwibsbnSgcmFAxXNQvEDHaVYCiAQ3PALegQIRxAF" target="_blank" rel="noopener" title="www.google.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.35 11.1h-9.17v2.73h6.51c-.33 3.81-3.5 5.44-6.5 5.44C8.36 19.27 5 16.25 5 12c0-4.1 3.2-7.27 7.2-7.27 3.09 0 4.9 1.97 4.9 1.97L19 4.72S16.56 2 12.1 2C6.42 2 2.03 6.8 2.03 12c0 5.05 4.13 10 10.22 10 5.35 0 9.25-3.67 9.25-9.09 0-1.15-.15-1.81-.15-1.81"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.4c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64h185.3c2.2 20.4 3.3 41.8 3.3 64m28.8-64h123.1c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64m112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6 78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7 10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5 11.6 26 20.9 58.2 27 94.7m-209 0H18.6c30-74.1 93.6-130.9 172-151.6-25.5 34.2-45.3 87.7-55.3 151.6M8.1 192h123.1c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64m186.6 254.6c-11.6-26-20.9-58.2-27-94.6h176.6c-6.1 36.4-15.5 68.6-27 94.6-10.5 23.6-22.2 40.7-33.5 51.5-11.2 10.7-20.5 13.9-27.8 13.9s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6-78.4-20.7-142-77.5-172-151.6zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6 25.5-34.2 45.2-87.7 55.3-151.6h116.7z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="../../../javascripts/pytutor_button.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

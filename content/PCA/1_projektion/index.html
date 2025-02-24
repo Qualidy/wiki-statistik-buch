@@ -1,0 +1,3061 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../0_einf%C3%BChrung/">
+      
+      
+        <link rel="next" href="../2_varianz/">
+      
+      
+      <link rel="icon" href="../../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.45">
+    
+    
+      
+        <title>Projektion - Statistik Buch Zusätze</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/beispiel_admonition.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/formel_admonition.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#projektion" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Statistik Buch Zusätze" class="md-header__button md-logo" aria-label="Statistik Buch Zusätze" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Statistik Buch Zusätze
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Projektion
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Statistik Buch Zusätze" class="md-nav__button md-logo" aria-label="Statistik Buch Zusätze" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    Statistik Buch Zusätze
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ergänzungen zum Buch "Statistik Schritt für Schritt"
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Content
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Content
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    B Grundlagen statistischer Untersuchungen
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            B Grundlagen statistischer Untersuchungen
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../B_Grundlagen_statistischer_Untersuchungen/B_1_Gesamtheiten/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gesamtheiten und ihre Beschreibung durch Merkmale
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../B_Grundlagen_statistischer_Untersuchungen/B_2_Skalenniveaus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Skalenniveaus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    C Univariate Analyse
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            C Univariate Analyse
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C_Univariate_Analyse/C_2_Eindimensionale_H%C3%A4ufigkeitsverteilung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    C.2.1 Eindimensionale Häufigkeitsverteilung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C_Univariate_Analyse/C_3_0_Ma%C3%9Fzahlen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    C.3.0 Mittelwerte
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C_Univariate_Analyse/C_3_3_Boxplots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    C.3.3 Boxplots und Quantile
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C_Univariate_Analyse/C_3_5_Gini_Koeffizient/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    C.3.5 Lorenzkurve und Gini-Koeffizient
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Clustering
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Clustering
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Clustering/0_einf%C3%BChrung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Einführung Clustering
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Clustering/1_KMeans/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    KMeans
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Clustering/2_dbscan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DBScan
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Clustering/3_distances/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Abstände
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    D Bivariate und multivariate Analyse
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            D Bivariate und multivariate Analyse
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_Bivariate_und_multivariate_Analyse/D_1_Darstellung%20Daten/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    D.1 Darstellung multivariater Datensätze
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_Bivariate_und_multivariate_Analyse/D_2_Korrelationsanalyse/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    D.2 Korrelationsanalyse
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_Bivariate_und_multivariate_Analyse/D_3_Regressionsrechnung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    D.3 Regressionsrechnung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    F Theoretische Wahrscheinlichkeitsmodelle
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            F Theoretische Wahrscheinlichkeitsmodelle
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../F_Theoretische%20Wahrscheinlichkeitsmodelle/F_5_0_Vortr%C3%A4ge_Verteilungen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vorträge zu Verteilungen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../F_Theoretische%20Wahrscheinlichkeitsmodelle/F_5_10%20Standardnormalverteilung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    F.5.10 Standardnormalverteilung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../F_Theoretische%20Wahrscheinlichkeitsmodelle/F_5_4_Binomialverteilung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Binomialverteilung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../F_Theoretische%20Wahrscheinlichkeitsmodelle/F_5_5_Geometrische_Verteilung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geometrische Verteilung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../F_Theoretische%20Wahrscheinlichkeitsmodelle/F_5_6_Hypergeometrische_Verteilung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hypergeometrische Verteilung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../F_Theoretische%20Wahrscheinlichkeitsmodelle/F_5_7_Poisson_Verteilung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Poisson-Verteilung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../F_Theoretische%20Wahrscheinlichkeitsmodelle/F_5_8_Exponentialverteilung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exponentialverteilung Vorstellung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../F_Theoretische%20Wahrscheinlichkeitsmodelle/F_5_X_Pareto_Verteilung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pareto-Verteilung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../F_Theoretische%20Wahrscheinlichkeitsmodelle/test/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Test zu Verteilungen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Neuronale Netze
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            Neuronale Netze
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Neuronale_Netze/nn/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Neuronale Netze
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    PCA
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            PCA
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../0_einf%C3%BChrung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Einführung in PCA
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Projektion
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Projektion
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#projektion-auf-einen-vektor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Projektion auf einen Vektor
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Projektion auf einen Vektor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#programmierung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Programmierung
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#projektion-auf-einen-hyperraum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Projektion auf einen Hyperraum
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2_varianz/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Varianz maximieren
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_lagrange/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lagrange
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4_eigenvektor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Eigenvektoren und Eigenwerte
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5_pca/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PCA
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="projektion">Projektion<a class="headerlink" href="#projektion" title="Permanent link">&para;</a></h1>
+<h2 id="projektion-auf-einen-vektor">Projektion auf einen Vektor<a class="headerlink" href="#projektion-auf-einen-vektor" title="Permanent link">&para;</a></h2>
+<p>Wir müssen uns zunächst klar machen, was eine Projektion auf einen Vektor bedeutet.</p>
+<iframe src="https://www.geogebra.org/calculator/mhnxsjsr?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+
+<div class="admonition formel">
+<p class="admonition-title">Aufgespannter Vektorraum</p>
+<p>Sei <span class="arithmatex">\(v \in \mathbb{R}^D\)</span> ein Vektor. Dann ist </p>
+<div class="arithmatex">\[
+\langle v \rangle := \{ kv | k \in \mathbb{R} \}
+\]</div>
+<p>der von <span class="arithmatex">\(v\)</span> aufgespannte Vektorraum. Man spricht <span class="arithmatex">\(\langle v \rangle\)</span> aus als "Der Aufspann von <span class="arithmatex">\(v\)</span>" oder
+"Der von <span class="arithmatex">\(v\)</span> aufgespannte Vektorraum".</p>
+<p>Einen solchen aufgespannten Vektorraum kannst du dir als eine (eindimensionale) Linie in einem Raum vorstellen.</p>
+</div>
+<details class="question" open="open">
+<summary>Projektionsraum bestimmen</summary>
+<p>Gegeben seien die folgenden Vektoren:</p>
+<div class="arithmatex">\[
+v = \begin{pmatrix} 2 \\ -1 \\ 0 \end{pmatrix}, \quad
+w = \begin{pmatrix} -2 \\ 1 \\ 0 \end{pmatrix}, \quad
+z = \begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix}, \quad
+u = \begin{pmatrix} 2 \\ -1 \\ 3 \\ 2\end{pmatrix}
+\]</div>
+<p>und die folgenden Punkte:</p>
+<div class="arithmatex">\[
+a = \begin{pmatrix} 4 \\ -2 \\ 0 \end{pmatrix}, \quad
+b = \begin{pmatrix} -4 \\ 2 \\ 0 \end{pmatrix}, \quad
+c = \begin{pmatrix} 6 \\ -3 \\ 9 \end{pmatrix}, \quad
+d = \begin{pmatrix} 1 \\ -1 \\ 1 \end{pmatrix}, \quad
+e = \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}, \quad
+f = \begin{pmatrix} 6 \\ -3 \\ 9 \\ 6 \end{pmatrix}, \quad
+g = \begin{pmatrix} 4 \\ -5 \\ 6 \\ 4 \end{pmatrix}
+\]</div>
+<p>Welche der Punkte liegen in den Unterräumen <span class="arithmatex">\(\langle v \rangle\)</span>, <span class="arithmatex">\(\langle w \rangle\)</span>, <span class="arithmatex">\(\langle z \rangle\)</span> und <span class="arithmatex">\(\langle u \rangle\)</span>?</p>
+<p>Bonus: Geben Sie die Vektoren in GeoGebra ein (soweit möglich) und verifizieren Sie Ihre Lösung.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Achte auf die Größe der Vektoren. In welchen Räumen können Sie dann überhaupt nur liegen?</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Da <span class="arithmatex">\(v \in \langle w \rangle\)</span> ist, gilt <span class="arithmatex">\(\langle v \rangle = \langle w \rangle\)</span></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><span class="arithmatex">\(\langle v \rangle = \langle w \rangle\)</span></th>
+<th><span class="arithmatex">\(\langle z \rangle\)</span></th>
+<th><span class="arithmatex">\(\langle u \rangle\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(a\)</span></td>
+<td><span class="arithmatex">\(a=2v = -2w\)</span></td>
+<td>❌</td>
+<td>unmöglich</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(b\)</span></td>
+<td><span class="arithmatex">\(a=-2v = 2w\)</span></td>
+<td>❌</td>
+<td>unmöglich</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(c\)</span></td>
+<td>❌</td>
+<td><span class="arithmatex">\(c=3z\)</span></td>
+<td>unmöglich</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(d\)</span></td>
+<td>❌</td>
+<td>❌</td>
+<td>unmöglich</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(e\)</span></td>
+<td><span class="arithmatex">\(e = 0v = 0w\)</span></td>
+<td><span class="arithmatex">\(d=0z\)</span></td>
+<td>unmöglich</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(f\)</span></td>
+<td>unmöglich</td>
+<td>unmöglich</td>
+<td><span class="arithmatex">\(f = 3u\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(g\)</span></td>
+<td>unmöglich</td>
+<td>unmöglich</td>
+<td>❌</td>
+</tr>
+</tbody>
+</table>
+</details>
+</details>
+<div class="admonition formel">
+<p class="admonition-title">Senkrecht stehen</p>
+<p>Seien <span class="arithmatex">\(v\)</span> und <span class="arithmatex">\(w\)</span> zwei Vektoren gleicher Größe. Dann ist <span class="arithmatex">\(v\)</span> senkrecht auf <span class="arithmatex">\(w\)</span> (geschrieben <span class="arithmatex">\(v \perp w\)</span>) genau dann wenn
+<span class="arithmatex">\(v^tw=0\)</span> ist. Oft wird <span class="arithmatex">\(v^tw\)</span> als <span class="arithmatex">\(v\cdot w\)</span> notiert. </p>
+</div>
+<details class="question" open="open">
+<summary>Senkrechte Vektoren bestimmen</summary>
+<p>Welche der folgenden Vektoren sind senkrecht aufeinander?</p>
+<div class="arithmatex">\[
+\mathbf{a} = \begin{pmatrix} 2 \\ -1 \\ 0 \end{pmatrix}, \quad
+\mathbf{b} = \begin{pmatrix} 1 \\ 2 \\ -2 \end{pmatrix}, \quad
+\mathbf{c} = \begin{pmatrix} -3 \\ 6 \\ 1 \end{pmatrix}\quad
+\mathbf{d} = \begin{pmatrix} 4 \\ -2 \end{pmatrix}, \quad
+\mathbf{e} = \begin{pmatrix} 1 \\ 2 \end{pmatrix}\quad
+\mathbf{f} = \begin{pmatrix} 1 \\ 0 \\ -1 \\ 2 \end{pmatrix}, \quad
+\mathbf{g} = \begin{pmatrix} 2 \\ -1 \\ 2 \\ 1 \end{pmatrix}
+\]</div>
+<p>Bonus: Gebe die Vektoren in Geogebra ein (soweit möglich) und verifiziere so deine Lösung.</p>
+<details class="success">
+<summary>Lösung</summary>
+<p>Es müssen nur die Vektoren gleicher größe verglichen werden.</p>
+<p><span class="arithmatex">\(\mathbf{a} \cdot \mathbf{b} = 0\)</span>  </p>
+<p><span class="arithmatex">\(\mathbf{a} \cdot \mathbf{c} = -12\)</span>  </p>
+<p><span class="arithmatex">\(\mathbf{b} \cdot \mathbf{c} = 7\)</span>  </p>
+<p><span class="arithmatex">\(\mathbf{d} \cdot \mathbf{e} = 0\)</span>  </p>
+<p><span class="arithmatex">\(\mathbf{f} \cdot \mathbf{g} = 2\)</span>  </p>
+<p><strong>Ergebnis:</strong></p>
+<p><span class="arithmatex">\(\mathbf{b} \not \perp \mathbf{a} \perp \mathbf{b} \not\perp \mathbf{c}\)</span>  </p>
+<p><span class="arithmatex">\(\mathbf{d} \perp \mathbf{e}\)</span></p>
+<p><span class="arithmatex">\(\mathbf{f} \not \perp \mathbf{g}\)</span></p>
+</details>
+</details>
+<div class="admonition formel">
+<p class="admonition-title">Projektionsfunktion</p>
+<p>Sei <span class="arithmatex">\(v \in \mathbb{R}^D\)</span> ein Vektor, auf den projeziert werden soll.</p>
+<p>Dann sei <span class="arithmatex">\(pr_v : \mathbb{R}^D \to \langle v \rangle : w \mapsto kv\)</span>, wobei ein <span class="arithmatex">\(d\in \mathbb{R}^D\)</span> existiert,
+mit <span class="arithmatex">\(w = kv + d\)</span> und <span class="arithmatex">\(d \perp v\)</span> (das heißt <span class="arithmatex">\(d\)</span> steht senkrecht auf <span class="arithmatex">\(v\)</span>).</p>
+<p><iframe src="https://www.geogebra.org/calculator/psst9sn4?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe></p>
+</div>
+<p>Die Projektionsfunktion ist derzeit noch <strong>sehr unbefriedigend</strong>, da sie keine Rechenvorschrift angibt, wie
+man auf <span class="arithmatex">\(k\)</span> kommt.</p>
+<div class="admonition formel">
+<p class="admonition-title">Rechenvorschrift der Projektionsfunktion</p>
+<p>Sei <span class="arithmatex">\(v \in \mathbb{R}^D\)</span> ein Vektor. Dann ist</p>
+<div class="arithmatex">\[pr_v(w) = \frac{w^tv}{|v|^2} v\]</div>
+<p>Das in der Definition noch nicht näher bestimmte <span class="arithmatex">\(k\)</span> ist also <span class="arithmatex">\(\frac{w^tv}{|v|^2}\)</span>.</p>
+<p>Ist <span class="arithmatex">\(|v|=1\)</span> (ein sog. Einheitsvektor), so gilt sogar:</p>
+<div class="arithmatex">\[pr_v(w) = v^twv\]</div>
+</div>
+<details class="question" open="open">
+<summary>Projektion von Punkten auf Vektoren</summary>
+<p>Gegeben sind die folgenden Punkte und Vektoren in unterschiedlichen Dimensionen:</p>
+<p><strong>2D:</strong></p>
+<div class="arithmatex">\[
+w_1 = \begin{pmatrix} 3 \\ 4 \end{pmatrix}, \quad
+w_2 = \begin{pmatrix} -2 \\ 1 \end{pmatrix}
+\]</div>
+<div class="arithmatex">\[
+v_1 = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad
+v_2 = \begin{pmatrix} 0 \\ 1 \end{pmatrix} \quad
+\]</div>
+<p><strong>3D:</strong></p>
+<div class="arithmatex">\[
+w_3 = \begin{pmatrix} 1 \\ 2 \\ 3 \end{pmatrix}, \quad
+w_4 = \begin{pmatrix} -1 \\ 0 \\ 2 \end{pmatrix}
+\]</div>
+<div class="arithmatex">\[
+v_3 = \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix} \quad
+v_4 = \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}
+\]</div>
+<p><strong>4D:</strong></p>
+<div class="arithmatex">\[
+w_5 = \begin{pmatrix} 2 \\ -1 \\ 3 \\ 4 \end{pmatrix}, \quad
+w_6 = \begin{pmatrix} 0 \\ 2 \\ -1 \\ 1 \end{pmatrix}
+\]</div>
+<div class="arithmatex">\[
+v_5 = \begin{pmatrix} 2 \\ 1 \\ 2 \\ 1 \end{pmatrix}, \quad
+v_6 = \begin{pmatrix} 1 \\ 0 \\ 0 \\ 0 \end{pmatrix} \quad
+\]</div>
+<p>Bestimmen Sie die Projektionen der Punkte auf die jeweiligen Vektoren.</p>
+<p>Berechnen Sie dann die Länge der Projektionen.</p>
+<details class="success">
+<summary>Lösung</summary>
+<p><strong>Berechnung der Längen der Vektoren</strong></p>
+<table>
+<thead>
+<tr>
+<th>Vektor <span class="arithmatex">\(v\)</span></th>
+<th>Länge von <span class="arithmatex">\(v\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(v_1\)</span></td>
+<td><span class="arithmatex">\(1.0\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(v_2\)</span></td>
+<td><span class="arithmatex">\(1.0\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(v_3\)</span></td>
+<td><span class="arithmatex">\(1.0\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(v_4\)</span></td>
+<td><span class="arithmatex">\(1.73\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(v_5\)</span></td>
+<td><span class="arithmatex">\(3.16\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(v_6\)</span></td>
+<td><span class="arithmatex">\(1.0\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Berechnung der Projektionen:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Punkt <span class="arithmatex">\(w\)</span></th>
+<th>Vektor <span class="arithmatex">\(v\)</span></th>
+<th>Projektion <span class="arithmatex">\(pr_v(w)\)</span></th>
+<th>~Länge von <span class="arithmatex">\(pr_v(p)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(w_1\)</span></td>
+<td><span class="arithmatex">\(v_1\)</span></td>
+<td><span class="arithmatex">\((3, 0)\)</span></td>
+<td><span class="arithmatex">\(3\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(w_1\)</span></td>
+<td><span class="arithmatex">\(v_2\)</span></td>
+<td><span class="arithmatex">\((0, 4)\)</span></td>
+<td><span class="arithmatex">\(4\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(w_2\)</span></td>
+<td><span class="arithmatex">\(v_1\)</span></td>
+<td><span class="arithmatex">\((-2, 0)\)</span></td>
+<td><span class="arithmatex">\(2\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(w_2\)</span></td>
+<td><span class="arithmatex">\(v_2\)</span></td>
+<td><span class="arithmatex">\((0, 1)\)</span></td>
+<td><span class="arithmatex">\(0.71\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(w_3\)</span></td>
+<td><span class="arithmatex">\(v_3\)</span></td>
+<td><span class="arithmatex">\((0, 2, 0)\)</span></td>
+<td><span class="arithmatex">\(2\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(w_3\)</span></td>
+<td><span class="arithmatex">\(v_4\)</span></td>
+<td><span class="arithmatex">\((2, 2, 2)\)</span></td>
+<td><span class="arithmatex">\(3.46\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(w_4\)</span></td>
+<td><span class="arithmatex">\(v_3\)</span></td>
+<td><span class="arithmatex">\((0, 0, 0)\)</span></td>
+<td><span class="arithmatex">\(0\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(w_4\)</span></td>
+<td><span class="arithmatex">\(v_4\)</span></td>
+<td><span class="arithmatex">\((\frac{1}{3}, \frac{1}{3}, \frac{1}{3})\)</span></td>
+<td><span class="arithmatex">\(0.58\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(w_5\)</span></td>
+<td><span class="arithmatex">\(v_5\)</span></td>
+<td><span class="arithmatex">\((2.6, 1.3, 2.6, 1.3)\)</span></td>
+<td><span class="arithmatex">\(4.11\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(w_5\)</span></td>
+<td><span class="arithmatex">\(v_6\)</span></td>
+<td><span class="arithmatex">\((2, 0, 0, 0)\)</span></td>
+<td><span class="arithmatex">\(2.0\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(w_6\)</span></td>
+<td><span class="arithmatex">\(v_5\)</span></td>
+<td><span class="arithmatex">\((0.2, 0.1, 0.2, 0.1)\)</span></td>
+<td><span class="arithmatex">\(0.32\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(w_6\)</span></td>
+<td><span class="arithmatex">\(v_6\)</span></td>
+<td><span class="arithmatex">\((0, 0, 0, 0)\)</span></td>
+<td><span class="arithmatex">\(0.0\)</span></td>
+</tr>
+</tbody>
+</table>
+</details>
+</details>
+<div class="admonition beispiel">
+<p class="admonition-title">Vektor normieren</p>
+<p>Um einen Vektor zu normieren, teilen wir ihn durch seine Norm.</p>
+<div class="arithmatex">\[
+\Bigl| \frac{v}{|v|} \Bigl| = 1
+\]</div>
+<p><iframe src="https://www.geogebra.org/calculator/dyup65bz?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe></p>
+</div>
+<p>Warum funktioniert diese Rechenregel? Betrachten wir dazu die folgende Herleitung:</p>
+<div class="admonition tip">
+<p class="admonition-title">Herleitung</p>
+<p>Sei <span class="arithmatex">\(v\in \mathbb{R}^D\setminus \{0\}\)</span> ein Vektor, auf den <span class="arithmatex">\(w\in \mathbb{R}^D\)</span> projiziert werden soll.</p>
+<p>Zunächst normieren wir <span class="arithmatex">\(v\)</span> zu <span class="arithmatex">\(u := \frac{v}{|v|}\)</span>. Das heißt <span class="arithmatex">\(|u| = 1\)</span>.</p>
+<p>Wir suchen nun ein <span class="arithmatex">\(k \in \mathbb{R}\)</span> mit <span class="arithmatex">\(ku + d = w\)</span> und dabei ist <span class="arithmatex">\(d \in \mathbb{R}^D\)</span> so, dass <span class="arithmatex">\(d \perp v, u\)</span> ist.</p>
+<p>Da <span class="arithmatex">\(d \perp u\)</span> und damit auch <span class="arithmatex">\(d \perp ku\)</span> ist, gilt:</p>
+<div class="arithmatex">\[
+0 = d^t(ku)
+\]</div>
+<p>Da <span class="arithmatex">\(ku + d = w\)</span> gilt <span class="arithmatex">\(d = w - ku\)</span>:</p>
+<div class="arithmatex">\[
+0 = (w-ku)^t(ku) = (w^t-ku^t)(ku) = w^tku - ku^tku = kw^tu - k^2u^tu
+\]</div>
+<p>Da <span class="arithmatex">\(|u| = 1\)</span> ist, gilt <span class="arithmatex">\(u^tu=1\)</span>. Also:</p>
+<div class="arithmatex">\[
+0 = kw^tu-k^2 = k(w^tu-k)
+\]</div>
+<p>Nun gibt es zwei Fälle, warum die Gleichung <span class="arithmatex">\(0\)</span> ergibt.</p>
+<p><strong>1. Fall:</strong> Ist <span class="arithmatex">\(k=0\)</span>, so bedeutet das nach <span class="arithmatex">\(w = ku + d = 0u + d = d\)</span>, dass <span class="arithmatex">\(w = d\perp u\)</span> ist. <span class="arithmatex">\(w\)</span> steht also senkrecht
+auf <span class="arithmatex">\(u\)</span> bzw. <span class="arithmatex">\(v\)</span> und wird daher auf <span class="arithmatex">\(0\)</span> projeziert.</p>
+<p><strong>2. Fall:</strong> Ist <span class="arithmatex">\(k\neq 0\)</span>, so muss <span class="arithmatex">\(w^tu-k = 0\)</span> sein. Dann können wir die Gleichung umstellen zu:</p>
+<div class="arithmatex">\[
+w^tu = k
+\]</div>
+<p>Damit haben wir auch unser gesuchtes <span class="arithmatex">\(k\)</span> gefunden.</p>
+<p>Wir können also sagen, dass <span class="arithmatex">\(pr_v(w)=ku= w ^t u u\)</span> gilt. Wir können dies auch noch umschreiben nach <span class="arithmatex">\(v\)</span>:</p>
+<div class="arithmatex">\[
+pr_v(w) = \frac{w^t v v}{|v|^2}
+\]</div>
+</div>
+<details class="question" open="open">
+<summary>Projektionsvorschrift bei Einheitsvektoren</summary>
+<p>Erkläre, warum </p>
+<div class="arithmatex">\[
+pr_v(w) = v^twv
+\]</div>
+<p>für <span class="arithmatex">\(v, w \in \mathbb{R}^D\)</span> gilt, wenn <span class="arithmatex">\(|v|=1\)</span> gilt.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Überlege dir, warum und wann <span class="arithmatex">\(a^tb = b^ta\)</span> gilt.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Es gilt immer <span class="arithmatex">\(a^tb = b^ta\)</span>, da</p>
+<div class="arithmatex">\[
+a^tb = a_1 \cdot b_1 + a_2 \cdot b_2 + \cdots + a_n \cdot b_n = b_1 \cdot a_1 + b_2 \cdot a_2 + \cdots b_n \cdot + a_n = b^t a
+\]</div>
+<p>Es gilt immer <span class="arithmatex">\(v^tw = w^tv\)</span>. Da der Nenner 1 ist, können wir den Nenner aus der allgemeinen Formel weglassen.</p>
+</details>
+</details>
+<h3 id="programmierung">Programmierung<a class="headerlink" href="#programmierung" title="Permanent link">&para;</a></h3>
+<details class="question" open="open">
+<summary>Vektoren normieren</summary>
+<p>Erstelle eine Funktion <code>norm(v)</code>, die <span class="arithmatex">\(|v|\)</span> berechnet.</p>
+<p>Erstelle dann eine Funktion <code>normalize(v)</code>, die einen Vektor <span class="arithmatex">\(w\)</span> zurückgibt, sodass <span class="arithmatex">\(w\in \langle v \rangle\)</span> 
+und <span class="arithmatex">\(|w| = 1\)</span> gilt.</p>
+</details>
+<details class="question" open="open">
+<summary>Senkrecht stehen</summary>
+<p>Erstelle eine Funktion <code>is_perpendicular(v, w)</code>, die prüft, ob zwei Vektoren <code>w</code> und <code>v</code> senkrecht stehen.</p>
+</details>
+<details class="question" open="open">
+<summary>Projektionsfunktion programmieren</summary>
+<p>Erstelle eine Funktion <code>projection_faktor(v, w)</code>, die den Vektoren <code>w</code> auf den Vektor <code>v</code>
+projeziert. Das Ergebnis soll dabei nur der Faktor <span class="arithmatex">\(k\)</span> aus der Rechnung <span class="arithmatex">\(pr_v(w) = kv\)</span> sein, der oben beschrieben
+ist.</p>
+<details class="success">
+<summary>Lösung</summary>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">  1</span>
+<span class="normal">  2</span>
+<span class="normal">  3</span>
+<span class="normal">  4</span>
+<span class="normal">  5</span>
+<span class="normal">  6</span>
+<span class="normal">  7</span>
+<span class="normal">  8</span>
+<span class="normal">  9</span>
+<span class="normal"> 10</span>
+<span class="normal"> 11</span>
+<span class="normal"> 12</span>
+<span class="normal"> 13</span>
+<span class="normal"> 14</span>
+<span class="normal"> 15</span>
+<span class="normal"> 16</span>
+<span class="normal"> 17</span>
+<span class="normal"> 18</span>
+<span class="normal"> 19</span>
+<span class="normal"> 20</span>
+<span class="normal"> 21</span>
+<span class="normal"> 22</span>
+<span class="normal"> 23</span>
+<span class="normal"> 24</span>
+<span class="normal"> 25</span>
+<span class="normal"> 26</span>
+<span class="normal"> 27</span>
+<span class="normal"> 28</span>
+<span class="normal"> 29</span>
+<span class="normal"> 30</span>
+<span class="normal"> 31</span>
+<span class="normal"> 32</span>
+<span class="normal"> 33</span>
+<span class="normal"> 34</span>
+<span class="normal"> 35</span>
+<span class="normal"> 36</span>
+<span class="normal"> 37</span>
+<span class="normal"> 38</span>
+<span class="normal"> 39</span>
+<span class="normal"> 40</span>
+<span class="normal"> 41</span>
+<span class="normal"> 42</span>
+<span class="normal"> 43</span>
+<span class="normal"> 44</span>
+<span class="normal"> 45</span>
+<span class="normal"> 46</span>
+<span class="normal"> 47</span>
+<span class="normal"> 48</span>
+<span class="normal"> 49</span>
+<span class="normal"> 50</span>
+<span class="normal"> 51</span>
+<span class="normal"> 52</span>
+<span class="normal"> 53</span>
+<span class="normal"> 54</span>
+<span class="normal"> 55</span>
+<span class="normal"> 56</span>
+<span class="normal"> 57</span>
+<span class="normal"> 58</span>
+<span class="normal"> 59</span>
+<span class="normal"> 60</span>
+<span class="normal"> 61</span>
+<span class="normal"> 62</span>
+<span class="normal"> 63</span>
+<span class="normal"> 64</span>
+<span class="normal"> 65</span>
+<span class="normal"> 66</span>
+<span class="normal"> 67</span>
+<span class="normal"> 68</span>
+<span class="normal"> 69</span>
+<span class="normal"> 70</span>
+<span class="normal"> 71</span>
+<span class="normal"> 72</span>
+<span class="normal"> 73</span>
+<span class="normal"> 74</span>
+<span class="normal"> 75</span>
+<span class="normal"> 76</span>
+<span class="normal"> 77</span>
+<span class="normal"> 78</span>
+<span class="normal"> 79</span>
+<span class="normal"> 80</span>
+<span class="normal"> 81</span>
+<span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span>
+<span class="normal">145</span>
+<span class="normal">146</span>
+<span class="normal">147</span>
+<span class="normal">148</span>
+<span class="normal">149</span>
+<span class="normal">150</span>
+<span class="normal">151</span>
+<span class="normal">152</span>
+<span class="normal">153</span>
+<span class="normal">154</span>
+<span class="normal">155</span>
+<span class="normal">156</span>
+<span class="normal">157</span>
+<span class="normal">158</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">### Daniel ####</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">unittest</span> <span class="kn">import</span> <span class="n">TestCase</span>
+<span class="kn">import</span> <span class="nn">unittest</span>
+<span class="kn">from</span> <span class="nn">parameterized</span> <span class="kn">import</span> <span class="n">parameterized</span>
+
+<span class="k">def</span> <span class="nf">projection</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">w</span><span class="p">):</span>
+     <span class="k">return</span> <span class="p">[</span><span class="n">x</span> <span class="o">-</span> <span class="p">((</span><span class="n">x</span> <span class="o">@</span> <span class="n">n</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">n</span><span class="o">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">n</span><span class="p">))</span> <span class="o">*</span> <span class="n">n</span><span class="o">.</span><span class="n">T</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">w</span><span class="p">]</span>
+
+<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">]])</span>
+
+<span class="c1"># a)</span>
+<span class="n">v1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span><span class="o">.</span><span class="n">T</span>
+<span class="n">v2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span><span class="o">.</span><span class="n">T</span>
+<span class="n">v3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span><span class="o">.</span><span class="n">T</span>
+
+<span class="c1"># a) Projektion auf v1</span>
+<span class="n">proj_v1_e1</span> <span class="o">=</span> <span class="n">projection</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">v1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a) Projektion auf v1:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">proj_v1_e1</span><span class="p">,</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># a) Projektion auf V2</span>
+<span class="n">proj_e1_v2</span> <span class="o">=</span> <span class="n">projection</span><span class="p">(</span><span class="n">proj_v1_e1</span><span class="p">,</span> <span class="n">v2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a) Projektion auf v2:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">proj_e1_v2</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># a) Projektion auf V3</span>
+<span class="n">proj_e1_v2</span> <span class="o">=</span> <span class="n">projection</span><span class="p">(</span><span class="n">proj_e1_v2</span><span class="p">,</span> <span class="n">v3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a) Projektion auf v3:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">proj_e1_v2</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+
+
+<span class="c1"># b)</span>
+<span class="n">v1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mf">0.5</span><span class="p">])</span><span class="o">.</span><span class="n">T</span>
+<span class="n">v2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">([</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">1.5</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span><span class="o">.</span><span class="n">T</span>
+<span class="n">v3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span><span class="o">.</span><span class="n">T</span>
+
+<span class="c1"># b) Projektion auf v1</span>
+<span class="n">proj_v1_e1</span> <span class="o">=</span> <span class="n">projection</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">v1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;b) Projektion auf v1:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">proj_v1_e1</span><span class="p">,</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># b) Projektion auf V2</span>
+<span class="n">proj_e1_v2</span> <span class="o">=</span> <span class="n">projection</span><span class="p">(</span><span class="n">proj_v1_e1</span><span class="p">,</span> <span class="n">v2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;b) Projektion auf v2:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">proj_e1_v2</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># b) Projektion auf V3</span>
+<span class="n">proj_e1_v2</span> <span class="o">=</span> <span class="n">projection</span><span class="p">(</span><span class="n">proj_e1_v2</span><span class="p">,</span> <span class="n">v3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;b) Projektion auf v3:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">proj_e1_v2</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+
+
+<span class="c1"># c)</span>
+<span class="n">v1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mf">0.5</span><span class="p">])</span><span class="o">.</span><span class="n">T</span>
+<span class="n">v2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">([</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">1.5</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span><span class="o">.</span><span class="n">T</span>
+<span class="n">v3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span><span class="o">.</span><span class="n">T</span>
+
+<span class="c1"># c) Projektion auf v1</span>
+<span class="n">proj_v1_e1</span> <span class="o">=</span> <span class="n">projection</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">v1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;c) Projektion auf v1:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">proj_v1_e1</span><span class="p">,</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># c) Projektion auf V2</span>
+<span class="n">proj_e1_v2</span> <span class="o">=</span> <span class="n">projection</span><span class="p">(</span><span class="n">proj_v1_e1</span><span class="p">,</span> <span class="n">v2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;c) Projektion auf v2:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">proj_e1_v2</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># c) Projektion auf V3</span>
+<span class="n">proj_e1_v2</span> <span class="o">=</span> <span class="n">projection</span><span class="p">(</span><span class="n">proj_e1_v2</span><span class="p">,</span> <span class="n">v3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;c) Projektion auf v3:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">proj_e1_v2</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">TestProjection</span><span class="p">(</span><span class="n">TestCase</span><span class="p">):</span>
+    <span class="nd">@parameterized</span><span class="o">.</span><span class="n">expand</span><span class="p">([</span>
+        <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">]]),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]),</span> 
+         <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">]),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">]),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">]),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">]),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">])]),</span>
+        <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">]]),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]),</span> 
+         <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">]),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">]),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">]),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">]),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">])]),</span>
+        <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">]]),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]),</span> 
+         <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">]),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">]),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">6</span><span class="p">]),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">7</span><span class="p">]),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">])]),</span>
+    <span class="p">])</span>
+    <span class="k">def</span> <span class="nf">test_projection</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">expected</span><span class="p">):</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">projection</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">r</span><span class="p">,</span> <span class="n">e</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">expected</span><span class="p">):</span>
+            <span class="n">np</span><span class="o">.</span><span class="n">testing</span><span class="o">.</span><span class="n">assert_array_almost_equal</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
+
+<span class="o">-------</span><span class="n">Johannes</span><span class="o">-------</span>
+<span class="kn">import</span> <span class="nn">doctest</span>
+<span class="n">doctest</span><span class="o">.</span><span class="n">testmod</span><span class="p">()</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+
+<span class="k">def</span> <span class="nf">projection</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    X = np.array([[2, 3, 5],</span>
+<span class="sd">              [1, 4, 4],</span>
+<span class="sd">              [3, 2, 6],</span>
+<span class="sd">              [3, 5, 7],</span>
+<span class="sd">              [2, 3, 5]])</span>
+<span class="sd">    v1_a, v2_a, v3_a = np.array([1,0,0]), np.array([0,0,1]), np.array([0,1,0])</span>
+<span class="sd">    &gt;&gt;&gt; projection(X, v1_a)</span>
+<span class="sd">    array([[0, 3, 5],</span>
+<span class="sd">              [0, 4, 4],</span>
+<span class="sd">              [0, 2, 6],</span>
+<span class="sd">              [0, 5, 7],</span>
+<span class="sd">              [0, 3, 5]])</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">x</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">outer</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">v</span><span class="p">),</span> <span class="n">v</span><span class="p">)</span>
+
+<span class="o">-----------</span><span class="n">Nick</span><span class="o">---------------</span>
+
+
+<span class="k">def</span> <span class="nf">projection</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">w</span><span class="p">):</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">n</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">w</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;Bitte keine leeren Listen übergeben&#39;</span><span class="p">)</span>
+
+    <span class="n">vector_n</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+    <span class="n">vector_w</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">vector_n</span><span class="o">.</span><span class="n">shape</span> <span class="o">!=</span> <span class="n">vector_w</span><span class="o">.</span><span class="n">shape</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;Die Vektoren müssen den gleichen shape haben&#39;</span><span class="p">)</span>
+
+
+    <span class="n">projection_1</span> <span class="o">=</span> <span class="p">((</span><span class="n">vector_w</span><span class="o">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">vector_n</span><span class="p">)</span><span class="o">/</span><span class="n">norm</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="n">vector_n</span>
+
+    <span class="k">return</span> <span class="n">vector_w</span> <span class="o">-</span> <span class="n">projection_1</span>
+
+
+  <span class="o">-----------</span><span class="n">Henrik</span><span class="o">---------------</span>
+
+<span class="k">def</span> <span class="nf">norm</span><span class="p">(</span><span class="n">v</span><span class="p">):</span>
+    <span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">v</span><span class="p">)):</span>
+        <span class="nb">sum</span> <span class="o">+=</span> <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span>
+    <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">normalize</span><span class="p">(</span><span class="n">v</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">v</span> <span class="o">/</span> <span class="n">norm</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">is_perpendicular</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">w</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">w</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+
+<span class="k">def</span> <span class="nf">projection_faktor</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">w</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">is_perpendicular</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">w</span><span class="p">):</span>
+        <span class="k">return</span> <span class="mi">0</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">w</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">norm</span><span class="p">(</span><span class="n">v</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">projection</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">w</span><span class="p">):</span>
+    <span class="n">proj_w_n</span> <span class="o">=</span> <span class="n">w</span> <span class="o">-</span> <span class="n">projection_faktor</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span> <span class="o">*</span> <span class="n">n</span>
+    <span class="k">return</span> <span class="n">proj_w_n</span>
+</code></pre></div></td></tr></table></div>
+</details>
+</details>
+<details class="success">
+<summary>Lösung der Programmieraufgaben</summary>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">  1</span>
+<span class="normal">  2</span>
+<span class="normal">  3</span>
+<span class="normal">  4</span>
+<span class="normal">  5</span>
+<span class="normal">  6</span>
+<span class="normal">  7</span>
+<span class="normal">  8</span>
+<span class="normal">  9</span>
+<span class="normal"> 10</span>
+<span class="normal"> 11</span>
+<span class="normal"> 12</span>
+<span class="normal"> 13</span>
+<span class="normal"> 14</span>
+<span class="normal"> 15</span>
+<span class="normal"> 16</span>
+<span class="normal"> 17</span>
+<span class="normal"> 18</span>
+<span class="normal"> 19</span>
+<span class="normal"> 20</span>
+<span class="normal"> 21</span>
+<span class="normal"> 22</span>
+<span class="normal"> 23</span>
+<span class="normal"> 24</span>
+<span class="normal"> 25</span>
+<span class="normal"> 26</span>
+<span class="normal"> 27</span>
+<span class="normal"> 28</span>
+<span class="normal"> 29</span>
+<span class="normal"> 30</span>
+<span class="normal"> 31</span>
+<span class="normal"> 32</span>
+<span class="normal"> 33</span>
+<span class="normal"> 34</span>
+<span class="normal"> 35</span>
+<span class="normal"> 36</span>
+<span class="normal"> 37</span>
+<span class="normal"> 38</span>
+<span class="normal"> 39</span>
+<span class="normal"> 40</span>
+<span class="normal"> 41</span>
+<span class="normal"> 42</span>
+<span class="normal"> 43</span>
+<span class="normal"> 44</span>
+<span class="normal"> 45</span>
+<span class="normal"> 46</span>
+<span class="normal"> 47</span>
+<span class="normal"> 48</span>
+<span class="normal"> 49</span>
+<span class="normal"> 50</span>
+<span class="normal"> 51</span>
+<span class="normal"> 52</span>
+<span class="normal"> 53</span>
+<span class="normal"> 54</span>
+<span class="normal"> 55</span>
+<span class="normal"> 56</span>
+<span class="normal"> 57</span>
+<span class="normal"> 58</span>
+<span class="normal"> 59</span>
+<span class="normal"> 60</span>
+<span class="normal"> 61</span>
+<span class="normal"> 62</span>
+<span class="normal"> 63</span>
+<span class="normal"> 64</span>
+<span class="normal"> 65</span>
+<span class="normal"> 66</span>
+<span class="normal"> 67</span>
+<span class="normal"> 68</span>
+<span class="normal"> 69</span>
+<span class="normal"> 70</span>
+<span class="normal"> 71</span>
+<span class="normal"> 72</span>
+<span class="normal"> 73</span>
+<span class="normal"> 74</span>
+<span class="normal"> 75</span>
+<span class="normal"> 76</span>
+<span class="normal"> 77</span>
+<span class="normal"> 78</span>
+<span class="normal"> 79</span>
+<span class="normal"> 80</span>
+<span class="normal"> 81</span>
+<span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span>
+<span class="normal">145</span>
+<span class="normal">146</span>
+<span class="normal">147</span>
+<span class="normal">148</span>
+<span class="normal">149</span>
+<span class="normal">150</span>
+<span class="normal">151</span>
+<span class="normal">152</span>
+<span class="normal">153</span>
+<span class="normal">154</span>
+<span class="normal">155</span>
+<span class="normal">156</span>
+<span class="normal">157</span>
+<span class="normal">158</span>
+<span class="normal">159</span>
+<span class="normal">160</span>
+<span class="normal">161</span>
+<span class="normal">162</span>
+<span class="normal">163</span>
+<span class="normal">164</span>
+<span class="normal">165</span>
+<span class="normal">166</span>
+<span class="normal">167</span>
+<span class="normal">168</span>
+<span class="normal">169</span>
+<span class="normal">170</span>
+<span class="normal">171</span>
+<span class="normal">172</span>
+<span class="normal">173</span>
+<span class="normal">174</span>
+<span class="normal">175</span>
+<span class="normal">176</span>
+<span class="normal">177</span>
+<span class="normal">178</span>
+<span class="normal">179</span>
+<span class="normal">180</span>
+<span class="normal">181</span>
+<span class="normal">182</span>
+<span class="normal">183</span>
+<span class="normal">184</span>
+<span class="normal">185</span>
+<span class="normal">186</span>
+<span class="normal">187</span>
+<span class="normal">188</span>
+<span class="normal">189</span>
+<span class="normal">190</span>
+<span class="normal">191</span>
+<span class="normal">192</span>
+<span class="normal">193</span>
+<span class="normal">194</span>
+<span class="normal">195</span>
+<span class="normal">196</span>
+<span class="normal">197</span>
+<span class="normal">198</span>
+<span class="normal">199</span>
+<span class="normal">200</span>
+<span class="normal">201</span>
+<span class="normal">202</span>
+<span class="normal">203</span>
+<span class="normal">204</span>
+<span class="normal">205</span>
+<span class="normal">206</span>
+<span class="normal">207</span>
+<span class="normal">208</span>
+<span class="normal">209</span>
+<span class="normal">210</span>
+<span class="normal">211</span>
+<span class="normal">212</span>
+<span class="normal">213</span>
+<span class="normal">214</span>
+<span class="normal">215</span>
+<span class="normal">216</span>
+<span class="normal">217</span>
+<span class="normal">218</span>
+<span class="normal">219</span>
+<span class="normal">220</span>
+<span class="normal">221</span>
+<span class="normal">222</span>
+<span class="normal">223</span>
+<span class="normal">224</span>
+<span class="normal">225</span>
+<span class="normal">226</span>
+<span class="normal">227</span>
+<span class="normal">228</span>
+<span class="normal">229</span>
+<span class="normal">230</span>
+<span class="normal">231</span>
+<span class="normal">232</span>
+<span class="normal">233</span>
+<span class="normal">234</span>
+<span class="normal">235</span>
+<span class="normal">236</span>
+<span class="normal">237</span>
+<span class="normal">238</span>
+<span class="normal">239</span>
+<span class="normal">240</span>
+<span class="normal">241</span>
+<span class="normal">242</span>
+<span class="normal">243</span>
+<span class="normal">244</span>
+<span class="normal">245</span>
+<span class="normal">246</span>
+<span class="normal">247</span>
+<span class="normal">248</span>
+<span class="normal">249</span>
+<span class="normal">250</span>
+<span class="normal">251</span>
+<span class="normal">252</span>
+<span class="normal">253</span>
+<span class="normal">254</span>
+<span class="normal">255</span>
+<span class="normal">256</span>
+<span class="normal">257</span>
+<span class="normal">258</span>
+<span class="normal">259</span>
+<span class="normal">260</span>
+<span class="normal">261</span>
+<span class="normal">262</span>
+<span class="normal">263</span>
+<span class="normal">264</span>
+<span class="normal">265</span>
+<span class="normal">266</span>
+<span class="normal">267</span>
+<span class="normal">268</span>
+<span class="normal">269</span>
+<span class="normal">270</span>
+<span class="normal">271</span>
+<span class="normal">272</span>
+<span class="normal">273</span>
+<span class="normal">274</span>
+<span class="normal">275</span>
+<span class="normal">276</span>
+<span class="normal">277</span>
+<span class="normal">278</span>
+<span class="normal">279</span>
+<span class="normal">280</span>
+<span class="normal">281</span>
+<span class="normal">282</span>
+<span class="normal">283</span>
+<span class="normal">284</span>
+<span class="normal">285</span>
+<span class="normal">286</span>
+<span class="normal">287</span>
+<span class="normal">288</span>
+<span class="normal">289</span>
+<span class="normal">290</span>
+<span class="normal">291</span>
+<span class="normal">292</span>
+<span class="normal">293</span>
+<span class="normal">294</span>
+<span class="normal">295</span>
+<span class="normal">296</span>
+<span class="normal">297</span>
+<span class="normal">298</span>
+<span class="normal">299</span>
+<span class="normal">300</span>
+<span class="normal">301</span>
+<span class="normal">302</span>
+<span class="normal">303</span>
+<span class="normal">304</span>
+<span class="normal">305</span>
+<span class="normal">306</span>
+<span class="normal">307</span>
+<span class="normal">308</span>
+<span class="normal">309</span>
+<span class="normal">310</span>
+<span class="normal">311</span>
+<span class="normal">312</span>
+<span class="normal">313</span>
+<span class="normal">314</span>
+<span class="normal">315</span>
+<span class="normal">316</span>
+<span class="normal">317</span>
+<span class="normal">318</span>
+<span class="normal">319</span>
+<span class="normal">320</span>
+<span class="normal">321</span>
+<span class="normal">322</span>
+<span class="normal">323</span>
+<span class="normal">324</span>
+<span class="normal">325</span>
+<span class="normal">326</span>
+<span class="normal">327</span>
+<span class="normal">328</span>
+<span class="normal">329</span>
+<span class="normal">330</span>
+<span class="normal">331</span>
+<span class="normal">332</span>
+<span class="normal">333</span>
+<span class="normal">334</span>
+<span class="normal">335</span>
+<span class="normal">336</span>
+<span class="normal">337</span>
+<span class="normal">338</span>
+<span class="normal">339</span>
+<span class="normal">340</span>
+<span class="normal">341</span>
+<span class="normal">342</span>
+<span class="normal">343</span>
+<span class="normal">344</span>
+<span class="normal">345</span>
+<span class="normal">346</span>
+<span class="normal">347</span>
+<span class="normal">348</span>
+<span class="normal">349</span>
+<span class="normal">350</span>
+<span class="normal">351</span>
+<span class="normal">352</span>
+<span class="normal">353</span>
+<span class="normal">354</span>
+<span class="normal">355</span>
+<span class="normal">356</span>
+<span class="normal">357</span>
+<span class="normal">358</span>
+<span class="normal">359</span>
+<span class="normal">360</span>
+<span class="normal">361</span>
+<span class="normal">362</span>
+<span class="normal">363</span>
+<span class="normal">364</span>
+<span class="normal">365</span>
+<span class="normal">366</span>
+<span class="normal">367</span>
+<span class="normal">368</span>
+<span class="normal">369</span>
+<span class="normal">370</span>
+<span class="normal">371</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">### David</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="k">def</span> <span class="nf">norm</span><span class="p">(</span><span class="n">vec</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="o">|</span><span class="nb">float</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+    <span class="k">return</span> <span class="nb">float</span><span class="p">((</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">vec</span><span class="p">)</span> <span class="o">@</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">vec</span><span class="p">)</span><span class="o">.</span><span class="n">T</span><span class="p">)</span> <span class="o">**</span> <span class="mf">0.5</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">normalize</span><span class="p">(</span><span class="n">vec</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="o">|</span><span class="nb">float</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">vec</span><span class="p">)</span> <span class="o">/</span> <span class="n">norm</span><span class="p">(</span><span class="n">vec</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">is_perpendicular</span><span class="p">(</span><span class="n">vec_1</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="o">|</span><span class="nb">float</span><span class="p">],</span> <span class="n">vec_2</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="o">|</span><span class="nb">float</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">vec_1</span><span class="p">)</span> <span class="o">@</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">vec_2</span><span class="p">)</span><span class="o">.</span><span class="n">T</span> <span class="o">==</span> <span class="mi">0</span>
+
+<span class="k">def</span> <span class="nf">projection_factor</span><span class="p">(</span><span class="n">coord</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="o">|</span><span class="nb">float</span><span class="p">],</span> <span class="n">vec</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="o">|</span><span class="nb">float</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+    <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">coord</span><span class="p">)</span><span class="o">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">normalize</span><span class="p">(</span><span class="n">vec</span><span class="p">))</span> <span class="o">/</span> <span class="n">norm</span><span class="p">(</span><span class="n">vec</span><span class="p">)</span> 
+
+
+
+  <span class="o">-----</span><span class="n">johannes</span><span class="o">-----</span>
+
+<span class="kn">import</span> <span class="nn">doctest</span>
+<span class="n">doctest</span><span class="o">.</span><span class="n">testmod</span><span class="p">()</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="k">def</span> <span class="nf">norm</span><span class="p">(</span><span class="n">v</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;    </span>
+<span class="sd">    &gt;&gt;&gt; norm(np.array([3,4]))</span>
+<span class="sd">    np.float64(5.0)</span>
+<span class="sd">    &gt;&gt;&gt; norm(np.array([0,1]))</span>
+<span class="sd">    np.float64(1.0)</span>
+<span class="sd">    &gt;&gt;&gt; norm(np.array([1,1]))</span>
+<span class="sd">    np.float64(1.4142135623730951)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">normalize</span><span class="p">(</span><span class="n">v</span><span class="p">):</span>
+
+    <span class="n">v_norm</span> <span class="o">=</span> <span class="n">norm</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">v_norm</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ZeroDivisionError</span><span class="p">(</span><span class="s2">&quot;Der Nullvektor kann nicht normiert werden.&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">v</span> <span class="o">/</span> <span class="n">v_norm</span>
+
+
+<span class="k">def</span> <span class="nf">is_perpendicular</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">toleranz</span><span class="o">=</span><span class="mf">0.0000001</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    &gt;&gt;&gt; is_perpendicular(np.array([1, 2]), np.array([-2, 1]))</span>
+<span class="sd">    np.True_</span>
+<span class="sd">    &gt;&gt;&gt; is_perpendicular(np.array([3, 4]), np.array([6, 8]))</span>
+<span class="sd">    np.False_</span>
+<span class="sd">    &gt;&gt;&gt; is_perpendicular(np.array([0, 1]), np.array([1, 0]))</span>
+<span class="sd">    np.True_</span>
+<span class="sd">    &gt;&gt;&gt; is_perpendicular(np.array([1, 1]), np.array([1, -1]))</span>
+<span class="sd">    np.True_</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="nb">abs</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">w</span><span class="p">))</span> <span class="o">&lt;</span> <span class="n">toleranz</span>
+
+  <span class="k">def</span> <span class="nf">projection_faktor</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">w</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    &gt;&gt;&gt; projection_faktor(np.array([1, 0]), np.array([2, 3]))</span>
+<span class="sd">    np.float64(2.0)</span>
+<span class="sd">    &gt;&gt;&gt; projection_faktor(np.array([1, 1]), np.array([2, 2]))</span>
+<span class="sd">    np.float64(2.0)</span>
+<span class="sd">    &gt;&gt;&gt; projection_faktor(np.array([3, 4]), np.array([6, 8]))</span>
+<span class="sd">    np.float64(2.0)</span>
+<span class="sd">    &gt;&gt;&gt; projection_faktor(np.array([1, 2]), np.array([-2, 1]))</span>
+<span class="sd">    np.float64(0.0)</span>
+<span class="sd">    &gt;&gt;&gt; projection_faktor(np.array([2, 1]), np.array([-2, 1]))</span>
+<span class="sd">    np.float64(-0.6)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">dot_product</span> <span class="o">=</span> <span class="n">v</span> <span class="o">@</span> <span class="n">w</span>
+    <span class="n">norm_squared</span> <span class="o">=</span> <span class="n">v</span><span class="nd">@v</span>
+
+    <span class="k">if</span> <span class="n">norm_squared</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ZeroDivisionError</span><span class="p">(</span><span class="s2">&quot;Der Vektor v darf nicht der Nullvektor sein.&quot;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">dot_product</span> <span class="o">/</span> <span class="n">norm_squared</span>
+
+
+
+
+  <span class="c1">########Daniel#########</span>
+
+  <span class="kn">import</span> <span class="nn">unittest</span>
+<span class="kn">from</span> <span class="nn">parameterized</span> <span class="kn">import</span> <span class="n">parameterized</span>
+
+<span class="k">def</span> <span class="nf">norm</span><span class="p">(</span><span class="n">v</span><span class="p">:</span> <span class="nb">list</span><span class="p">):</span>
+    <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">i</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">v</span><span class="p">)</span><span class="o">**</span><span class="mf">0.5</span>
+
+<span class="k">def</span> <span class="nf">normalize</span><span class="p">(</span><span class="n">v</span><span class="p">:</span> <span class="nb">list</span><span class="p">):</span>
+    <span class="n">length</span> <span class="o">=</span> <span class="n">norm</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">length</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">erg</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">v</span><span class="p">:</span>
+            <span class="n">erg</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span> <span class="o">/</span> <span class="n">length</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">erg</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Die Länge des zu normalisierenden Vektors muss größer als 0 sein!&quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">is_perpendicular</span><span class="p">(</span><span class="n">v</span><span class="p">:</span> <span class="nb">list</span><span class="p">,</span> <span class="n">w</span><span class="p">:</span> <span class="nb">list</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">w</span><span class="p">):</span>
+        <span class="n">erg</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">v</span><span class="p">)):</span>
+            <span class="n">erg</span> <span class="o">+=</span> <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">w</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">erg</span> <span class="o">==</span> <span class="mi">0</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ArithmeticError</span><span class="p">(</span><span class="s2">&quot;Dimension der Vektoren müssen übereinstimmen&quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">projection_faktor</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">w</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">w</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">ArithmeticError</span><span class="p">(</span><span class="s2">&quot;Die Dimensionen der Vektoren müssen übereinstimmen&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Berechnung des Skalarprodukts von v und w</span>
+    <span class="n">dot_product_vw</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">v_i</span> <span class="o">*</span> <span class="n">w_i</span> <span class="k">for</span> <span class="n">v_i</span><span class="p">,</span> <span class="n">w_i</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">w</span><span class="p">))</span>
+
+    <span class="c1"># Berechnung der Norm von v</span>
+    <span class="n">length_v</span> <span class="o">=</span> <span class="n">norm</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">length_v</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Der Vektor v darf nicht der Nullvektor sein&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Berechnung des Projektionsfaktors</span>
+    <span class="n">k</span> <span class="o">=</span> <span class="n">dot_product_vw</span> <span class="o">/</span> <span class="p">(</span><span class="n">length_v</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">k</span>
+
+<span class="k">class</span> <span class="nc">TestVectorFunctions</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+
+    <span class="nd">@parameterized</span><span class="o">.</span><span class="n">expand</span><span class="p">([</span>
+        <span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="mf">5.0</span><span class="p">),</span>
+        <span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">(</span><span class="mi">3</span><span class="o">**</span><span class="mf">0.5</span><span class="p">)),</span>
+        <span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="mf">0.0</span><span class="p">),</span>
+        <span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">(</span><span class="mi">12</span><span class="o">**</span><span class="mf">0.5</span><span class="p">)),</span>
+        <span class="p">([</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">],</span> <span class="mf">5.0</span><span class="p">)</span>
+    <span class="p">])</span>
+    <span class="k">def</span> <span class="nf">test_norm</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">expected</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertAlmostEqual</span><span class="p">(</span><span class="n">norm</span><span class="p">(</span><span class="n">v</span><span class="p">),</span> <span class="n">expected</span><span class="p">,</span> <span class="n">places</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span>
+
+    <span class="nd">@parameterized</span><span class="o">.</span><span class="n">expand</span><span class="p">([</span>
+        <span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.6</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">]),</span>
+        <span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">3</span><span class="o">**</span><span class="mf">0.5</span><span class="p">)]</span><span class="o">*</span><span class="mi">3</span><span class="p">),</span>
+        <span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="ne">ValueError</span><span class="p">),</span>
+        <span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">3</span><span class="o">**</span><span class="mf">0.5</span><span class="p">)]</span><span class="o">*</span><span class="mi">3</span><span class="p">),</span>
+        <span class="p">([</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.6</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.8</span><span class="p">])</span>
+    <span class="p">])</span>
+    <span class="k">def</span> <span class="nf">test_normalize</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">expected</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">expected</span> <span class="o">==</span> <span class="ne">ValueError</span><span class="p">:</span>
+            <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">assertRaises</span><span class="p">(</span><span class="ne">ValueError</span><span class="p">):</span>
+                <span class="n">normalize</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="n">normalize</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">r</span><span class="p">,</span> <span class="n">e</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">expected</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">assertAlmostEqual</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">e</span><span class="p">,</span> <span class="n">places</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span>
+
+    <span class="nd">@parameterized</span><span class="o">.</span><span class="n">expand</span><span class="p">([</span>
+        <span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="ne">ArithmeticError</span><span class="p">)</span>
+    <span class="p">])</span>
+    <span class="k">def</span> <span class="nf">test_is_perpendicular</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">expected</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">expected</span> <span class="o">==</span> <span class="ne">ArithmeticError</span><span class="p">:</span>
+            <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">assertRaises</span><span class="p">(</span><span class="ne">ArithmeticError</span><span class="p">):</span>
+                <span class="n">is_perpendicular</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">is_perpendicular</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">w</span><span class="p">),</span> <span class="n">expected</span><span class="p">)</span>
+
+    <span class="nd">@parameterized</span><span class="o">.</span><span class="n">expand</span><span class="p">([</span>
+        <span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="mf">2.2857142857142856</span><span class="p">),</span>
+        <span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="mf">0.44</span><span class="p">),</span>
+        <span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="mf">0.0</span><span class="p">),</span>
+        <span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="mf">0.5</span><span class="p">),</span>
+        <span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="mf">0.0</span><span class="p">),</span>
+        <span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="ne">ValueError</span><span class="p">),</span>
+        <span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="ne">ArithmeticError</span><span class="p">)</span>
+    <span class="p">])</span>
+    <span class="k">def</span> <span class="nf">test_projection_faktor</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">expected</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">expected</span> <span class="o">==</span> <span class="ne">ValueError</span><span class="p">:</span>
+            <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">assertRaises</span><span class="p">(</span><span class="ne">ValueError</span><span class="p">):</span>
+                <span class="n">projection_faktor</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">expected</span> <span class="o">==</span> <span class="ne">ArithmeticError</span><span class="p">:</span>
+            <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">assertRaises</span><span class="p">(</span><span class="ne">ArithmeticError</span><span class="p">):</span>
+                <span class="n">projection_faktor</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">assertAlmostEqual</span><span class="p">(</span><span class="n">projection_faktor</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">w</span><span class="p">),</span> <span class="n">expected</span><span class="p">,</span> <span class="n">places</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
+
+
+
+<span class="o">------</span><span class="n">Marc</span><span class="o">------</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">test</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">],[</span><span class="mi">2</span><span class="p">],[</span><span class="mi">2</span><span class="p">]])</span>
+<span class="k">def</span> <span class="nf">norm</span><span class="p">(</span><span class="n">v</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">v</span><span class="o">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">v</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">normalize</span><span class="p">(</span><span class="n">v</span><span class="p">):</span>
+    <span class="n">norm_v</span> <span class="o">=</span> <span class="n">norm</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">norm_v</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Der Vektor hat eine Norm von 0, kann nicht normalisiert werden.&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">v</span> <span class="o">/</span> <span class="n">norm_v</span>  
+
+
+
+<span class="k">def</span> <span class="nf">is_perpendicular</span><span class="p">(</span><span class="n">v</span><span class="p">,</span><span class="n">w</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">v</span><span class="o">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">w</span> <span class="o">==</span> <span class="mi">0</span>
+
+
+
+<span class="k">def</span> <span class="nf">projection_factor</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">w</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">w</span><span class="o">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">v</span><span class="p">)</span><span class="o">.</span><span class="n">item</span><span class="p">()</span> <span class="o">/</span> <span class="p">(</span><span class="n">norm</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>  
+
+
+
+
+
+<span class="c1">######### Marina</span>
+
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="k">def</span> <span class="nf">projection_vector</span><span class="p">(</span><span class="n">w</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span>
+
+    <span class="n">w</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
+    <span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+
+    <span class="c1">#sum(w_i * v_i for w_i, v_i in zip(w, v))</span>
+    <span class="n">dot_product</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">w</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span>
+
+    <span class="n">vector_sqaured</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">dot_product</span><span class="o">/</span><span class="n">vector_sqaured</span><span class="p">)</span> <span class="o">*</span> <span class="n">v</span>
+
+
+<span class="k">def</span> <span class="nf">normalize_vector</span><span class="p">(</span><span class="n">v</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">v</span><span class="p">))</span><span class="o">**</span><span class="mf">0.5</span>
+
+
+<span class="k">def</span> <span class="nf">are_perpendicular</span><span class="p">(</span><span class="n">v1</span><span class="p">,</span> <span class="n">v2</span><span class="p">):</span>
+
+    <span class="n">v1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">v1</span><span class="p">)</span>
+    <span class="n">v2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">v2</span><span class="p">)</span>
+
+    <span class="n">dot_product</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">v1</span><span class="p">,</span> <span class="n">v2</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">isclose</span><span class="p">(</span><span class="n">dot_product</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">length_vector</span><span class="p">(</span><span class="n">w</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span>
+    <span class="n">proj_vec</span> <span class="o">=</span> <span class="n">projection_vector</span><span class="p">(</span><span class="n">w</span><span class="p">,</span><span class="n">v</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">normalize_vector</span><span class="p">(</span><span class="n">proj_vec</span><span class="p">)</span>
+
+
+<span class="c1">### Fabian </span>
+
+<span class="k">def</span> <span class="nf">norm</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="nb">sum</span><span class="p">([(</span><span class="n">n</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">v</span><span class="p">]))</span>
+
+
+<span class="k">def</span> <span class="nf">normalize</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">float</span><span class="p">]:</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">any</span><span class="p">(</span><span class="n">v</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;Nullvektor kann nicht normalisiert werden&#39;</span><span class="p">)</span>
+    <span class="n">l</span> <span class="o">=</span> <span class="n">norm</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">s</span> <span class="o">/</span> <span class="n">l</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">v</span><span class="p">]</span>
+
+
+<span class="k">def</span> <span class="nf">is_nullvektor</span><span class="p">(</span><span class="n">v</span><span class="p">):</span>
+    <span class="k">return</span> <span class="nb">all</span><span class="p">([</span><span class="n">s</span><span class="o">==</span><span class="mi">0</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">v</span><span class="p">])</span>
+
+
+<span class="k">def</span> <span class="nf">is_perpendicular</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">is_nullvektor</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="ow">or</span> <span class="n">is_nullvektor</span><span class="p">(</span><span class="n">w</span><span class="p">):</span>
+        <span class="k">return</span> <span class="kc">False</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">v</span><span class="p">)</span><span class="o">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">w</span> <span class="o">==</span> <span class="mi">0</span>
+
+
+<span class="k">def</span> <span class="nf">projection_factor</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">w</span><span class="p">)</span><span class="o">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">v</span><span class="p">)</span> <span class="o">/</span> <span class="n">norm</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span>
+
+
+<span class="c1">###### Noah</span>
+
+<span class="k">def</span> <span class="nf">norm</span><span class="p">(</span><span class="n">v</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">num</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">v</span><span class="p">))</span><span class="o">**</span><span class="mf">0.5</span>
+
+<span class="k">def</span> <span class="nf">normalize</span><span class="p">(</span><span class="n">v</span><span class="p">):</span>
+    <span class="n">div</span> <span class="o">=</span> <span class="n">norm</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">num</span><span class="o">/</span><span class="n">div</span> <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">v</span><span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">perpendicular</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">w</span><span class="p">):</span>
+    <span class="n">vt_x_w</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">v</span><span class="o">*</span><span class="n">w</span> <span class="k">for</span> <span class="n">v</span><span class="p">,</span><span class="n">w</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">v</span><span class="p">,</span><span class="n">w</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">vt_x_w</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;The two vectors </span><span class="si">{</span><span class="n">v</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">w</span><span class="si">}</span><span class="s2"> are perpendicular.&quot;</span><span class="p">,</span> <span class="n">vt_x_w</span><span class="p">]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;The two vectors </span><span class="si">{</span><span class="n">v</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">w</span><span class="si">}</span><span class="s2"> are NOT perpendicular.&quot;</span><span class="p">,</span> <span class="n">vt_x_w</span><span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">projection_factor</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">w</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">perpendicular</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">w</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="p">(</span><span class="n">norm</span><span class="p">(</span><span class="n">v</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">projection</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">w</span><span class="p">):</span>
+    <span class="n">factor</span> <span class="o">=</span> <span class="n">projection_factor</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">factor</span><span class="o">*</span><span class="n">num</span> <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">v</span><span class="p">]</span>
+
+
+<span class="c1">########## Tobias</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">unittest</span> <span class="kn">import</span> <span class="n">TestCase</span><span class="p">,</span> <span class="n">main</span>
+<span class="kn">from</span> <span class="nn">parameterized</span> <span class="kn">import</span> <span class="n">parameterized</span>
+
+
+<span class="k">def</span> <span class="nf">norm</span><span class="p">(</span><span class="n">v</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="nb">sum</span><span class="p">([</span><span class="n">elem</span> <span class="o">**</span> <span class="mi">2</span> <span class="k">for</span> <span class="n">elem</span> <span class="ow">in</span> <span class="n">v</span><span class="p">]))</span>
+
+
+<span class="k">class</span> <span class="nc">NormTest</span><span class="p">(</span><span class="n">TestCase</span><span class="p">):</span>
+    <span class="nd">@parameterized</span><span class="o">.</span><span class="n">expand</span><span class="p">([</span>
+        <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="mi">1</span><span class="p">],</span>
+        <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="mi">2</span><span class="p">],</span>
+        <span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="mi">0</span><span class="p">],</span>
+    <span class="p">])</span>
+    <span class="k">def</span> <span class="nf">test_norm_0</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">result</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">norm</span><span class="p">(</span><span class="n">v</span><span class="p">),</span> <span class="n">result</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">normalize</span><span class="p">(</span><span class="n">v</span><span class="p">):</span>
+    <span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">v</span> <span class="o">/</span> <span class="n">norm</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">NormalizeTest</span><span class="p">(</span><span class="n">TestCase</span><span class="p">):</span>
+    <span class="nd">@parameterized</span><span class="o">.</span><span class="n">expand</span><span class="p">(([</span>
+        <span class="p">[[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]],</span>
+        <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]]</span>
+    <span class="p">]))</span>
+    <span class="k">def</span> <span class="nf">test_normalize_0</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">w</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertListEqual</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">normalize</span><span class="p">(</span><span class="n">v</span><span class="p">)),</span> <span class="n">w</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">is_perpendicular</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">w</span><span class="p">):</span>
+    <span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+    <span class="n">w</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">v</span><span class="o">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">w</span> <span class="o">==</span> <span class="mi">0</span>
+
+
+<span class="k">class</span> <span class="nc">PerpendicularTest</span><span class="p">(</span><span class="n">TestCase</span><span class="p">):</span>
+    <span class="nd">@parameterized</span><span class="o">.</span><span class="n">expand</span><span class="p">([</span>
+        <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="kc">True</span><span class="p">],</span>
+        <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="kc">False</span><span class="p">],</span>
+        <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="kc">False</span><span class="p">]</span>
+    <span class="p">])</span>
+    <span class="k">def</span> <span class="nf">test_perpendicular_0</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">result</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">is_perpendicular</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">w</span><span class="p">),</span> <span class="n">result</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">projection_factor</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">w</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">is_perpendicular</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">w</span><span class="p">):</span>
+        <span class="k">return</span> <span class="mi">0</span>
+
+    <span class="n">w</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="p">(</span><span class="n">w</span><span class="o">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">normalize</span><span class="p">(</span><span class="n">v</span><span class="p">))</span> <span class="o">/</span> <span class="n">norm</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">ProjectionTest</span><span class="p">(</span><span class="n">TestCase</span><span class="p">):</span>
+    <span class="nd">@parameterized</span><span class="o">.</span><span class="n">expand</span><span class="p">([</span>
+        <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="mi">3</span><span class="p">],</span>
+        <span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="mi">4</span><span class="p">],</span>
+        <span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="mi">2</span><span class="p">],</span>
+        <span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="mi">0</span><span class="p">],</span>
+        <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="mi">2</span><span class="p">]</span>
+    <span class="p">])</span>
+    <span class="k">def</span> <span class="nf">test_projection</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertAlmostEqual</span><span class="p">(</span><span class="n">projection_factor</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">w</span><span class="p">),</span> <span class="n">k</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+</details>
+<h2 id="projektion-auf-einen-hyperraum">Projektion auf einen Hyperraum<a class="headerlink" href="#projektion-auf-einen-hyperraum" title="Permanent link">&para;</a></h2>
+<div class="admonition formel">
+<p class="admonition-title">Hyperebene</p>
+<p>Eine <strong>Hyperebene</strong> ist ein Raum, der eine Dimension kleiner ist, als der Hauptraum.</p>
+</div>
+<div class="admonition beispiel">
+<p class="admonition-title">Beispiel</p>
+<p>Wenn der Hauptraum der 3-dimensionale Raum ist, dann ist ein Hyperraum eine Ebene, die unendlich groß ist und 
+durch den Nullpunkt geht. Diese Ebene muss nicht auf einer der Achsen liegen, sondern kann auch "quer"
+im Raum sein. Das wichtige ist, dass man sich auf dieser Ebene nur noch in zwei verschiedene Richtungen bewegen kann,
+während man im 3d-Raum noch drei orthogonale Richtungsvektoren hatte.</p>
+<p>Wenn der Hauptraum ein 2d-Koordinatensystem ist, dann ist jede Gerade, die durch den Nullpunkt geht eine Hyperebene.</p>
+</div>
+<p>Jeder Hyperraum hat einen Normalenvektor, der senkrecht auf den Raum steht. Dieser ist nützlich, um alle 
+Punkte aus dem großen Raum auf den Hyperraum herunter zu projizieren.</p>
+<iframe src="https://www.geogebra.org/calculator/aejercma?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+
+<div class="admonition formel">
+<p class="admonition-title">Normalenvektor</p>
+<p>Sei <span class="arithmatex">\(n \in \mathbb{R}^D\)</span> ein Vektor. Dann erzeugt <span class="arithmatex">\(n\)</span> eine Hyperebene 
+<span class="arithmatex">\(H := \{ x \in \mathbb{R}^D | x \perp n \}\)</span></p>
+</div>
+<div class="admonition formel">
+<p class="admonition-title">Hessesche Normalform</p>
+<p>Es sei <span class="arithmatex">\(E\)</span> eine Ebene mit zugehörigen Normalenvektor <span class="arithmatex">\(n\)</span>. Falls die Ebene nicht durch den Nullpunkt geht,
+kann ein <em>Stützvektor</em> <span class="arithmatex">\(a \in E\)</span> genutzt werden, um die gesamte Ebene als die Punkte <span class="arithmatex">\(x\)</span> zu beschreiben,
+die die Gleichung </p>
+<div class="arithmatex">\[
+(x-a)\cdot n = 0 \text{ bzw. } (x-a)^t n = 0
+\]</div>
+<p>erfüllen.</p>
+<p>In unseren Untersuchungen sind ist jedoch immer <span class="arithmatex">\(a = 0\)</span>, da alle betrachteten Räume durch den Nullpunkt gehen.</p>
+</div>
+<div class="admonition beispiel">
+<p class="admonition-title">Beispiel</p>
+<p>Gegeben sei eine Ebene <span class="arithmatex">\(E\)</span>, die durch die Vektoren 
+<span class="arithmatex">\(v = \begin{pmatrix} 1 \\ -2 \\ 0.5 \end{pmatrix}\)</span> und <span class="arithmatex">\(u = \begin{pmatrix} 3 \\ -1 \\ 0 \end{pmatrix}\)</span>
+aufgespannt wird.</p>
+<p>Dann ist <span class="arithmatex">\(n = \begin{pmatrix} 0.5 \\ 1.5 \\ 5 \end{pmatrix}\)</span> Normalenvektor von <span class="arithmatex">\(E\)</span> und <span class="arithmatex">\(n \perp v, u\)</span>. </p>
+<p><iframe src="https://www.geogebra.org/calculator/fq84pxup?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe></p>
+</div>
+<details class="question" open="open">
+<summary>Normalenvektor bestimmen</summary>
+<p>Gegeben sei eine Ebene </p>
+<div class="arithmatex">\[
+E: x = r\cdot \begin{pmatrix} -3 \\ 3 \\ 4 \end{pmatrix} + s\cdot \begin{pmatrix} 12 \\ 5 \\ 1 \end{pmatrix}
+\]</div>
+<p>Finde einen Normalenvektor der Ebene. Wie viele Normalnvektoren gibt es?</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Stelle ein Lineares Gleichungsssystem auf. Die Unbekannten sind die Koordinaten des Normalenvektors.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Um den Normalenvektor der Ebene zu bestimmen, benötigen wir einen Vektor, der senkrecht auf beiden Richtungsvektoren steht. Dies erreichen wir, indem wir ein lineares Gleichungssystem (LGS) zur Bestimmung eines solchen Vektors <span class="arithmatex">\(\mathbf{n} = (a, b, c)^T\)</span> aufstellen.</p>
+<p>Der Normalenvektor muss orthogonal zu den beiden Spannvektoren sein:</p>
+<div class="arithmatex">\[
+\begin{pmatrix} -3 \\ 3 \\ 4 \end{pmatrix}^t \cdot \begin{pmatrix} a \\ b \\ c \end{pmatrix} = 0
+\]</div>
+<div class="arithmatex">\[
+\begin{pmatrix} 12 \\ 5 \\ 1 \end{pmatrix}^t \cdot \begin{pmatrix} a \\ b \\ c \end{pmatrix} = 0
+\]</div>
+<p>Dies ergibt das lineare Gleichungssystem:</p>
+<div class="arithmatex">\[
+-3a + 3b + 4c = 0
+\]</div>
+<div class="arithmatex">\[
+12a + 5b + c = 0
+\]</div>
+<p>Um eine Lösung zu finden, setzen wir <span class="arithmatex">\( c = 1 \)</span> (eine beliebige Wahl zur Bestimmung eines konkreten Normalenvektors):</p>
+<div class="arithmatex">\[
+-3a + 3b + 4 = 0
+\]</div>
+<div class="arithmatex">\[
+12a + 5b + 1 = 0
+\]</div>
+<p>Umgeformt:</p>
+<div class="arithmatex">\[
+-3a + 3b = -4
+\]</div>
+<div class="arithmatex">\[
+12a + 5b = -1
+\]</div>
+<p>Lösen durch das Additionsverfahren:</p>
+<p>Multiplizieren der ersten Gleichung mit 4:</p>
+<div class="arithmatex">\[
+-12a + 12b = -16
+\]</div>
+<p>Addition mit der zweiten Gleichung:</p>
+<div class="arithmatex">\[
+(-12a + 12b) + (12a + 5b) = -16 -1
+\]</div>
+<div class="arithmatex">\[
+17b = -17
+\]</div>
+<div class="arithmatex">\[
+b = -1
+\]</div>
+<p>Einsetzen von <span class="arithmatex">\( b = -1 \)</span> in <span class="arithmatex">\( -3a + 3(-1) = -4 \)</span>:</p>
+<div class="arithmatex">\[
+-3a - 3 = -4
+\]</div>
+<div class="arithmatex">\[
+-3a = -1
+\]</div>
+<div class="arithmatex">\[
+a = \frac{1}{3}
+\]</div>
+<p>Damit ergibt sich ein Normalenvektor:</p>
+<div class="arithmatex">\[
+\mathbf{n} = \begin{pmatrix} \frac{1}{3} \\ -1 \\ 1 \end{pmatrix}
+\]</div>
+<p>Wir hatten zu Beginn <span class="arithmatex">\(c=1\)</span> gesetzt. Natürlich ist auch jedes vielfache von <span class="arithmatex">\(\mathbf{n}\)</span> ein Normalenvektor.</p>
+</details>
+</details>
+<details class="question" open="open">
+<summary>Projektion auf Ebene</summary>
+<p>Finde heraus und erkläre, wie die Projektion auf die Ebene funktioniert, wenn man den Normalenvektor vorliegen hat.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Nutze gerne diese <a href="https://studyflix.de/mathematik/orthogonale-projektion-1468">Quelle von studyflix</a>.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Wenn der Normalenvektor <span class="arithmatex">\(n\)</span> der Ebene <span class="arithmatex">\(E\)</span> auf dem Nullpunkt aufliegt, so gilt die Formel:</p>
+<div class="arithmatex">\[
+pr_E(w) = w - \frac{w^tn}{|n|^2}\cdot n 
+\]</div>
+<p>für alle <span class="arithmatex">\(w\)</span>, die projiziert werden sollen.</p>
+</details>
+</details>
+<details class="question" open="open">
+<summary>Daten projizieren</summary>
+<p>Gegeben ist eine Matrix <span class="arithmatex">\( X \)</span> mit drei Merkmalen und fünf Beobachtungen:</p>
+<div class="arithmatex">\[
+X =
+\begin{pmatrix}
+2 &amp; 3 &amp; 5 \\
+1 &amp; 4 &amp; 4 \\
+3 &amp; 2 &amp; 6 \\
+4 &amp; 5 &amp; 7 \\
+2 &amp; 3 &amp; 5
+\end{pmatrix}
+\]</div>
+<p>Dabei entspricht jede Spalte einem Merkmal und jede Zeile einer Beobachtung.</p>
+<p>a) <span class="arithmatex">\(v_1 = (1,0,0)^t,v_2 = (0,0,1)^t,v_3 = (0,1,0)^t\)</span></p>
+<p>b) <span class="arithmatex">\(v_1 = (1,-2,0.5)^t,v_2 = (0.5, 1.5, 5)^t,v_3 = (43, 19, -10)^t\)</span></p>
+<p>c) <span class="arithmatex">\(v_1 = (1,-2,0.5)^t,v_2 = (0.5, 1.5, 5)^t,v_3 = (3,1,0)^t\)</span></p>
+<p>Projiziere die Daten zunächst auf <span class="arithmatex">\(v_1\)</span> (i) und  auf den von <span class="arithmatex">\(v_1\)</span> aufgespannten Hyperraum <span class="arithmatex">\(E_1\)</span> (ii).</p>
+<p>Die auf <span class="arithmatex">\(v_1\)</span> projizierten Daten bilden ein neues Merkmal.</p>
+<p>Die Daten in <span class="arithmatex">\(E_1\)</span> werden nun wieder projiziert auf den Vektor <span class="arithmatex">\(v_2\)</span> (iii) und auf den von <span class="arithmatex">\(v_2\)</span>
+aufgespannten Hyperraum <span class="arithmatex">\(E_2\)</span> (iv).</p>
+<p>Die auf <span class="arithmatex">\(v_2\)</span> projizierten Daten bilden ein neues Merkmal.</p>
+<p>Schließlich werden die Daten in <span class="arithmatex">\(E_2\)</span> werden nun wieder projiziert auf den Vektor <span class="arithmatex">\(v_3\)</span> (v) und 
+auf den von <span class="arithmatex">\(v_3\)</span> aufgespannten Hyperraum <span class="arithmatex">\(E_3\)</span> (vi) .</p>
+<p>Die auf <span class="arithmatex">\(v_3\)</span> projizierten Daten bilden ein neues Merkmal.</p>
+<p>Notieren Sie Matrizen mit den neuen Merkmalen.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Nach der Projektion auf den den Vektor können die Zwischenergebnisse genutzt werden, um schneller die Projektion auf die Ebene zu bestimmen.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p><iframe src="https://www.geogebra.org/calculator/ertzqddm?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe></p>
+<p>a)</p>
+<div class="arithmatex">\[
+\begin{pmatrix}
+2 &amp; 5 &amp; 3 \\
+1 &amp; 4 &amp; 4 \\
+3 &amp; 6 &amp; 2 \\
+4 &amp; 7 &amp; 5 \\
+2 &amp; 5 &amp; 3
+\end{pmatrix}
+\]</div>
+<p>b)</p>
+<div class="arithmatex">\[
+\begin{pmatrix}
+-0.29 &amp; 1.11 &amp; \frac{31}{770} \\
+-0.95 &amp; 0.96 &amp; \frac{79}{2310} \\
+0.38 &amp; 1.25 &amp; \frac{107}{2310} \\
+-0.48 &amp; 1.62 &amp; \frac{197}{2310} \\
+-0.29 &amp; 1.11 &amp; \frac{31}{770} 
+\end{pmatrix}
+\]</div>
+</details>
+</details>
+<details class="question" open="open">
+<summary>Projektion auf Hyperebene Programmieren</summary>
+<p>Baue eine Funktion <code>projection(n, w)</code>, die einen Vektor <code>w</code> auf den vom Normalenvektor <code>n</code> aufgespannten Teilraum
+projiziert.</p>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../0_einf%C3%BChrung/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Einführung in PCA">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Einführung in PCA
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../2_varianz/" class="md-footer__link md-footer__link--next" aria-label="Next: Varianz maximieren">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Varianz maximieren
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.kununu.com/de/qualidy" target="_blank" rel="noopener" title="www.kununu.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M311 86.3c12.3-12.7 12-32.9-.7-45.2s-32.9-12-45.2.7l-155.2 160L64 249V64c0-17.7-14.3-32-32-32S0 46.3 0 64v384c0 17.7 14.3 32 32 32s32-14.3 32-32V341l64.7-66.7 133 192c10.1 14.5 30 18.1 44.5 8.1s18.1-30 8.1-44.5L174.1 227.4z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.google.com/search?sca_esv=7e6ba2047fcb60f3&uds=AMwkrPtyB8MsmozA4Lwzqy2G2HCu-abqzc6moOG48q3gP5dtjTRzC2Ws0eSwcyLXDfZNuYCrZ7ByIreHLG9th3vKLekPoVeey0tumAbet4cVLQRLzdRFhUbOGbnyp3xo1V0hzzaNmkCN&si=AKbGX_rcuucMgom2rba1cdwsvM2SVoIkP2btyqGMV4t0GuHIs4sGV_1tpuqR0YHG4Rzd9SdJcL-lW6E-2aJA5azZLTKkIOrZ2j2aWwoBkVbdEJ0o0GPcQhs%3D&q=Qualidy+GmbH+Rezensionen&sa=X&ved=2ahUKEwibsbnSgcmFAxXNQvEDHaVYCiAQ3PALegQIRxAF" target="_blank" rel="noopener" title="www.google.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.35 11.1h-9.17v2.73h6.51c-.33 3.81-3.5 5.44-6.5 5.44C8.36 19.27 5 16.25 5 12c0-4.1 3.2-7.27 7.2-7.27 3.09 0 4.9 1.97 4.9 1.97L19 4.72S16.56 2 12.1 2C6.42 2 2.03 6.8 2.03 12c0 5.05 4.13 10 10.22 10 5.35 0 9.25-3.67 9.25-9.09 0-1.15-.15-1.81-.15-1.81"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.4c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64h185.3c2.2 20.4 3.3 41.8 3.3 64m28.8-64h123.1c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64m112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6 78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7 10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5 11.6 26 20.9 58.2 27 94.7m-209 0H18.6c30-74.1 93.6-130.9 172-151.6-25.5 34.2-45.3 87.7-55.3 151.6M8.1 192h123.1c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64m186.6 254.6c-11.6-26-20.9-58.2-27-94.6h176.6c-6.1 36.4-15.5 68.6-27 94.6-10.5 23.6-22.2 40.7-33.5 51.5-11.2 10.7-20.5 13.9-27.8 13.9s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6-78.4-20.7-142-77.5-172-151.6zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6 25.5-34.2 45.2-87.7 55.3-151.6h116.7z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="../../../javascripts/pytutor_button.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

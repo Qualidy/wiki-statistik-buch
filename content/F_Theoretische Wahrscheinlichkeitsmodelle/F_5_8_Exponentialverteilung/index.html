@@ -1,0 +1,1639 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../F_5_7_Poisson_Verteilung/">
+      
+      
+        <link rel="next" href="../F_5_X_Pareto_Verteilung/">
+      
+      
+      <link rel="icon" href="../../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.45">
+    
+    
+      
+        <title>Exponentialverteilung Vorstellung - Statistik Buch Zusätze</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/beispiel_admonition.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/formel_admonition.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#exponentialverteilung" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Statistik Buch Zusätze" class="md-header__button md-logo" aria-label="Statistik Buch Zusätze" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Statistik Buch Zusätze
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Exponentialverteilung Vorstellung
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Statistik Buch Zusätze" class="md-nav__button md-logo" aria-label="Statistik Buch Zusätze" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    Statistik Buch Zusätze
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ergänzungen zum Buch "Statistik Schritt für Schritt"
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Content
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Content
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    B Grundlagen statistischer Untersuchungen
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            B Grundlagen statistischer Untersuchungen
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../B_Grundlagen_statistischer_Untersuchungen/B_1_Gesamtheiten/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gesamtheiten und ihre Beschreibung durch Merkmale
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../B_Grundlagen_statistischer_Untersuchungen/B_2_Skalenniveaus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Skalenniveaus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    C Univariate Analyse
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            C Univariate Analyse
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C_Univariate_Analyse/C_2_Eindimensionale_H%C3%A4ufigkeitsverteilung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    C.2.1 Eindimensionale Häufigkeitsverteilung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C_Univariate_Analyse/C_3_0_Ma%C3%9Fzahlen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    C.3.0 Mittelwerte
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C_Univariate_Analyse/C_3_3_Boxplots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    C.3.3 Boxplots und Quantile
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C_Univariate_Analyse/C_3_5_Gini_Koeffizient/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    C.3.5 Lorenzkurve und Gini-Koeffizient
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Clustering
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Clustering
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Clustering/0_einf%C3%BChrung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Einführung Clustering
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Clustering/1_KMeans/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    KMeans
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Clustering/2_dbscan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DBScan
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Clustering/3_distances/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Abstände
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    D Bivariate und multivariate Analyse
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            D Bivariate und multivariate Analyse
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_Bivariate_und_multivariate_Analyse/D_1_Darstellung%20Daten/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    D.1 Darstellung multivariater Datensätze
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_Bivariate_und_multivariate_Analyse/D_2_Korrelationsanalyse/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    D.2 Korrelationsanalyse
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D_Bivariate_und_multivariate_Analyse/D_3_Regressionsrechnung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    D.3 Regressionsrechnung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    F Theoretische Wahrscheinlichkeitsmodelle
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            F Theoretische Wahrscheinlichkeitsmodelle
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../F_5_0_Vortr%C3%A4ge_Verteilungen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vorträge zu Verteilungen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../F_5_10%20Standardnormalverteilung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    F.5.10 Standardnormalverteilung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../F_5_4_Binomialverteilung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Binomialverteilung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../F_5_5_Geometrische_Verteilung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geometrische Verteilung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../F_5_6_Hypergeometrische_Verteilung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hypergeometrische Verteilung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../F_5_7_Poisson_Verteilung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Poisson-Verteilung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Exponentialverteilung Vorstellung
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Exponentialverteilung Vorstellung
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-ist-das-fur-eine-verteilung-und-wozu-dient-sie" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was ist das für eine Verteilung und wozu dient sie?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rechenaufgabenmc-fragenfreitext-aufgabenwissenfragen-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rechenaufgaben/MC-Fragen/Freitext-Aufgaben/Wissenfragen erstellen.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multiple-choice-aufgaben" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multiple Choice Aufgaben
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#programmierung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Programmierung
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../F_5_X_Pareto_Verteilung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pareto-Verteilung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../test/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Test zu Verteilungen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Neuronale Netze
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            Neuronale Netze
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Neuronale_Netze/nn/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Neuronale Netze
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    PCA
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            PCA
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PCA/0_einf%C3%BChrung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Einführung in PCA
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PCA/1_projektion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Projektion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PCA/2_varianz/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Varianz maximieren
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PCA/3_lagrange/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lagrange
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PCA/4_eigenvektor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Eigenvektoren und Eigenwerte
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PCA/5_pca/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PCA
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="exponentialverteilung">Exponentialverteilung<a class="headerlink" href="#exponentialverteilung" title="Permanent link">&para;</a></h1>
+<h2 id="was-ist-das-fur-eine-verteilung-und-wozu-dient-sie">Was ist das für eine Verteilung und wozu dient sie?<a class="headerlink" href="#was-ist-das-fur-eine-verteilung-und-wozu-dient-sie" title="Permanent link">&para;</a></h2>
+<p>Die Exponentialverteilung ist eine spezielle Wahrscheinlichkeitsverteilung, die in der Statistik verwendet wird. Sie beschreibt, wie lange es im Durchschnitt dauert, bis ein bestimmtes zufälliges Ereignis, das <strong>erste Mal</strong> eintritt.</p>
+<ul>
+<li>Sie ist <strong>gedächtnislos</strong>, was bedeutet, dass es keinen unterschied macht, wie lange man auf ein Ereignis wartet. Die Wahrscheinlichkeit, dass es Eintritt ist zu jedem Zeitpunkt gleich. Die Warscheinlichkeit hängt also nur davon ab, wie lange man noch darauf warten muss, und nicht davon, wie lange man schon gewartet hat.</li>
+<li>Der Wert ist immer <span class="arithmatex">\(\geq 0\)</span> (es gibt keine negativen Zeiten).</li>
+</ul>
+<div class="admonition warning wichtig">
+<p class="admonition-title">Warning</p>
+<p>Die Exponentialverteilung ist ein <strong>theoretisches Modell</strong>, das in der Praxis oft verwendet wird, um Prozesse zu vereinfachen. Tatsächliche Ereignisse können von dieser Verteilung abweichen, da reale Daten häufig nicht exakt der Exponentialverteilung folgen. Dennoch ist sie nützlich, weil sie mathematisch leicht handhabbar ist und grundlegende Einblicke liefert.</p>
+</div>
+<div class="admonition formel">
+<p class="admonition-title">Dichtefunktion</p>
+<p>Die Dichtefunktion, gibt die Wahrscheinlichkeitsdichte an, dass das Ereignis nach einer Zeit <span class="arithmatex">\(x\)</span> eintritt.</p>
+<div class="arithmatex">\[f(x; \lambda) = \begin{cases}
+\lambda e^{-\lambda x}, &amp; x \geq 0 \\
+0, &amp; sonst
+\end{cases}\]</div>
+<p>Für <span class="arithmatex">\(x &lt; 0\)</span> gilt <span class="arithmatex">\(f(x) = 0\)</span>, da negative Zeiten keinen Sinn ergeben.</p>
+</div>
+<div class="admonition formel">
+<p class="admonition-title">Verteilungsfunktion</p>
+<p>Die Dichtefunktion gibt die Wahrscheinlichkeitsdichte dafür an, dass das Ereignis nach einer Zeit <span class="arithmatex">\(x\)</span> eintritt:</p>
+<div class="arithmatex">\[F(x; \lambda) = \begin{cases}
+1 - e^{-\lambda x}, &amp; x \geq 0 \\
+0, &amp; sonst
+\end{cases}\]</div>
+<p><strong><span class="arithmatex">\(\lambda\)</span>:</strong> Kehrwert der durchschnittlichen Zeit bis zum Ereignis</p>
+<p><strong><span class="arithmatex">\(e\)</span>:</strong> Die Eulersche Zahl (<span class="arithmatex">\(\approx 2{,}71828\)</span>).</p>
+</div>
+<div class="admonition beispiel">
+<p class="admonition-title">Beispiel</p>
+<p>Tritt ein Ereignis im Mittel einmal alle 5 Minuten ein, dann ist <span class="arithmatex">\(\lambda = \frac{1}{5} = 0{,}2\)</span>.</p>
+</div>
+<div class="admonition formel">
+<p class="admonition-title">Erwartungswert</p>
+<p>Wie lange muss man durchschnittlich warten, bis das Ereignis auftritt:</p>
+<div class="arithmatex">\[\mathbb{E}(X) = \frac{1}{\lambda}\]</div>
+<p>Tritt ein Ereignis im Durchschnitt <span class="arithmatex">\(\lambda\)</span>-mal pro Einheit auf, dann dauert es im Mittel <span class="arithmatex">\(\frac{1}{\lambda}\)</span> Einheiten, bis es eintritt.</p>
+</div>
+<div class="admonition formel">
+<p class="admonition-title">Varianz</p>
+<p>Sie misst, wie stark die Wartezeiten um den Erwartungswert streuen</p>
+<div class="arithmatex">\[Var(X) = \frac{1}{\lambda^2}\]</div>
+</div>
+<p>Eine größere Rate <span class="arithmatex">\(\lambda\)</span> führt dazu, dass die Varianz kleiner wird, da die Streuung bei häufigeren Ereignissen kleiner ist.</p>
+<iframe src="https://websim.ai/p/h7sps6_itzxqn7qm76_h/1" width="100%" height="610" style="border:none;"></iframe>
+
+<div class="admonition beispiele">
+<p class="admonition-title">Anwendungsbereiche</p>
+<p>Man verwendet die Exponentialverteilung, wenn ...</p>
+<ul>
+<li>Wie lange ein Gerät funktioniert, bevor es kaputtgeht.</li>
+<li>Radioaktiver Zerfall</li>
+<li>Zeit zwischen zwei Anrufen(im Callcenter)</li>
+</ul>
+</div>
+<div class="admonition beispiel">
+<p class="admonition-title">Beispiel: Wartezeit an einer Kasse</p>
+<p>An einer Supermarktkasse dauert es im Durchschnitt <strong>3 Minuten</strong>, bis ein Kunde fertig bedient wird.</p>
+<p><strong>Fragen:</strong></p>
+<p>Wie groß ist die Wahrscheinlichkeit, dass die Bedienung eines Kunden <strong>weniger als 2 Minuten</strong> dauert?</p>
+<p>Wie groß ist die Wahrscheinlichkeit, dass die Bedienung eines Kunden <strong>länger als 4 Minuten</strong> dauert?</p>
+<p><strong>Gegebene Werte:</strong></p>
+<p>Durchschnittliche Wartezeit: <span class="arithmatex">\(E(X) = 3\)</span> Minuten</p>
+<p>Parameter der Exponentialverteilung:</p>
+<div class="arithmatex">\[\lambda = \frac{1}{E(X)} = \frac{1}{3} \approx 0{,}333\]</div>
+<p><strong>Formeln:</strong></p>
+<p><strong>Verteilungsfunktion für P(X &lt;= x) :</strong></p>
+<div class="arithmatex">\[P(X \leq x) = F(x) = 1 - e^{-\lambda x}\]</div>
+<p><strong>Gegenwahrscheinlichkeit für P(X &gt; x) :</strong></p>
+<div class="arithmatex">\[P(X &gt; x) = 1 - F(x) = e^{-\lambda x}\]</div>
+<p><strong>Rechnungen:</strong></p>
+<p><em>Wahrscheinlichkeit für weniger als 2 Minuten:</em></p>
+<div class="arithmatex">\[P(X \leq 2) = 1 - e^{-\lambda \cdot 2} = 1 - e^{-0{,}333 \cdot 2}\]</div>
+<div class="arithmatex">\[P(X \leq 2) = 1 - e^{-0{,}666} \approx 1 - 0{,}514 \approx 0{,}486\]</div>
+<p><em>Ergebnis:</em> Die Wahrscheinlichkeit, dass die Bedienung weniger als 2 Minuten dauert, beträgt etwa <strong>48,6 %</strong>.</p>
+<p><em>Wahrscheinlichkeit für mehr als 4 Minuten:</em></p>
+<div class="arithmatex">\[P(X &gt; 4) = e^{-\lambda \cdot 4} = e^{-0{,}333 \cdot 4}\]</div>
+<div class="arithmatex">\[P(X &gt; 4) = e^{-1{,}332} \approx 0{,}264\]</div>
+<p><em>Ergebnis:</em> Die Wahrscheinlichkeit, dass die Bedienung länger als 4 Minuten dauert, beträgt etwa <strong>26,4 %</strong>.</p>
+<p><strong>Zusammenfassung:</strong></p>
+<div class="arithmatex">\[P(X \leq 2) \approx 48{,}6\,\%\]</div>
+<div class="arithmatex">\[P(X &gt; 4) \approx 26{,}4\,\%\]</div>
+</div>
+<h2 id="rechenaufgabenmc-fragenfreitext-aufgabenwissenfragen-erstellen">Rechenaufgaben/MC-Fragen/Freitext-Aufgaben/Wissenfragen erstellen.<a class="headerlink" href="#rechenaufgabenmc-fragenfreitext-aufgabenwissenfragen-erstellen" title="Permanent link">&para;</a></h2>
+<details class="question" open="open">
+<summary>Aufgabe 1</summary>
+<p>Die tägliche <strong>Ausfallrate</strong> ist laut Hersteller <span class="arithmatex">\(\lambda = 0{,}001\)</span>.</p>
+<ol>
+<li>Wie ist die durchschnittliche Zeit bis ein Handy nicht mehr funktioniert</li>
+<li>Wie hoch ist die Wahrscheinlichkeit, dass dein Handy nach einem Jahr noch funktioniert ?</li>
+</ol>
+<details class="success">
+<summary>Lösung</summary>
+<p><strong>Erwartungswert</strong>: <span class="arithmatex">\(E(X) = \frac{1}{\lambda} = \frac{1}{0{,}001} = 1000\)</span></p>
+<p><strong>Antwort 1:</strong>
+Sie durchschnittliche Zeit bis ein Handy nicht mehr funktioniert sind <strong>1000 Tage</strong></p>
+<div class="arithmatex">\[F(x;\lambda) = F(365;0,001) = 1-e^{−λ⋅t} = 1-e^{−0,001⋅365} ≈ 0,306\]</div>
+<p><strong>Antwort 2:</strong>
+Nach 365 Tagen sind 30,6% aller Geräte ausgefallen.
+Die Wahrscheinlichkeit, dass unser Gerät nach 365 Tagen noch funktionieren wird, liegt also bei 69,4%.</p>
+</details>
+</details>
+<details class="question" open="open">
+<summary>Aufgabe 2</summary>
+<p>Nach 400 Tagen sind 3% der Computer defekt. Bestimme <span class="arithmatex">\(\lambda\)</span>.</p>
+<details class="success">
+<summary>Lösung</summary>
+<p><span class="arithmatex">\(<span class="arithmatex">\(F(400) = 0,03\)</span>\)</span>
+In die Verteilungsfunktion Eingesetzt:</p>
+<div class="arithmatex">\[0,03 = 1 - e^{\lambda * 400}\]</div>
+<p>Nach <span class="arithmatex">\(\lambda\)</span> auflösen:</p>
+<p>Exponentialausdruck isolieren:</p>
+<div class="arithmatex">\[e^{\lambda*400} = 1 - 0,03 = 0,97\]</div>
+<p>Natürlichen logarithmus auf beiden Seiten anwenden:</p>
+<div class="arithmatex">\[-\lambda * 400 = ln(0,97)\]</div>
+<p>ln(0,97) berechnen:</p>
+<div class="arithmatex">\[ln(0,97) ≈ -0,03046\]</div>
+<p>Eingesetzt in die Gleichung:</p>
+<div class="arithmatex">\[-\lambda * 400 = -0,03046\]</div>
+<p>Zum Schluss nach <span class="arithmatex">\(\lambda\)</span> auflösen:</p>
+<div class="arithmatex">\[\lambda = rac{0,03046}{400}\]</div>
+<div class="arithmatex">\[\lambda ≈ 0,00007615\]</div>
+<p><strong>Antwort:</strong> Der Wert von <span class="arithmatex">\(\lambda\)</span> beträgt etwa 0,00007615 pro Tag.</p>
+</details>
+</details>
+<h2 id="multiple-choice-aufgaben">Multiple Choice Aufgaben<a class="headerlink" href="#multiple-choice-aufgaben" title="Permanent link">&para;</a></h2>
+<details class="question" open="open">
+<summary>MC-Frage 1</summary>
+<p>Ein Gerät hat eine mittlere Haltbarkeit von 5 Jahren. Mit welcher Wahrscheinlichkeit ist ein Gerät 5 Jahre nach Anschaffung noch gut?</p>
+<p>A) 37%</p>
+<p>B) 50%</p>
+<p>C) 63%</p>
+<p>D) keine dieser Antworten</p>
+<details class="success">
+<summary>Lösung</summary>
+<p>A</p>
+</details>
+</details>
+<details class="question" open="open">
+<summary>MC-Frage 2</summary>
+<p>Welche Verteilungsfunktion gehört zum größeren Lambda?</p>
+<p><img alt="Screenshot 2025-01-21 at 09.03.20" src="https://hackmd.io/_uploads/Hk81SCnvyg.png" /></p>
+<p>A) die Helle</p>
+<p>B) die Dunkle</p>
+<p>C) Die Linien haben das gleiche Lambda</p>
+<p>D) Das kann man so nicht beurteilen</p>
+<details class="success">
+<summary>Lösung</summary>
+<p>B</p>
+</details>
+</details>
+<h2 id="programmierung">Programmierung<a class="headerlink" href="#programmierung" title="Permanent link">&para;</a></h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+<span class="n">lmbda</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">6</span>
+
+<span class="n">dichtefunktion</span> <span class="o">=</span> <span class="n">lmbda</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">lmbda</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span>
+<span class="n">verteilungsfunktion</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">lmbda</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">dichtefunktion</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Dichtefunktion&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Zeit&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Wahrscheinlichkeit&quot;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">verteilungsfunktion</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Verteilungsfunktion&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Zeit&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Wahrscheinlichkeit&quot;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></td></tr></table></div>
+<p><img alt="Ausgabe" src="../exp.png" /></p>
+<ul>
+<li>Numpy wurde hier verwendet, um einen gleichmäßigen Wertebreich zu erstellen, und um die Exponentialberechnungen durchzuführen</li>
+<li>Matplotlib.pyplot wurde zum Visualisieren verwendet.</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../F_5_7_Poisson_Verteilung/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Poisson-Verteilung">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Poisson-Verteilung
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../F_5_X_Pareto_Verteilung/" class="md-footer__link md-footer__link--next" aria-label="Next: Pareto-Verteilung">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Pareto-Verteilung
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.kununu.com/de/qualidy" target="_blank" rel="noopener" title="www.kununu.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M311 86.3c12.3-12.7 12-32.9-.7-45.2s-32.9-12-45.2.7l-155.2 160L64 249V64c0-17.7-14.3-32-32-32S0 46.3 0 64v384c0 17.7 14.3 32 32 32s32-14.3 32-32V341l64.7-66.7 133 192c10.1 14.5 30 18.1 44.5 8.1s18.1-30 8.1-44.5L174.1 227.4z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.google.com/search?sca_esv=7e6ba2047fcb60f3&uds=AMwkrPtyB8MsmozA4Lwzqy2G2HCu-abqzc6moOG48q3gP5dtjTRzC2Ws0eSwcyLXDfZNuYCrZ7ByIreHLG9th3vKLekPoVeey0tumAbet4cVLQRLzdRFhUbOGbnyp3xo1V0hzzaNmkCN&si=AKbGX_rcuucMgom2rba1cdwsvM2SVoIkP2btyqGMV4t0GuHIs4sGV_1tpuqR0YHG4Rzd9SdJcL-lW6E-2aJA5azZLTKkIOrZ2j2aWwoBkVbdEJ0o0GPcQhs%3D&q=Qualidy+GmbH+Rezensionen&sa=X&ved=2ahUKEwibsbnSgcmFAxXNQvEDHaVYCiAQ3PALegQIRxAF" target="_blank" rel="noopener" title="www.google.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.35 11.1h-9.17v2.73h6.51c-.33 3.81-3.5 5.44-6.5 5.44C8.36 19.27 5 16.25 5 12c0-4.1 3.2-7.27 7.2-7.27 3.09 0 4.9 1.97 4.9 1.97L19 4.72S16.56 2 12.1 2C6.42 2 2.03 6.8 2.03 12c0 5.05 4.13 10 10.22 10 5.35 0 9.25-3.67 9.25-9.09 0-1.15-.15-1.81-.15-1.81"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.4c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64h185.3c2.2 20.4 3.3 41.8 3.3 64m28.8-64h123.1c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64m112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6 78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7 10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5 11.6 26 20.9 58.2 27 94.7m-209 0H18.6c30-74.1 93.6-130.9 172-151.6-25.5 34.2-45.3 87.7-55.3 151.6M8.1 192h123.1c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64m186.6 254.6c-11.6-26-20.9-58.2-27-94.6h176.6c-6.1 36.4-15.5 68.6-27 94.6-10.5 23.6-22.2 40.7-33.5 51.5-11.2 10.7-20.5 13.9-27.8 13.9s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6-78.4-20.7-142-77.5-172-151.6zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6 25.5-34.2 45.2-87.7 55.3-151.6h116.7z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="../../../javascripts/pytutor_button.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
